@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Tools · AIX Outdoors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+<div class="sample-banner">
+  <div><strong>SAMPLE SITE</strong> · not a live bid · pricing is illustrative</div>
+</div>
+<header class="nav"><div class="wrap">
+    <a class="wordmark" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="3" fill="#6b7c3a"/><path d="M8 30 L20 8 L32 30" fill="none" stroke="#f3f1ea" stroke-width="2.4"/><path d="M14 30h12" stroke="#e85d04" stroke-width="2.4"/><circle cx="20" cy="22" r="2.2" fill="#e85d04"/></svg>
+      <div><span>AIX Outdoors</span><small>Land · Trails · Plots</small></div>
+    </a>
+    <nav class="nav-links"><a href="services.html" class="">Work</a><a href="process.html" class="">Process</a><a href="gallery.html" class="">Gallery</a><a href="project-tools.html" class="active">Project tools</a><a href="journal.html" class="">Journal</a><a href="partners.html" class="">Partners</a><a href="service-area.html" class="">Service area</a><a href="faq.html" class="">FAQ</a></nav>
+    <a class="btn" href="quote.html">Request a quote</a>
+  </div></header>
+<section class="page-hero"><div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / Project tools</div>
+  <p class="tiny">AIX Outdoors</p>
+  <h1>Project tools</h1>
+  <p class="lede" style="margin-left:auto;margin-right:auto">Four quick calculators for planning a job before you call. Every number here is a planning estimate — not a bid — and the assumptions are written out so you can sanity-check them yourself.</p>
+</div></section>
+<div class="fb-after-hero"></div>
+
+<div class="layout-with-rail">
+<div class="layout-main">
+<section class="section"><div class="wrap">
+  <p class="note" style="margin-bottom:24px">These calculators run in your browser only — nothing is sent anywhere, and nothing here is a quote. Use <a href="quote.html">Request a quote</a> once you have real numbers to work from.</p>
+  <div class="calc-list">
+
+    <div class="calc-card">
+      <h3>Gravel / stone volume</h3>
+      <p class="muted">Figure out roughly how many tons of crushed stone a lane or pad needs before you call the quarry.</p>
+      <div class="calc-grid">
+        <div><label for="gr-length">Length (ft)</label><input id="gr-length" type="number" min="0" step="any" placeholder="e.g. 400"></div>
+        <div><label for="gr-width">Width (ft)</label><input id="gr-width" type="number" min="0" step="any" placeholder="e.g. 12"></div>
+        <div><label for="gr-depth">Depth (in)</label><input id="gr-depth" type="number" min="0" step="any" placeholder="e.g. 4"></div>
+      </div>
+      <div class="calc-actions"><button class="btn" type="button" id="gr-calc">Calculate</button></div>
+      <div class="calc-result" id="gr-result" hidden>
+        <span class="big" id="gr-out">—</span>
+        <p id="gr-out-2"></p>
+      </div>
+      <p class="calc-help">Assumption: crushed limestone at roughly <strong>1.4 tons per cubic yard</strong> — your quarry&rsquo;s stone may run lighter or heavier, so ask for their number if you have it. This is length &times; width &times; depth, converted to cubic yards, then to tons. Plan to order about <strong>20% extra</strong> to cover compaction once it&rsquo;s spread and packed. Planning estimate only — not a bid.</p>
+    </div>
+
+    <div class="calc-card">
+      <h3>Acreage from a rectangle</h3>
+      <p class="muted">Useful for sizing a mowing job, a clearing pass, or a food plot when you only have a tape measure or a GPS distance.</p>
+      <div class="calc-grid cols-2">
+        <div><label for="ac-length">Length (ft)</label><input id="ac-length" type="number" min="0" step="any" placeholder="e.g. 660"></div>
+        <div><label for="ac-width">Width (ft)</label><input id="ac-width" type="number" min="0" step="any" placeholder="e.g. 330"></div>
+      </div>
+      <div class="calc-actions"><button class="btn" type="button" id="ac-calc">Calculate</button></div>
+      <div class="calc-result" id="ac-result" hidden>
+        <span class="big" id="ac-out">—</span>
+        <p id="ac-out-2"></p>
+      </div>
+      <p class="calc-help">One acre is <strong>43,560 square feet</strong>. This assumes a simple rectangle — an irregular field will need to be broken into a few rectangles and added together, or measured with a GPS app. Good for a first pass on mowing, clearing, or plot sizing before a walk-through.</p>
+    </div>
+
+    <div class="calc-card">
+      <h3>Food plot seed</h3>
+      <p class="muted">Turn a seed-rate number (from the bag or your plan) into a total pounds figure for the plot you actually have.</p>
+      <div class="calc-grid cols-2">
+        <div><label for="sd-acres">Plot size (acres)</label><input id="sd-acres" type="number" min="0" step="any" placeholder="e.g. 1.5"></div>
+        <div><label for="sd-rate">Seeding rate (lbs / acre)</label><input id="sd-rate" type="number" min="0" step="any" placeholder="e.g. 60"></div>
+      </div>
+      <div class="calc-actions"><button class="btn" type="button" id="sd-calc">Calculate</button></div>
+      <div class="calc-result" id="sd-result" hidden>
+        <span class="big" id="sd-out">—</span>
+        <p id="sd-out-2"></p>
+      </div>
+      <p class="calc-help">Seeding rate varies a lot by species and mix — a straight brassica, a cereal grain, and a clover blend are not the same number. Use the rate printed on your seed tag or plan; this just multiplies it by your acreage. Not sized to soil test results.</p>
+    </div>
+
+    <div class="calc-card">
+      <h3>Trail length</h3>
+      <p class="muted">Convert a corridor length in feet (paced off, GPS-tracked, or measured) into miles for planning a walk or a machine day.</p>
+      <div class="calc-grid cols-2">
+        <div><label for="tr-feet">Length (ft)</label><input id="tr-feet" type="number" min="0" step="any" placeholder="e.g. 2600"></div>
+        <div></div>
+      </div>
+      <div class="calc-actions"><button class="btn" type="button" id="tr-calc">Calculate</button></div>
+      <div class="calc-result" id="tr-result" hidden>
+        <span class="big" id="tr-out">—</span>
+        <p id="tr-out-2"></p>
+      </div>
+      <p class="calc-help">One mile is <strong>5,280 feet</strong>. Handy for turning a paced-off or GPS trail length into a figure that&rsquo;s easier to talk about — machine time on trail work is still priced by the linear foot, not the mile.</p>
+    </div>
+
+  </div>
+  <p class="note" style="margin-top:28px">Every result on this page is a planning estimate for this design sample &mdash; not a bid, not an offer to contract. A real quote accounts for access, terrain, stone index, and site conditions a calculator can&rsquo;t see. <a href="quote.html">Request a quote</a> once you have a property in mind.</p>
+</div></section>
+</div>
+<aside class="fb-rail" aria-label="Facebook Page timeline sample"></aside>
+</div>
+
+<section class="cta-band"><div class="wrap">
+  <div><h2>Have real numbers now?</h2><p class="muted">Send the property and what these tools told you — it saves a round of back-and-forth on the quote.</p></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <a class="btn" href="quote.html">Request a quote</a>
+    <a class="btn btn-ghost" href="services.html">See the catalog</a>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="wordmark" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="3" fill="#6b7c3a"/><path d="M8 30 L20 8 L32 30" fill="none" stroke="#f3f1ea" stroke-width="2.4"/><path d="M14 30h12" stroke="#e85d04" stroke-width="2.4"/><circle cx="20" cy="22" r="2.2" fill="#e85d04"/></svg>
+      <div><span>AIX Outdoors</span><small>Land · Trails · Plots</small></div>
+    </a>
+      <p style="margin-top:14px">Land work for private hunting ground within 100 miles of Burlington, Iowa.</p>
+      <p>Burlington, IA 52601<br>(555) 010-1249<br>hello@aixoutdoors.example</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="service-clearing.html">Ground clearing</a>
+      <a href="service-trails.html">Trails</a>
+      <a href="service-plots.html">Feeding plots</a>
+      <a href="service-stands.html">Stand management</a>
+      <a href="service-mowing.html">Large plot mowing</a>
+      <a href="service-driveways.html">Gravel driveways</a>
+      <a href="service-hauling.html">Dump truck & hauling</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="process.html">How a job runs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="project-tools.html">Project tools</a>
+      <a href="journal.html">Journal</a>
+      <a href="partners.html">Partners</a>
+      <a href="service-area.html">Service area</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quote.html">Quote request</a>
+    </div>
+    <div>
+      <h4>Sample notice</h4>
+      <p>This is a design sample. Figures, phone, and email are placeholders. No owner portrait or personal bio is used by design. Job-site partners are labeled SAMPLE until the owner confirms names.</p>
+    </div>
+  </div>
+  <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Photos: Unsplash Iowa/Midwest + generated SAMPLE harvest · Partners are placeholders · Not an offer to contract</div>
+</footer>
+
+<script>
+(function () {
+  function num(id) {
+    var v = parseFloat(document.getElementById(id).value);
+    return isNaN(v) || v < 0 ? 0 : v;
+  }
+  function show(id) { document.getElementById(id).hidden = false; }
+
+  document.getElementById("gr-calc").addEventListener("click", function () {
+    var len = num("gr-length"), wid = num("gr-width"), depthIn = num("gr-depth");
+    var cubicFt = len * wid * (depthIn / 12);
+    var cubicYd = cubicFt / 27;
+    var tons = cubicYd * 1.4;
+    var tonsWithCompaction = tons * 1.2;
+    document.getElementById("gr-out").textContent =
+      cubicYd.toFixed(1) + " cubic yd \u2248 " + tons.toFixed(1) + " tons";
+    document.getElementById("gr-out-2").textContent =
+      "With ~20% added for compaction: about " + tonsWithCompaction.toFixed(1) + " tons. Planning estimate — not a bid.";
+    show("gr-result");
+  });
+
+  document.getElementById("ac-calc").addEventListener("click", function () {
+    var len = num("ac-length"), wid = num("ac-width");
+    var sqft = len * wid;
+    var acres = sqft / 43560;
+    document.getElementById("ac-out").textContent = acres.toFixed(2) + " acres";
+    document.getElementById("ac-out-2").textContent =
+      sqft.toLocaleString() + " sq ft, at 43,560 sq ft per acre. Rectangle assumption — planning estimate only.";
+    show("ac-result");
+  });
+
+  document.getElementById("sd-calc").addEventListener("click", function () {
+    var acres = num("sd-acres"), rate = num("sd-rate");
+    var lbs = acres * rate;
+    document.getElementById("sd-out").textContent = lbs.toFixed(1) + " lbs total";
+    document.getElementById("sd-out-2").textContent =
+      acres.toFixed(2) + " acres \u00d7 " + rate.toFixed(0) + " lbs/acre. Check your seed tag\u2019s actual rate \u2014 this does not size a mix for you.";
+    show("sd-result");
+  });
+
+  document.getElementById("tr-calc").addEventListener("click", function () {
+    var feet = num("tr-feet");
+    var miles = feet / 5280;
+    document.getElementById("tr-out").textContent = miles.toFixed(2) + " miles";
+    document.getElementById("tr-out-2").textContent =
+      feet.toLocaleString() + " ft, at 5,280 ft per mile. Machine time is still priced by the linear foot.";
+    show("tr-result");
+  });
+})();
+</script>
+<script src="fb-feed.js" defer></script>
+</body>
+</html>

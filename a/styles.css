@@ -747,3 +747,184 @@ body.fb-sheet-open { overflow: hidden; }
 @media (max-width: 900px) {
   .pain-grid, .proof-lib { grid-template-columns: 1fr; }
 }
+
+/* ===== Direction A v2 — problem lists, differentiation, video strips,
+   planning calculators, grouped gallery, journal, home problems band ===== */
+
+/* Problem lists (per-service "sound familiar?") */
+.problem-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 28px;
+  margin-top: 18px;
+}
+.problem-list li {
+  padding: 12px 0 12px 26px;
+  position: relative;
+  color: var(--ink-muted);
+  border-bottom: 1px solid var(--line);
+  font-size: 14.5px;
+}
+.problem-list li::before {
+  content: "";
+  position: absolute; left: 2px; top: 18px;
+  width: 10px; height: 10px;
+  border-radius: 1px;
+  background: var(--danger);
+  transform: rotate(45deg);
+}
+
+/* "More than X" differentiation box */
+.more-than-box {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 30px 28px;
+  box-shadow: inset 3px 0 0 var(--orange);
+}
+.more-than-box h2 { margin: 6px 0 14px; }
+.more-than-box > p.muted { max-width: 74ch; }
+.honesty-note {
+  margin-top: 22px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--olive);
+  background: var(--bg-elev);
+  border-radius: 0 6px 6px 0;
+}
+.honesty-note p.tiny { margin-bottom: 6px; }
+.honesty-note p:last-child { color: var(--ink-muted); font-size: 14px; max-width: 70ch; }
+
+/* Per-service "Watch this work" video strip + gallery video grid */
+.video-strip, .video-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 10px;
+}
+.video-strip { grid-template-columns: repeat(2, 1fr); }
+.video-grid { grid-template-columns: repeat(3, 1fr); }
+.video-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  color: var(--ink);
+}
+.video-card:hover { border-color: var(--olive-bright); color: var(--ink); }
+.video-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+}
+.video-thumb::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.55));
+}
+.video-thumb .partner-tag {
+  position: absolute; top: 10px; left: 10px; z-index: 1;
+}
+.video-play {
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px; height: 46px; border-radius: 50%;
+  background: var(--orange); color: #fff;
+  display: grid; place-items: center;
+  font-size: 15px; z-index: 1;
+}
+.video-cap { padding: 12px 14px 16px; font-size: 13.5px; color: var(--ink-muted); }
+.video-cap strong { display: block; color: var(--ink); font-size: 14.5px; margin-bottom: 2px; font-weight: 700; }
+
+/* Planning calculators (project-tools.html) */
+.calc-list { display: grid; gap: 24px; margin-top: 12px; }
+.calc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+}
+.calc-card h3 { font-size: 22px; font-family: var(--display); text-transform: uppercase; letter-spacing: .03em; }
+.calc-card > p.muted { margin: 8px 0 18px; max-width: 68ch; }
+.calc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 16px; }
+.calc-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.calc-grid label { display: block; margin-bottom: 6px; }
+.calc-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.calc-result {
+  margin-top: 18px;
+  padding: 16px 18px;
+  background: var(--bg-elev);
+  border-left: 3px solid var(--olive);
+  border-radius: 0 6px 6px 0;
+}
+.calc-result .big { font-family: var(--display); font-size: 26px; color: var(--orange); display: block; margin-bottom: 4px; }
+.calc-result p { color: var(--ink-muted); font-size: 13.5px; margin-top: 4px; }
+.calc-help {
+  margin-top: 14px; padding: 12px 14px;
+  border-left: 3px solid var(--line);
+  color: var(--ink-muted); font-size: 13px;
+}
+
+/* Grouped gallery */
+.gallery-jump {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  padding: 16px; margin: 8px 0 4px;
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.gallery-jump a {
+  font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+  font-family: var(--mono); color: var(--ink-muted);
+  border: 1px solid var(--line); padding: 7px 12px; border-radius: 20px;
+}
+.gallery-jump a:hover { color: var(--orange); border-color: var(--orange); }
+.gallery-group-block { margin-top: 52px; scroll-margin-top: calc(var(--banner-h) + var(--nav-h) + 16px); }
+.gallery-group-block:first-child { margin-top: 28px; }
+.gallery-group-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 16px; flex-wrap: wrap; margin-bottom: 20px;
+  border-bottom: 1px solid var(--line); padding-bottom: 12px;
+}
+.gallery-group-head h2 { font-size: clamp(22px, 3vw, 30px); }
+
+/* Home "problems we fix" band */
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+.problem-tile {
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px 18px; box-shadow: inset 3px 0 0 var(--danger);
+}
+.problem-tile h3 { font-size: 15px; margin-bottom: 8px; }
+.problem-tile p { font-size: 13.5px; color: var(--ink-muted); }
+
+/* Journal (field notes) */
+.journal-intro { max-width: 74ch; }
+.journal-list { display: grid; gap: 26px; margin-top: 10px; }
+.journal-post {
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 30px 28px;
+}
+.journal-meta {
+  display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--olive-bright); margin-bottom: 10px;
+}
+.journal-meta .jflag {
+  background: var(--orange); color: #fff; padding: 2px 8px; font-weight: 700; letter-spacing: .12em;
+}
+.journal-post h2 { margin-bottom: 4px; }
+.journal-post p { color: var(--ink-muted); margin-top: 14px; max-width: 76ch; font-size: 15px; }
+
+@media (max-width: 900px) {
+  .problem-list { grid-template-columns: 1fr; }
+  .video-grid { grid-template-columns: 1fr 1fr; }
+  .calc-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .video-strip, .video-grid, .calc-grid, .calc-grid.cols-2, .problems-grid { grid-template-columns: 1fr; }
+  .more-than-box, .journal-post, .calc-card { padding: 22px 18px; }
+  .gallery-group-head { flex-direction: column; align-items: flex-start; }
+}
