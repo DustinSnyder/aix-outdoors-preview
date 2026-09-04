@@ -1022,3 +1022,42 @@ body.fb-sheet-open { overflow: hidden; }
   .more-than-box, .journal-post, .calc-card { padding: 22px 18px; }
   .gallery-group-head { flex-direction: column; align-items: flex-start; }
 }
+
+
+/* Real job video embeds (forestry mulching etc.) */
+.job-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.job-video {
+  margin: 0;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.job-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
+  max-height: 420px;
+}
+.job-video figcaption {
+  padding: 12px 14px 14px;
+  font-size: 14px;
+  color: var(--ink-muted);
+}
+.job-video figcaption strong {
+  display: block;
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+@media (max-width: 700px) {
+  .job-video-grid { grid-template-columns: 1fr; }
+}
