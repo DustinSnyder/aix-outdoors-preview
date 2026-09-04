@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Service Area · SE Iowa, NE Missouri, E Illinois · AIX Outdoors</title>
-  <meta name="description" content="AIX Outdoors service area: rural southeast Iowa, northeast Missouri, and eastern Illinois approaches from Burlington, IA. Forestry mulching, brush clearing, driveways, and more on your property.">
+  <meta name="description" content="Check your ZIP: AIX Outdoors works within ~100 miles of Burlington, IA 52601 across southeast Iowa, northeast Missouri, and eastern Illinois. Request a free estimate.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -26,13 +26,35 @@
   <div class="crumbs"><a href="index.html">Home</a> / Service area</div>
   <p class="tiny">AIX Outdoors</p>
   <h1>We travel to your land</h1>
-  <p class="lede" style="margin-left:auto;margin-right:auto">Land-management contractors based in Burlington, Iowa, working rural southeast Iowa, northeast Missouri, and eastern / west-central Illinois approaches. Forestry mulching, brush clearing, trails, plots, mowing, gravel driveways, and hauling — on your property. Ask with your nearest town; we say yes or no up front.</p>
+  <p class="lede" style="margin-left:auto;margin-right:auto">Land-management contractors based in Burlington, Iowa, working rural southeast Iowa, northeast Missouri, and eastern / west-central Illinois approaches. Type your ZIP below to see if you are inside our ~100-mile working radius of 52601 — then send a lead if you want a free estimate.</p>
+  <p class="hero-page-actions" style="margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
+    <a class="btn" href="tel:+13197501530">Call 319-750-1530</a>
+    <a class="btn" href="#zip-check">Check your ZIP</a>
+    <a class="btn btn-ghost" href="#lead-form">Request estimate</a>
+  </p>
 </div></section>
 <div class="fb-after-hero"></div>
 
 <div class="layout-with-rail">
 <div class="layout-main">
-<section class="section"><div class="wrap grid-2">
+
+<section class="section" id="zip-check" style="padding-top:0"><div class="wrap">
+  <div class="zip-check-panel">
+    <p class="tiny">Coverage check</p>
+    <h2>Is your property in our service area?</h2>
+    <p class="muted">We keep a list of ZIP codes in Iowa, Missouri, and Illinois within 100 miles of Burlington, IA <strong>52601</strong>. Enter yours — we will tell you yes, edge, or outside.</p>
+    <form id="zip-form" class="zip-form" action="#" method="get">
+      <label for="zip-input">Your ZIP code</label>
+      <div class="zip-row">
+        <input id="zip-input" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 52632" autocomplete="postal-code" required>
+        <button class="btn" type="submit">Check ZIP</button>
+      </div>
+    </form>
+    <div id="zip-result" class="zip-result" hidden role="status" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<section class="section" id="map" style="padding-top:0"><div class="wrap grid-2">
   <div class="map-wrap"><svg viewBox="0 0 420 380" role="img" aria-label="One-hundred mile service radius centered on Burlington Iowa">
   <rect width="420" height="380" fill="#121212"/>
   <text x="16" y="22" fill="#b0b0b0" font-size="11" letter-spacing="2" font-family="sans-serif">100-MILE WORKING RADIUS · BURLINGTON IA 52601</text>
@@ -60,14 +82,57 @@
 <circle cx="155" cy="320" r="4" fill="#2f63d6" opacity=".7"/><text x="163" y="324" fill="#b0b0b0" font-size="11" font-family="sans-serif">Hannibal (edge)</text>
 <circle cx="95" cy="40" r="4" fill="#c45c3a"/><text x="103" y="44" fill="#c45c3a" font-size="11" font-family="sans-serif">Cedar Rapids — outside</text>
 </svg>
-    <p class="muted" style="margin-top:10px;font-size:13px">Schematic only. The blue ring is a 100-mile idea, not a surveyed isochrone. River crossing and ferry time are not modeled.</p>
+    <p class="muted" style="margin-top:10px;font-size:13px">Schematic only. The blue ring is a 100-mile idea, not a surveyed isochrone. ZIP check uses straight-line distance to 52601 for IA / MO / IL codes.</p>
   </div>
   <div>
     <p class="tiny">Towns we will travel to</p>
     <h2>Inside or on the edge — your property, not ours</h2>
     <ul class="city-list"><li>Burlington, IA <em>· Base — 52601</em></li><li>Fort Madison, IA <em>· Core</em></li><li>Keokuk, IA <em>· Core</em></li><li>Mount Pleasant, IA <em>· Core</em></li><li>Fairfield, IA <em>· Core</em></li><li>Washington, IA <em>· Core</em></li><li>Muscatine, IA <em>· Core</em></li><li>Iowa City, IA <em>· Edge of radius</em></li><li>Davenport / Bettendorf, IA <em>· Edge of radius</em></li><li>Moline, IL <em>· Edge of radius</em></li><li>Galesburg, IL <em>· Illinois side</em></li><li>Macomb, IL <em>· Illinois side</em></li><li>Quincy, IL <em>· Illinois side</em></li><li>Nauvoo, IL <em>· River towns</em></li><li>Kahoka, MO <em>· Missouri side</em></li><li>Hannibal, MO <em>· Edge of radius</em></li><li class="out">Cedar Rapids, IA · outside — we do not book it</li></ul>
-    <p class="note">We travel from Burlington, IA to your acreage. Phone <a href="tel:+13197501530">319-750-1530</a> · hello@aixoutdoors.example</p>
+    <p class="note">We travel from Burlington, IA to your acreage. Phone <a href="tel:+13197501530">319-750-1530</a></p>
   </div>
+</div></section>
+
+<section class="section" id="lead-form" style="padding-top:0"><div class="wrap">
+  <div class="section-head">
+    <div><p class="tiny">Free estimate</p><h2>Send a job lead</h2></div>
+    <p>Name, address, phone, email, and the job type. Submissions email to the AIX inbox. Or call / text <a href="tel:+13197501530">319-750-1530</a>.</p>
+  </div>
+  <div id="lead-sent" class="quote-ok" hidden>
+    <p class="tiny">Lead sent</p>
+    <h2>Thanks — we got your request.</h2>
+    <p class="muted">Check your email if FormSubmit asks you to confirm the first time. We will follow up about your property.</p>
+    <p style="margin-top:22px"><a class="btn" href="service-area.html#lead-form">Send another</a>
+    <a class="btn btn-ghost" href="tel:+13197501530" style="margin-left:8px">Call 319-750-1530</a></p>
+  </div>
+  <form id="lead-form-el" class="quote-panel lead-panel" action="https://formsubmit.co/cmboal@pm.me" method="POST">
+    <input type="hidden" name="_subject" value="AIX Outdoors website lead">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://dustinsnyder.github.io/aix-outdoors-preview/a/service-area.html?sent=1#lead-form">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <div class="form-row">
+      <div><label for="lead-name">Name</label><input id="lead-name" name="name" required placeholder="Your name" autocomplete="name"></div>
+      <div><label for="lead-phone">Phone</label><input id="lead-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
+    </div>
+    <div><label for="lead-email">Email</label><input id="lead-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"></div>
+    <div><label for="lead-address">Address</label><input id="lead-address" name="address" required placeholder="Property address or nearest town + ZIP" autocomplete="street-address"></div>
+    <div><label for="lead-job">Job type requested</label>
+      <select id="lead-job" name="job_type" required>
+        <option value="">Choose one</option>
+        <option>Forestry mulching / ground clearing</option>
+        <option>Trail creation and management</option>
+        <option>Hunting feeding plots</option>
+        <option>Hunting stand management</option>
+        <option>Large plot mowing</option>
+        <option>Gravel driveway resurfacing</option>
+        <option>Dump truck services and hauling</option>
+        <option>Combination / not sure — describe below</option>
+      </select>
+    </div>
+    <div><label for="lead-notes">Notes (optional)</label><textarea id="lead-notes" name="notes" placeholder="Acreage, access, timing, photos you can text…"></textarea></div>
+    <button class="btn" type="submit">Send lead / free estimate</button>
+    <p class="note">Goes to <strong>cmboal@pm.me</strong>. First submit may need a one-time email confirmation from FormSubmit. Nothing is stored on this static GitHub Pages site.</p>
+  </form>
 </div></section>
 
 </div>
@@ -81,7 +146,7 @@
       <div class="wordmark-text"><span>AIX Outdoors</span><small>Land Clearing • Hauling • Grading</small></div>
     </a>
       <p style="margin-top:14px">Quality work. Honest pricing. Locally owned &amp; operated. Land-management contractors for private landowners. We work on your property.</p>
-      <p>Burlington, IA 52601<br><a href="tel:+13197501530">319-750-1530</a><br>hello@aixoutdoors.example</p>
+      <p>Burlington, IA 52601<br><a href="tel:+13197501530">319-750-1530</a><br>cmboal@pm.me</p>
     </div>
     <div>
       <h4>Services</h4>
@@ -93,13 +158,14 @@
     </div>
     <div>
       <h4>Sample notice</h4>
-      <p>This is a design sample. Email is a placeholder. No owner portrait or personal bio is used by design. Job-site partners are labeled SAMPLE until the owner confirms names.</p>
+      <p>Design sample on GitHub Pages. Lead form uses FormSubmit to email cmboal@pm.me. No owner portrait or personal bio is used by design.</p>
     </div>
   </div>
-  <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Photos: Unsplash Iowa/Midwest + generated SAMPLE harvest · Partners are placeholders · Not an offer to contract</div>
+  <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Photos: Unsplash Iowa/Midwest · Partners are placeholders · Not an offer to contract</div>
 </footer>
 <a class="sticky-call" href="tel:+13197501530">Call or text 319-750-1530</a>
 
+<script src="js/service-area.js" defer></script>
 <script src="fb-feed.js" defer></script>
 </body>
 </html>

@@ -25,33 +25,50 @@
   <div class="crumbs"><a href="index.html">Home</a> / Quote</div>
   <p class="tiny">AIX Outdoors</p>
   <h1>Request a free estimate</h1>
-  <p class="lede" style="margin-left:auto;margin-right:auto">Tell us about your property — address, photos, and what you want done. Static sample — no backend. Pricing here is not a bid. Or call / text 319-750-1530.</p>
+  <p class="lede" style="margin-left:auto;margin-right:auto">Tell us about your property — name, address, phone, email, and job type. The form emails cmboal@pm.me. Pricing tables here are orientation only — not a bid. Or call / text 319-750-1530.</p>
 </div></section>
 <div class="fb-after-hero"></div>
 
 <div class="layout-with-rail">
 <div class="layout-main">
 <section class="section quote-section"><div class="wrap grid-2">
-  <form id="quote-form" class="quote-panel" action="#" method="post">
+    <form id="quote-form" class="quote-panel" action="https://formsubmit.co/cmboal@pm.me" method="POST">
+    <input type="hidden" name="_subject" value="AIX Outdoors quote request">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://dustinsnyder.github.io/aix-outdoors-preview/a/quote.html?sent=1">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
     <div class="form-row">
-      <div><label>Name</label><input placeholder="Your name"></div>
-      <div><label>Phone</label><input placeholder="319-750-1530"></div>
+      <div><label for="q-name">Name</label><input id="q-name" name="name" required placeholder="Your name" autocomplete="name"></div>
+      <div><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
     </div>
-    <div><label>Email</label><input type="email" placeholder="you@example.com"></div>
+    <div><label for="q-email">Email</label><input id="q-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"></div>
+    <div><label for="q-address">Address</label><input id="q-address" name="address" required placeholder="Property address or nearest town + ZIP" autocomplete="street-address"></div>
     <div class="form-row">
-      <div><label>Nearest town</label><input placeholder="e.g. Fort Madison, IA"></div>
-      <div><label>Acres (approx.)</label><input placeholder="80"></div>
+      <div><label for="q-acres">Acres (approx.)</label><input id="q-acres" name="acres" placeholder="80"></div>
+      <div><label for="q-job">Job type requested</label>
+        <select id="q-job" name="job_type" required>
+          <option value="">Choose one</option>
+          <option>Forestry mulching / ground clearing</option>
+          <option>Trail creation and management</option>
+          <option>Hunting feeding plots</option>
+          <option>Hunting stand management</option>
+          <option>Large plot mowing</option>
+          <option>Gravel driveway resurfacing</option>
+          <option>Dump truck services and hauling</option>
+          <option>Combination — describe below</option>
+        </select>
+      </div>
     </div>
-    <div><label>Primary service</label><select><option>Choose one</option><option>Ground Clearing</option><option>Trail Creation and Management</option><option>Hunting Feeding Plots</option><option>Hunting Stand Management</option><option>Large Plot Mowing</option><option>Gravel Driveway Resurfacing</option><option>Dump Truck Services and Hauling</option><option>Combination — describe below</option></select></div>
-    <div><label>What should be true when we leave?</label><textarea placeholder="Finish condition, access notes, timing around hunting season…"></textarea></div>
-    <button class="btn" type="submit">Send sample request</button>
-    <p class="note">Contact: Burlington IA 52601 · <a href="tel:+13197501530">319-750-1530</a> · hello@aixoutdoors.example. Nothing is emailed from this sample.</p>
+    <div><label for="q-notes">What should be true when we leave?</label><textarea id="q-notes" name="notes" placeholder="Finish condition, access notes, timing around hunting season…"></textarea></div>
+    <button class="btn" type="submit">Send free estimate request</button>
+    <p class="note">Emails <strong>cmboal@pm.me</strong> via FormSubmit. First submit may need a one-time confirmation. Or call / text <a href="tel:+13197501530">319-750-1530</a>.</p>
   </form>
   <div id="quote-ok" class="quote-ok" hidden>
-    <p class="tiny">Sample received</p>
-    <h2>Packet noted — nothing was sent.</h2>
-    <p class="muted">This success state is for layout review. A live site would queue a scoped packet. Cedar Rapids remains outside the 100-mile ring of 52601.</p>
-    <p style="margin-top:22px"><a class="btn" href="quote.html">Reset the form</a></p>
+    <p class="tiny">Request sent</p>
+    <h2>Thanks — your estimate request went through.</h2>
+    <p class="muted">If this is the first FormSubmit message to that inbox, confirm the activation email once. We will follow up about your property.</p>
+    <p style="margin-top:22px"><a class="btn" href="quote.html">Send another</a></p>
   </div>
   <div>
     <p class="tiny">Sample ranges</p>
@@ -96,12 +113,14 @@
 <a class="sticky-call" href="tel:+13197501530">Call or text 319-750-1530</a>
 
 <script>
-document.getElementById("quote-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  this.hidden = true;
-  document.getElementById("quote-ok").hidden = false;
-  document.getElementById("quote-ok").scrollIntoView({ behavior: "smooth", block: "center" });
-});
+(function () {
+  if (new URLSearchParams(window.location.search).get("sent") === "1") {
+    var f = document.getElementById("quote-form");
+    var ok = document.getElementById("quote-ok");
+    if (f) f.hidden = true;
+    if (ok) { ok.hidden = false; ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
+  }
+})();
 </script>
 <script src="fb-feed.js" defer></script>
 </body>

@@ -1,0 +1,4144 @@
+{
+  "center": {
+    "zip": "52601",
+    "city": "Burlington",
+    "state": "IA",
+    "lat": 40.8551,
+    "lon": -91.111,
+    "radius_miles": 100
+  },
+  "generated": "2026-09-04",
+  "count": 590,
+  "zips": {
+    "50027": {
+      "city": "Barnes City",
+      "state": "IA",
+      "lat": 41.4739,
+      "lon": -92.47194,
+      "miles": 82.7
+    },
+    "50044": {
+      "city": "Bussey",
+      "state": "IA",
+      "lat": 41.20247,
+      "lon": -92.88907,
+      "miles": 95.7
+    },
+    "50104": {
+      "city": "Gibson",
+      "state": "IA",
+      "lat": 41.49458,
+      "lon": -92.38841,
+      "miles": 79.8
+    },
+    "50136": {
+      "city": "Keswick",
+      "state": "IA",
+      "lat": 41.46984,
+      "lon": -92.28927,
+      "miles": 74.6
+    },
+    "50143": {
+      "city": "Leighton",
+      "state": "IA",
+      "lat": 41.34245,
+      "lon": -92.79893,
+      "miles": 94.1
+    },
+    "50150": {
+      "city": "Lovilia",
+      "state": "IA",
+      "lat": 41.12771,
+      "lon": -92.97404,
+      "miles": 99.0
+    },
+    "50157": {
+      "city": "Malcom",
+      "state": "IA",
+      "lat": 41.74545,
+      "lon": -92.56183,
+      "miles": 97.2
+    },
+    "50171": {
+      "city": "Montezuma",
+      "state": "IA",
+      "lat": 41.58434,
+      "lon": -92.52584,
+      "miles": 89.1
+    },
+    "50207": {
+      "city": "New Sharon",
+      "state": "IA",
+      "lat": 41.43344,
+      "lon": -92.6381,
+      "miles": 88.9
+    },
+    "50242": {
+      "city": "Searsboro",
+      "state": "IA",
+      "lat": 41.56332,
+      "lon": -92.69428,
+      "miles": 95.7
+    },
+    "50255": {
+      "city": "Thornburg",
+      "state": "IA",
+      "lat": 41.45593,
+      "lon": -92.33207,
+      "miles": 75.9
+    },
+    "50256": {
+      "city": "Tracy",
+      "state": "IA",
+      "lat": 41.2664,
+      "lon": -92.91114,
+      "miles": 98.0
+    },
+    "50268": {
+      "city": "What Cheer",
+      "state": "IA",
+      "lat": 41.40695,
+      "lon": -92.36227,
+      "miles": 75.5
+    },
+    "52030": {
+      "city": "Andrew",
+      "state": "IA",
+      "lat": 42.15322,
+      "lon": -90.59219,
+      "miles": 93.6
+    },
+    "52033": {
+      "city": "Cascade",
+      "state": "IA",
+      "lat": 42.27941,
+      "lon": -91.00177,
+      "miles": 98.6
+    },
+    "52037": {
+      "city": "Delmar",
+      "state": "IA",
+      "lat": 41.96712,
+      "lon": -90.62899,
+      "miles": 80.8
+    },
+    "52060": {
+      "city": "Maquoketa",
+      "state": "IA",
+      "lat": 42.10217,
+      "lon": -90.67961,
+      "miles": 89.0
+    },
+    "52064": {
+      "city": "Miles",
+      "state": "IA",
+      "lat": 42.08977,
+      "lon": -90.31076,
+      "miles": 94.8
+    },
+    "52069": {
+      "city": "Preston",
+      "state": "IA",
+      "lat": 42.05772,
+      "lon": -90.4279,
+      "miles": 90.3
+    },
+    "52070": {
+      "city": "Sabula",
+      "state": "IA",
+      "lat": 42.08146,
+      "lon": -90.21771,
+      "miles": 96.5
+    },
+    "52074": {
+      "city": "Spragueville",
+      "state": "IA",
+      "lat": 42.10966,
+      "lon": -90.4724,
+      "miles": 92.8
+    },
+    "52075": {
+      "city": "Springbrook",
+      "state": "IA",
+      "lat": 42.16577,
+      "lon": -90.47916,
+      "miles": 96.3
+    },
+    "52201": {
+      "city": "Ainsworth",
+      "state": "IA",
+      "lat": 41.33218,
+      "lon": -91.54704,
+      "miles": 40.0
+    },
+    "52202": {
+      "city": "Alburnett",
+      "state": "IA",
+      "lat": 42.15836,
+      "lon": -91.63792,
+      "miles": 94.1
+    },
+    "52203": {
+      "city": "Amana",
+      "state": "IA",
+      "lat": 41.81035,
+      "lon": -91.8906,
+      "miles": 77.4
+    },
+    "52205": {
+      "city": "Anamosa",
+      "state": "IA",
+      "lat": 42.11754,
+      "lon": -91.28806,
+      "miles": 87.7
+    },
+    "52206": {
+      "city": "Atkins",
+      "state": "IA",
+      "lat": 41.99187,
+      "lon": -91.88718,
+      "miles": 88.2
+    },
+    "52207": {
+      "city": "Baldwin",
+      "state": "IA",
+      "lat": 42.09286,
+      "lon": -90.83,
+      "miles": 86.7
+    },
+    "52208": {
+      "city": "Belle Plaine",
+      "state": "IA",
+      "lat": 41.88568,
+      "lon": -92.26475,
+      "miles": 93.0
+    },
+    "52209": {
+      "city": "Blairstown",
+      "state": "IA",
+      "lat": 41.90809,
+      "lon": -92.09462,
+      "miles": 88.8
+    },
+    "52211": {
+      "city": "Brooklyn",
+      "state": "IA",
+      "lat": 41.75978,
+      "lon": -92.45062,
+      "miles": 93.5
+    },
+    "52212": {
+      "city": "Center Junction",
+      "state": "IA",
+      "lat": 42.10954,
+      "lon": -91.08929,
+      "miles": 86.7
+    },
+    "52213": {
+      "city": "Center Point",
+      "state": "IA",
+      "lat": 42.1995,
+      "lon": -91.77222,
+      "miles": 99.0
+    },
+    "52214": {
+      "city": "Central City",
+      "state": "IA",
+      "lat": 42.19056,
+      "lon": -91.50704,
+      "miles": 94.5
+    },
+    "52215": {
+      "city": "Chelsea",
+      "state": "IA",
+      "lat": 41.91018,
+      "lon": -92.40106,
+      "miles": 98.9
+    },
+    "52216": {
+      "city": "Clarence",
+      "state": "IA",
+      "lat": 41.89321,
+      "lon": -91.0431,
+      "miles": 71.8
+    },
+    "52219": {
+      "city": "Prairieburg",
+      "state": "IA",
+      "lat": 42.23758,
+      "lon": -91.42576,
+      "miles": 96.9
+    },
+    "52220": {
+      "city": "Conroy",
+      "state": "IA",
+      "lat": 41.72661,
+      "lon": -91.99853,
+      "miles": 75.8
+    },
+    "52221": {
+      "city": "Guernsey",
+      "state": "IA",
+      "lat": 41.64151,
+      "lon": -92.33215,
+      "miles": 83.5
+    },
+    "52222": {
+      "city": "Deep River",
+      "state": "IA",
+      "lat": 41.57623,
+      "lon": -92.33693,
+      "miles": 80.9
+    },
+    "52227": {
+      "city": "Ely",
+      "state": "IA",
+      "lat": 41.89647,
+      "lon": -91.5626,
+      "miles": 75.7
+    },
+    "52228": {
+      "city": "Fairfax",
+      "state": "IA",
+      "lat": 41.90282,
+      "lon": -91.79132,
+      "miles": 80.5
+    },
+    "52231": {
+      "city": "Harper",
+      "state": "IA",
+      "lat": 41.36371,
+      "lon": -92.05912,
+      "miles": 60.6
+    },
+    "52232": {
+      "city": "Hartwick",
+      "state": "IA",
+      "lat": 41.80128,
+      "lon": -92.34043,
+      "miles": 91.3
+    },
+    "52233": {
+      "city": "Hiawatha",
+      "state": "IA",
+      "lat": 42.04934,
+      "lon": -91.68732,
+      "miles": 87.7
+    },
+    "52235": {
+      "city": "Hills",
+      "state": "IA",
+      "lat": 41.57024,
+      "lon": -91.53281,
+      "miles": 54.1
+    },
+    "52236": {
+      "city": "Homestead",
+      "state": "IA",
+      "lat": 41.73143,
+      "lon": -91.87647,
+      "miles": 72.4
+    },
+    "52240": {
+      "city": "Iowa City",
+      "state": "IA",
+      "lat": 41.63143,
+      "lon": -91.49924,
+      "miles": 57.3
+    },
+    "52241": {
+      "city": "Coralville",
+      "state": "IA",
+      "lat": 41.69708,
+      "lon": -91.59746,
+      "miles": 63.4
+    },
+    "52242": {
+      "city": "Iowa City",
+      "state": "IA",
+      "lat": 41.66195,
+      "lon": -91.54317,
+      "miles": 60.1
+    },
+    "52245": {
+      "city": "Iowa City",
+      "state": "IA",
+      "lat": 41.67071,
+      "lon": -91.50666,
+      "miles": 60.0
+    },
+    "52246": {
+      "city": "Iowa City",
+      "state": "IA",
+      "lat": 41.64903,
+      "lon": -91.59718,
+      "miles": 60.4
+    },
+    "52247": {
+      "city": "Kalona",
+      "state": "IA",
+      "lat": 41.51503,
+      "lon": -91.71774,
+      "miles": 55.4
+    },
+    "52248": {
+      "city": "Keota",
+      "state": "IA",
+      "lat": 41.34386,
+      "lon": -91.93891,
+      "miles": 54.8
+    },
+    "52249": {
+      "city": "Keystone",
+      "state": "IA",
+      "lat": 42.01202,
+      "lon": -92.20517,
+      "miles": 98.0
+    },
+    "52251": {
+      "city": "Ladora",
+      "state": "IA",
+      "lat": 41.71218,
+      "lon": -92.20314,
+      "miles": 82.0
+    },
+    "52252": {
+      "city": "Langworthy",
+      "state": "IA",
+      "lat": 42.19712,
+      "lon": -91.22727,
+      "miles": 92.9
+    },
+    "52253": {
+      "city": "Lisbon",
+      "state": "IA",
+      "lat": 41.89713,
+      "lon": -91.35154,
+      "miles": 73.1
+    },
+    "52254": {
+      "city": "Lost Nation",
+      "state": "IA",
+      "lat": 41.95232,
+      "lon": -90.80538,
+      "miles": 77.4
+    },
+    "52255": {
+      "city": "Lowden",
+      "state": "IA",
+      "lat": 41.86294,
+      "lon": -90.96129,
+      "miles": 70.1
+    },
+    "52257": {
+      "city": "Luzerne",
+      "state": "IA",
+      "lat": 41.91836,
+      "lon": -92.17742,
+      "miles": 91.9
+    },
+    "52301": {
+      "city": "Marengo",
+      "state": "IA",
+      "lat": 41.78658,
+      "lon": -92.09013,
+      "miles": 82.0
+    },
+    "52302": {
+      "city": "Marion",
+      "state": "IA",
+      "lat": 42.0656,
+      "lon": -91.57091,
+      "miles": 87.0
+    },
+    "52305": {
+      "city": "Martelle",
+      "state": "IA",
+      "lat": 42.01801,
+      "lon": -91.34207,
+      "miles": 81.2
+    },
+    "52306": {
+      "city": "Mechanicsville",
+      "state": "IA",
+      "lat": 41.89729,
+      "lon": -91.25296,
+      "miles": 72.4
+    },
+    "52307": {
+      "city": "Middle Amana",
+      "state": "IA",
+      "lat": 41.79158,
+      "lon": -91.90244,
+      "miles": 76.6
+    },
+    "52308": {
+      "city": "Millersburg",
+      "state": "IA",
+      "lat": 41.5733,
+      "lon": -92.1592,
+      "miles": 73.7
+    },
+    "52309": {
+      "city": "Monmouth",
+      "state": "IA",
+      "lat": 42.12415,
+      "lon": -90.88733,
+      "miles": 88.4
+    },
+    "52310": {
+      "city": "Monticello",
+      "state": "IA",
+      "lat": 42.21983,
+      "lon": -91.19737,
+      "miles": 94.4
+    },
+    "52312": {
+      "city": "Morley",
+      "state": "IA",
+      "lat": 42.00617,
+      "lon": -91.24526,
+      "miles": 79.8
+    },
+    "52314": {
+      "city": "Mount Vernon",
+      "state": "IA",
+      "lat": 41.93439,
+      "lon": -91.44985,
+      "miles": 76.6
+    },
+    "52315": {
+      "city": "Newhall",
+      "state": "IA",
+      "lat": 42.00181,
+      "lon": -91.96985,
+      "miles": 90.9
+    },
+    "52316": {
+      "city": "North English",
+      "state": "IA",
+      "lat": 41.53727,
+      "lon": -92.09367,
+      "miles": 69.5
+    },
+    "52317": {
+      "city": "North Liberty",
+      "state": "IA",
+      "lat": 41.76277,
+      "lon": -91.63142,
+      "miles": 68.3
+    },
+    "52318": {
+      "city": "Norway",
+      "state": "IA",
+      "lat": 41.89012,
+      "lon": -91.89656,
+      "miles": 82.3
+    },
+    "52320": {
+      "city": "Olin",
+      "state": "IA",
+      "lat": 41.99997,
+      "lon": -91.14643,
+      "miles": 79.1
+    },
+    "52321": {
+      "city": "Onslow",
+      "state": "IA",
+      "lat": 42.14168,
+      "lon": -90.98307,
+      "miles": 89.1
+    },
+    "52322": {
+      "city": "Oxford",
+      "state": "IA",
+      "lat": 41.69221,
+      "lon": -91.76284,
+      "miles": 67.0
+    },
+    "52323": {
+      "city": "Oxford Junction",
+      "state": "IA",
+      "lat": 41.98445,
+      "lon": -90.95344,
+      "miles": 78.5
+    },
+    "52324": {
+      "city": "Palo",
+      "state": "IA",
+      "lat": 42.06421,
+      "lon": -91.80583,
+      "miles": 91.0
+    },
+    "52325": {
+      "city": "Parnell",
+      "state": "IA",
+      "lat": 41.58028,
+      "lon": -91.92305,
+      "miles": 65.5
+    },
+    "52327": {
+      "city": "Riverside",
+      "state": "IA",
+      "lat": 41.477,
+      "lon": -91.58046,
+      "miles": 49.4
+    },
+    "52328": {
+      "city": "Robins",
+      "state": "IA",
+      "lat": 42.07195,
+      "lon": -91.66641,
+      "miles": 88.9
+    },
+    "52332": {
+      "city": "Shellsburg",
+      "state": "IA",
+      "lat": 42.09861,
+      "lon": -91.88772,
+      "miles": 94.9
+    },
+    "52333": {
+      "city": "Solon",
+      "state": "IA",
+      "lat": 41.80376,
+      "lon": -91.48685,
+      "miles": 68.4
+    },
+    "52334": {
+      "city": "South Amana",
+      "state": "IA",
+      "lat": 41.73084,
+      "lon": -91.94355,
+      "miles": 74.4
+    },
+    "52335": {
+      "city": "South English",
+      "state": "IA",
+      "lat": 41.45935,
+      "lon": -92.05895,
+      "miles": 64.6
+    },
+    "52336": {
+      "city": "Springville",
+      "state": "IA",
+      "lat": 42.0689,
+      "lon": -91.44111,
+      "miles": 85.6
+    },
+    "52337": {
+      "city": "Stanwood",
+      "state": "IA",
+      "lat": 41.88217,
+      "lon": -91.14282,
+      "miles": 71.0
+    },
+    "52338": {
+      "city": "Swisher",
+      "state": "IA",
+      "lat": 41.82904,
+      "lon": -91.70858,
+      "miles": 74.1
+    },
+    "52340": {
+      "city": "Tiffin",
+      "state": "IA",
+      "lat": 41.70615,
+      "lon": -91.68019,
+      "miles": 65.8
+    },
+    "52341": {
+      "city": "Toddville",
+      "state": "IA",
+      "lat": 42.10535,
+      "lon": -91.7341,
+      "miles": 92.2
+    },
+    "52346": {
+      "city": "Van Horne",
+      "state": "IA",
+      "lat": 42.01298,
+      "lon": -92.08119,
+      "miles": 94.5
+    },
+    "52347": {
+      "city": "Victor",
+      "state": "IA",
+      "lat": 41.71345,
+      "lon": -92.28591,
+      "miles": 85.1
+    },
+    "52351": {
+      "city": "Walford",
+      "state": "IA",
+      "lat": 41.87496,
+      "lon": -91.83529,
+      "miles": 79.8
+    },
+    "52353": {
+      "city": "Washington",
+      "state": "IA",
+      "lat": 41.29923,
+      "lon": -91.71596,
+      "miles": 44.0
+    },
+    "52354": {
+      "city": "Watkins",
+      "state": "IA",
+      "lat": 41.91883,
+      "lon": -91.98856,
+      "miles": 86.4
+    },
+    "52355": {
+      "city": "Webster",
+      "state": "IA",
+      "lat": 41.4576,
+      "lon": -92.18387,
+      "miles": 69.6
+    },
+    "52356": {
+      "city": "Wellman",
+      "state": "IA",
+      "lat": 41.4749,
+      "lon": -91.84769,
+      "miles": 57.5
+    },
+    "52358": {
+      "city": "West Branch",
+      "state": "IA",
+      "lat": 41.69644,
+      "lon": -91.32097,
+      "miles": 59.1
+    },
+    "52359": {
+      "city": "West Chester",
+      "state": "IA",
+      "lat": 41.35428,
+      "lon": -91.81006,
+      "miles": 50.1
+    },
+    "52361": {
+      "city": "Williamsburg",
+      "state": "IA",
+      "lat": 41.6446,
+      "lon": -92.0154,
+      "miles": 72.0
+    },
+    "52362": {
+      "city": "Wyoming",
+      "state": "IA",
+      "lat": 42.05881,
+      "lon": -91.00258,
+      "miles": 83.4
+    },
+    "52401": {
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "lat": 41.97534,
+      "lon": -91.65871,
+      "miles": 82.4
+    },
+    "52402": {
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "lat": 42.02272,
+      "lon": -91.66001,
+      "miles": 85.5
+    },
+    "52403": {
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "lat": 41.96813,
+      "lon": -91.57964,
+      "miles": 80.6
+    },
+    "52404": {
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "lat": 41.92153,
+      "lon": -91.69077,
+      "miles": 79.6
+    },
+    "52405": {
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "lat": 41.98644,
+      "lon": -91.74774,
+      "miles": 84.8
+    },
+    "52411": {
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "lat": 42.05093,
+      "lon": -91.72723,
+      "miles": 88.6
+    },
+    "52501": {
+      "city": "Ottumwa",
+      "state": "IA",
+      "lat": 41.03828,
+      "lon": -92.43252,
+      "miles": 70.1
+    },
+    "52530": {
+      "city": "Agency",
+      "state": "IA",
+      "lat": 40.98953,
+      "lon": -92.29492,
+      "miles": 62.5
+    },
+    "52531": {
+      "city": "Albia",
+      "state": "IA",
+      "lat": 41.02684,
+      "lon": -92.81562,
+      "miles": 89.8
+    },
+    "52533": {
+      "city": "Batavia",
+      "state": "IA",
+      "lat": 41.01228,
+      "lon": -92.15043,
+      "miles": 55.3
+    },
+    "52534": {
+      "city": "Beacon",
+      "state": "IA",
+      "lat": 41.27342,
+      "lon": -92.6806,
+      "miles": 86.7
+    },
+    "52535": {
+      "city": "Birmingham",
+      "state": "IA",
+      "lat": 40.86533,
+      "lon": -91.96407,
+      "miles": 44.6
+    },
+    "52536": {
+      "city": "Blakesburg",
+      "state": "IA",
+      "lat": 40.95291,
+      "lon": -92.61802,
+      "miles": 79.0
+    },
+    "52537": {
+      "city": "Bloomfield",
+      "state": "IA",
+      "lat": 40.7355,
+      "lon": -92.41426,
+      "miles": 68.7
+    },
+    "52540": {
+      "city": "Brighton",
+      "state": "IA",
+      "lat": 41.15769,
+      "lon": -91.82281,
+      "miles": 42.6
+    },
+    "52542": {
+      "city": "Cantril",
+      "state": "IA",
+      "lat": 40.62712,
+      "lon": -92.05164,
+      "miles": 51.7
+    },
+    "52543": {
+      "city": "Cedar",
+      "state": "IA",
+      "lat": 41.20065,
+      "lon": -92.51773,
+      "miles": 77.1
+    },
+    "52544": {
+      "city": "Centerville",
+      "state": "IA",
+      "lat": 40.71774,
+      "lon": -92.90831,
+      "miles": 94.5
+    },
+    "52548": {
+      "city": "Chillicothe",
+      "state": "IA",
+      "lat": 41.0855,
+      "lon": -92.5306,
+      "miles": 75.7
+    },
+    "52549": {
+      "city": "Cincinnati",
+      "state": "IA",
+      "lat": 40.61392,
+      "lon": -92.94602,
+      "miles": 97.5
+    },
+    "52550": {
+      "city": "Delta",
+      "state": "IA",
+      "lat": 41.31635,
+      "lon": -92.36254,
+      "miles": 72.6
+    },
+    "52551": {
+      "city": "Douds",
+      "state": "IA",
+      "lat": 40.81877,
+      "lon": -92.1058,
+      "miles": 52.1
+    },
+    "52552": {
+      "city": "Drakesville",
+      "state": "IA",
+      "lat": 40.83552,
+      "lon": -92.53633,
+      "miles": 74.5
+    },
+    "52553": {
+      "city": "Eddyville",
+      "state": "IA",
+      "lat": 41.14865,
+      "lon": -92.65668,
+      "miles": 83.1
+    },
+    "52554": {
+      "city": "Eldon",
+      "state": "IA",
+      "lat": 40.92562,
+      "lon": -92.23387,
+      "miles": 58.9
+    },
+    "52555": {
+      "city": "Exline",
+      "state": "IA",
+      "lat": 40.63905,
+      "lon": -92.81046,
+      "miles": 90.2
+    },
+    "52556": {
+      "city": "Fairfield",
+      "state": "IA",
+      "lat": 41.01842,
+      "lon": -91.9264,
+      "miles": 44.0
+    },
+    "52557": {
+      "city": "Fairfield",
+      "state": "IA",
+      "lat": 41.02026,
+      "lon": -91.96653,
+      "miles": 46.1
+    },
+    "52560": {
+      "city": "Floris",
+      "state": "IA",
+      "lat": 40.85491,
+      "lon": -92.25312,
+      "miles": 59.7
+    },
+    "52561": {
+      "city": "Fremont",
+      "state": "IA",
+      "lat": 41.22135,
+      "lon": -92.44081,
+      "miles": 73.8
+    },
+    "52562": {
+      "city": "Hayesville",
+      "state": "IA",
+      "lat": 41.26539,
+      "lon": -92.24858,
+      "miles": 65.7
+    },
+    "52563": {
+      "city": "Hedrick",
+      "state": "IA",
+      "lat": 41.17295,
+      "lon": -92.27765,
+      "miles": 64.7
+    },
+    "52565": {
+      "city": "Keosauqua",
+      "state": "IA",
+      "lat": 40.74005,
+      "lon": -91.94332,
+      "miles": 44.3
+    },
+    "52566": {
+      "city": "Kirkville",
+      "state": "IA",
+      "lat": 41.12887,
+      "lon": -92.50547,
+      "miles": 75.1
+    },
+    "52567": {
+      "city": "Libertyville",
+      "state": "IA",
+      "lat": 40.93174,
+      "lon": -92.07224,
+      "miles": 50.5
+    },
+    "52568": {
+      "city": "Martinsburg",
+      "state": "IA",
+      "lat": 41.1779,
+      "lon": -92.25077,
+      "miles": 63.5
+    },
+    "52570": {
+      "city": "Milton",
+      "state": "IA",
+      "lat": 40.68656,
+      "lon": -92.14853,
+      "miles": 55.5
+    },
+    "52571": {
+      "city": "Moravia",
+      "state": "IA",
+      "lat": 40.87739,
+      "lon": -92.83114,
+      "miles": 89.9
+    },
+    "52572": {
+      "city": "Moulton",
+      "state": "IA",
+      "lat": 40.67795,
+      "lon": -92.69163,
+      "miles": 83.6
+    },
+    "52573": {
+      "city": "Mount Sterling",
+      "state": "IA",
+      "lat": 40.62378,
+      "lon": -91.92979,
+      "miles": 45.7
+    },
+    "52574": {
+      "city": "Mystic",
+      "state": "IA",
+      "lat": 40.80822,
+      "lon": -92.96948,
+      "miles": 97.2
+    },
+    "52576": {
+      "city": "Ollie",
+      "state": "IA",
+      "lat": 41.21337,
+      "lon": -92.1125,
+      "miles": 57.8
+    },
+    "52577": {
+      "city": "Oskaloosa",
+      "state": "IA",
+      "lat": 41.27174,
+      "lon": -92.6602,
+      "miles": 85.7
+    },
+    "52580": {
+      "city": "Packwood",
+      "state": "IA",
+      "lat": 41.12039,
+      "lon": -92.09069,
+      "miles": 54.3
+    },
+    "52584": {
+      "city": "Pulaski",
+      "state": "IA",
+      "lat": 40.65273,
+      "lon": -92.24936,
+      "miles": 61.2
+    },
+    "52585": {
+      "city": "Richland",
+      "state": "IA",
+      "lat": 41.18902,
+      "lon": -91.98863,
+      "miles": 51.2
+    },
+    "52586": {
+      "city": "Rose Hill",
+      "state": "IA",
+      "lat": 41.34573,
+      "lon": -92.46694,
+      "miles": 78.3
+    },
+    "52588": {
+      "city": "Selma",
+      "state": "IA",
+      "lat": 40.86325,
+      "lon": -92.16315,
+      "miles": 55.0
+    },
+    "52591": {
+      "city": "Sigourney",
+      "state": "IA",
+      "lat": 41.31988,
+      "lon": -92.19465,
+      "miles": 64.9
+    },
+    "52593": {
+      "city": "Udell",
+      "state": "IA",
+      "lat": 40.77363,
+      "lon": -92.73955,
+      "miles": 85.3
+    },
+    "52594": {
+      "city": "Unionville",
+      "state": "IA",
+      "lat": 40.83561,
+      "lon": -92.64957,
+      "miles": 80.4
+    },
+    "52595": {
+      "city": "University Park",
+      "state": "IA",
+      "lat": 41.28847,
+      "lon": -92.61506,
+      "miles": 83.9
+    },
+    "52601": {
+      "city": "Burlington",
+      "state": "IA",
+      "lat": 40.8551,
+      "lon": -91.111,
+      "miles": 0.0
+    },
+    "52619": {
+      "city": "Argyle",
+      "state": "IA",
+      "lat": 40.5246,
+      "lon": -91.56566,
+      "miles": 33.0
+    },
+    "52620": {
+      "city": "Bonaparte",
+      "state": "IA",
+      "lat": 40.7032,
+      "lon": -91.79563,
+      "miles": 37.3
+    },
+    "52621": {
+      "city": "Crawfordsville",
+      "state": "IA",
+      "lat": 41.20821,
+      "lon": -91.53209,
+      "miles": 32.8
+    },
+    "52623": {
+      "city": "Danville",
+      "state": "IA",
+      "lat": 40.85569,
+      "lon": -91.33998,
+      "miles": 12.0
+    },
+    "52624": {
+      "city": "Denmark",
+      "state": "IA",
+      "lat": 40.7348,
+      "lon": -91.33609,
+      "miles": 14.4
+    },
+    "52625": {
+      "city": "Donnellson",
+      "state": "IA",
+      "lat": 40.66604,
+      "lon": -91.57094,
+      "miles": 27.4
+    },
+    "52626": {
+      "city": "Farmington",
+      "state": "IA",
+      "lat": 40.63201,
+      "lon": -91.72119,
+      "miles": 35.5
+    },
+    "52627": {
+      "city": "Fort Madison",
+      "state": "IA",
+      "lat": 40.65973,
+      "lon": -91.35145,
+      "miles": 18.5
+    },
+    "52630": {
+      "city": "Hillsboro",
+      "state": "IA",
+      "lat": 40.80375,
+      "lon": -91.7038,
+      "miles": 31.2
+    },
+    "52631": {
+      "city": "Houghton",
+      "state": "IA",
+      "lat": 40.78308,
+      "lon": -91.61209,
+      "miles": 26.7
+    },
+    "52632": {
+      "city": "Keokuk",
+      "state": "IA",
+      "lat": 40.44072,
+      "lon": -91.43973,
+      "miles": 33.4
+    },
+    "52635": {
+      "city": "Lockridge",
+      "state": "IA",
+      "lat": 40.99117,
+      "lon": -91.75843,
+      "miles": 35.1
+    },
+    "52637": {
+      "city": "Mediapolis",
+      "state": "IA",
+      "lat": 41.01949,
+      "lon": -91.13774,
+      "miles": 11.4
+    },
+    "52638": {
+      "city": "Middletown",
+      "state": "IA",
+      "lat": 40.79864,
+      "lon": -91.24577,
+      "miles": 8.1
+    },
+    "52639": {
+      "city": "Montrose",
+      "state": "IA",
+      "lat": 40.52763,
+      "lon": -91.46409,
+      "miles": 29.2
+    },
+    "52640": {
+      "city": "Morning Sun",
+      "state": "IA",
+      "lat": 41.09649,
+      "lon": -91.28205,
+      "miles": 18.9
+    },
+    "52641": {
+      "city": "Mount Pleasant",
+      "state": "IA",
+      "lat": 40.98799,
+      "lon": -91.58531,
+      "miles": 26.4
+    },
+    "52644": {
+      "city": "Mount Union",
+      "state": "IA",
+      "lat": 41.03988,
+      "lon": -91.41535,
+      "miles": 20.4
+    },
+    "52645": {
+      "city": "New London",
+      "state": "IA",
+      "lat": 40.91429,
+      "lon": -91.40138,
+      "miles": 15.7
+    },
+    "52646": {
+      "city": "Oakville",
+      "state": "IA",
+      "lat": 41.06706,
+      "lon": -91.00072,
+      "miles": 15.7
+    },
+    "52647": {
+      "city": "Olds",
+      "state": "IA",
+      "lat": 41.1342,
+      "lon": -91.54506,
+      "miles": 29.7
+    },
+    "52649": {
+      "city": "Salem",
+      "state": "IA",
+      "lat": 40.83827,
+      "lon": -91.60647,
+      "miles": 25.9
+    },
+    "52650": {
+      "city": "Sperry",
+      "state": "IA",
+      "lat": 40.94782,
+      "lon": -91.15687,
+      "miles": 6.8
+    },
+    "52651": {
+      "city": "Stockport",
+      "state": "IA",
+      "lat": 40.85819,
+      "lon": -91.81323,
+      "miles": 36.7
+    },
+    "52652": {
+      "city": "Swedesburg",
+      "state": "IA",
+      "lat": 41.09796,
+      "lon": -91.5542,
+      "miles": 28.6
+    },
+    "52653": {
+      "city": "Wapello",
+      "state": "IA",
+      "lat": 41.16642,
+      "lon": -91.15597,
+      "miles": 21.6
+    },
+    "52654": {
+      "city": "Wayland",
+      "state": "IA",
+      "lat": 41.13581,
+      "lon": -91.66898,
+      "miles": 35.0
+    },
+    "52655": {
+      "city": "West Burlington",
+      "state": "IA",
+      "lat": 40.84768,
+      "lon": -91.21174,
+      "miles": 5.3
+    },
+    "52656": {
+      "city": "West Point",
+      "state": "IA",
+      "lat": 40.73844,
+      "lon": -91.4611,
+      "miles": 20.0
+    },
+    "52657": {
+      "city": "Saint Paul",
+      "state": "IA",
+      "lat": 40.76784,
+      "lon": -91.5164,
+      "miles": 22.0
+    },
+    "52658": {
+      "city": "Wever",
+      "state": "IA",
+      "lat": 40.69998,
+      "lon": -91.22657,
+      "miles": 12.3
+    },
+    "52659": {
+      "city": "Winfield",
+      "state": "IA",
+      "lat": 41.13285,
+      "lon": -91.43658,
+      "miles": 25.6
+    },
+    "52660": {
+      "city": "Yarmouth",
+      "state": "IA",
+      "lat": 40.99146,
+      "lon": -91.29998,
+      "miles": 13.6
+    },
+    "52701": {
+      "city": "Andover",
+      "state": "IA",
+      "lat": 41.98198,
+      "lon": -90.24908,
+      "miles": 89.8
+    },
+    "52720": {
+      "city": "Atalissa",
+      "state": "IA",
+      "lat": 41.59064,
+      "lon": -91.16578,
+      "miles": 50.9
+    },
+    "52721": {
+      "city": "Bennett",
+      "state": "IA",
+      "lat": 41.75588,
+      "lon": -90.9633,
+      "miles": 62.7
+    },
+    "52722": {
+      "city": "Bettendorf",
+      "state": "IA",
+      "lat": 41.56633,
+      "lon": -90.4673,
+      "miles": 59.4
+    },
+    "52726": {
+      "city": "Blue Grass",
+      "state": "IA",
+      "lat": 41.50092,
+      "lon": -90.78419,
+      "miles": 47.7
+    },
+    "52727": {
+      "city": "Bryant",
+      "state": "IA",
+      "lat": 41.95834,
+      "lon": -90.33341,
+      "miles": 86.2
+    },
+    "52728": {
+      "city": "Buffalo",
+      "state": "IA",
+      "lat": 41.45907,
+      "lon": -90.72592,
+      "miles": 46.3
+    },
+    "52729": {
+      "city": "Calamus",
+      "state": "IA",
+      "lat": 41.80063,
+      "lon": -90.74312,
+      "miles": 68.1
+    },
+    "52730": {
+      "city": "Camanche",
+      "state": "IA",
+      "lat": 41.77366,
+      "lon": -90.34364,
+      "miles": 74.9
+    },
+    "52731": {
+      "city": "Charlotte",
+      "state": "IA",
+      "lat": 41.96637,
+      "lon": -90.48551,
+      "miles": 83.3
+    },
+    "52732": {
+      "city": "Clinton",
+      "state": "IA",
+      "lat": 41.90126,
+      "lon": -90.25083,
+      "miles": 84.9
+    },
+    "52737": {
+      "city": "Columbus City",
+      "state": "IA",
+      "lat": 41.25918,
+      "lon": -91.37478,
+      "miles": 31.1
+    },
+    "52738": {
+      "city": "Columbus Junction",
+      "state": "IA",
+      "lat": 41.2736,
+      "lon": -91.38072,
+      "miles": 32.1
+    },
+    "52739": {
+      "city": "Conesville",
+      "state": "IA",
+      "lat": 41.3728,
+      "lon": -91.36823,
+      "miles": 38.2
+    },
+    "52742": {
+      "city": "De Witt",
+      "state": "IA",
+      "lat": 41.83616,
+      "lon": -90.51076,
+      "miles": 74.6
+    },
+    "52745": {
+      "city": "Dixon",
+      "state": "IA",
+      "lat": 41.71502,
+      "lon": -90.75783,
+      "miles": 62.2
+    },
+    "52746": {
+      "city": "Donahue",
+      "state": "IA",
+      "lat": 41.71945,
+      "lon": -90.67172,
+      "miles": 63.9
+    },
+    "52747": {
+      "city": "Durant",
+      "state": "IA",
+      "lat": 41.59758,
+      "lon": -90.91147,
+      "miles": 52.3
+    },
+    "52748": {
+      "city": "Eldridge",
+      "state": "IA",
+      "lat": 41.66471,
+      "lon": -90.55713,
+      "miles": 62.9
+    },
+    "52749": {
+      "city": "Fruitland",
+      "state": "IA",
+      "lat": 41.34608,
+      "lon": -91.13112,
+      "miles": 33.9
+    },
+    "52750": {
+      "city": "Goose Lake",
+      "state": "IA",
+      "lat": 41.933,
+      "lon": -90.39302,
+      "miles": 83.3
+    },
+    "52751": {
+      "city": "Grand Mound",
+      "state": "IA",
+      "lat": 41.8519,
+      "lon": -90.68398,
+      "miles": 72.3
+    },
+    "52752": {
+      "city": "Grandview",
+      "state": "IA",
+      "lat": 41.27465,
+      "lon": -91.1911,
+      "miles": 29.3
+    },
+    "52753": {
+      "city": "Le Claire",
+      "state": "IA",
+      "lat": 41.62544,
+      "lon": -90.38989,
+      "miles": 65.1
+    },
+    "52754": {
+      "city": "Letts",
+      "state": "IA",
+      "lat": 41.34254,
+      "lon": -91.24144,
+      "miles": 34.4
+    },
+    "52755": {
+      "city": "Lone Tree",
+      "state": "IA",
+      "lat": 41.48015,
+      "lon": -91.43349,
+      "miles": 46.3
+    },
+    "52756": {
+      "city": "Long Grove",
+      "state": "IA",
+      "lat": 41.72966,
+      "lon": -90.54084,
+      "miles": 67.3
+    },
+    "52757": {
+      "city": "Low Moor",
+      "state": "IA",
+      "lat": 41.80337,
+      "lon": -90.3552,
+      "miles": 76.4
+    },
+    "52758": {
+      "city": "McCausland",
+      "state": "IA",
+      "lat": 41.74405,
+      "lon": -90.44104,
+      "miles": 70.6
+    },
+    "52759": {
+      "city": "Montpelier",
+      "state": "IA",
+      "lat": 41.46043,
+      "lon": -90.80989,
+      "miles": 44.7
+    },
+    "52760": {
+      "city": "Moscow",
+      "state": "IA",
+      "lat": 41.58255,
+      "lon": -91.09853,
+      "miles": 50.3
+    },
+    "52761": {
+      "city": "Muscatine",
+      "state": "IA",
+      "lat": 41.43798,
+      "lon": -91.05802,
+      "miles": 40.4
+    },
+    "52765": {
+      "city": "New Liberty",
+      "state": "IA",
+      "lat": 41.72182,
+      "lon": -90.87274,
+      "miles": 61.1
+    },
+    "52766": {
+      "city": "Nichols",
+      "state": "IA",
+      "lat": 41.46407,
+      "lon": -91.30061,
+      "miles": 43.2
+    },
+    "52767": {
+      "city": "Pleasant Valley",
+      "state": "IA",
+      "lat": 41.57356,
+      "lon": -90.42326,
+      "miles": 61.2
+    },
+    "52768": {
+      "city": "Princeton",
+      "state": "IA",
+      "lat": 41.69906,
+      "lon": -90.38977,
+      "miles": 69.3
+    },
+    "52769": {
+      "city": "Stockton",
+      "state": "IA",
+      "lat": 41.60836,
+      "lon": -90.8416,
+      "miles": 53.9
+    },
+    "52771": {
+      "city": "Teeds Grove",
+      "state": "IA",
+      "lat": 42.01958,
+      "lon": -90.25707,
+      "miles": 91.8
+    },
+    "52772": {
+      "city": "Tipton",
+      "state": "IA",
+      "lat": 41.75006,
+      "lon": -91.14083,
+      "miles": 61.9
+    },
+    "52773": {
+      "city": "Walcott",
+      "state": "IA",
+      "lat": 41.62187,
+      "lon": -90.75529,
+      "miles": 56.1
+    },
+    "52774": {
+      "city": "Welton",
+      "state": "IA",
+      "lat": 41.90743,
+      "lon": -90.59596,
+      "miles": 77.5
+    },
+    "52776": {
+      "city": "West Liberty",
+      "state": "IA",
+      "lat": 41.5795,
+      "lon": -91.275,
+      "miles": 50.8
+    },
+    "52777": {
+      "city": "Wheatland",
+      "state": "IA",
+      "lat": 41.84739,
+      "lon": -90.85529,
+      "miles": 69.8
+    },
+    "52778": {
+      "city": "Wilton",
+      "state": "IA",
+      "lat": 41.61115,
+      "lon": -91.00066,
+      "miles": 52.6
+    },
+    "52801": {
+      "city": "Davenport",
+      "state": "IA",
+      "lat": 41.52082,
+      "lon": -90.57483,
+      "miles": 53.8
+    },
+    "52802": {
+      "city": "Davenport",
+      "state": "IA",
+      "lat": 41.49908,
+      "lon": -90.63621,
+      "miles": 50.9
+    },
+    "52803": {
+      "city": "Davenport",
+      "state": "IA",
+      "lat": 41.53871,
+      "lon": -90.55623,
+      "miles": 55.3
+    },
+    "52804": {
+      "city": "Davenport",
+      "state": "IA",
+      "lat": 41.53584,
+      "lon": -90.68081,
+      "miles": 52.1
+    },
+    "52806": {
+      "city": "Davenport",
+      "state": "IA",
+      "lat": 41.58918,
+      "lon": -90.62553,
+      "miles": 56.6
+    },
+    "52807": {
+      "city": "Davenport",
+      "state": "IA",
+      "lat": 41.61061,
+      "lon": -90.51634,
+      "miles": 60.7
+    },
+    "61037": {
+      "city": "Galt",
+      "state": "IL",
+      "lat": 41.7882,
+      "lon": -89.75978,
+      "miles": 95.2
+    },
+    "61042": {
+      "city": "Harmon",
+      "state": "IL",
+      "lat": 41.68819,
+      "lon": -89.56015,
+      "miles": 99.0
+    },
+    "61071": {
+      "city": "Rock Falls",
+      "state": "IL",
+      "lat": 41.72599,
+      "lon": -89.70006,
+      "miles": 94.8
+    },
+    "61081": {
+      "city": "Sterling",
+      "state": "IL",
+      "lat": 41.84425,
+      "lon": -89.73613,
+      "miles": 98.8
+    },
+    "61201": {
+      "city": "Rock Island",
+      "state": "IL",
+      "lat": 41.47799,
+      "lon": -90.57608,
+      "miles": 51.2
+    },
+    "61230": {
+      "city": "Albany",
+      "state": "IL",
+      "lat": 41.74074,
+      "lon": -90.21447,
+      "miles": 76.9
+    },
+    "61231": {
+      "city": "Aledo",
+      "state": "IL",
+      "lat": 41.2128,
+      "lon": -90.72294,
+      "miles": 31.9
+    },
+    "61232": {
+      "city": "Andalusia",
+      "state": "IL",
+      "lat": 41.43168,
+      "lon": -90.72734,
+      "miles": 44.6
+    },
+    "61233": {
+      "city": "Andover",
+      "state": "IL",
+      "lat": 41.29464,
+      "lon": -90.29129,
+      "miles": 52.4
+    },
+    "61234": {
+      "city": "Annawan",
+      "state": "IL",
+      "lat": 41.41804,
+      "lon": -89.91947,
+      "miles": 73.2
+    },
+    "61235": {
+      "city": "Atkinson",
+      "state": "IL",
+      "lat": 41.39972,
+      "lon": -90.0237,
+      "miles": 68.0
+    },
+    "61236": {
+      "city": "Barstow",
+      "state": "IL",
+      "lat": 41.51242,
+      "lon": -90.35586,
+      "miles": 60.0
+    },
+    "61237": {
+      "city": "Buffalo Prairie",
+      "state": "IL",
+      "lat": 41.34175,
+      "lon": -90.86221,
+      "miles": 36.0
+    },
+    "61238": {
+      "city": "Cambridge",
+      "state": "IL",
+      "lat": 41.28727,
+      "lon": -90.17647,
+      "miles": 57.1
+    },
+    "61239": {
+      "city": "Carbon Cliff",
+      "state": "IL",
+      "lat": 41.49479,
+      "lon": -90.38966,
+      "miles": 58.0
+    },
+    "61240": {
+      "city": "Coal Valley",
+      "state": "IL",
+      "lat": 41.42579,
+      "lon": -90.4325,
+      "miles": 52.9
+    },
+    "61241": {
+      "city": "Colona",
+      "state": "IL",
+      "lat": 41.48782,
+      "lon": -90.31997,
+      "miles": 60.0
+    },
+    "61242": {
+      "city": "Cordova",
+      "state": "IL",
+      "lat": 41.70363,
+      "lon": -90.27858,
+      "miles": 72.8
+    },
+    "61243": {
+      "city": "Deer Grove",
+      "state": "IL",
+      "lat": 41.61849,
+      "lon": -89.6784,
+      "miles": 91.2
+    },
+    "61244": {
+      "city": "East Moline",
+      "state": "IL",
+      "lat": 41.52138,
+      "lon": -90.39424,
+      "miles": 59.2
+    },
+    "61250": {
+      "city": "Erie",
+      "state": "IL",
+      "lat": 41.65884,
+      "lon": -90.10081,
+      "miles": 76.4
+    },
+    "61251": {
+      "city": "Fenton",
+      "state": "IL",
+      "lat": 41.72909,
+      "lon": -90.07291,
+      "miles": 80.9
+    },
+    "61252": {
+      "city": "Fulton",
+      "state": "IL",
+      "lat": 41.8435,
+      "lon": -90.12272,
+      "miles": 85.4
+    },
+    "61254": {
+      "city": "Geneseo",
+      "state": "IL",
+      "lat": 41.46692,
+      "lon": -90.15551,
+      "miles": 65.2
+    },
+    "61256": {
+      "city": "Hampton",
+      "state": "IL",
+      "lat": 41.56017,
+      "lon": -90.40151,
+      "miles": 61.1
+    },
+    "61257": {
+      "city": "Hillsdale",
+      "state": "IL",
+      "lat": 41.59025,
+      "lon": -90.22322,
+      "miles": 68.6
+    },
+    "61258": {
+      "city": "Hooppole",
+      "state": "IL",
+      "lat": 41.52185,
+      "lon": -89.91396,
+      "miles": 77.4
+    },
+    "61259": {
+      "city": "Illinois City",
+      "state": "IL",
+      "lat": 41.38839,
+      "lon": -90.92733,
+      "miles": 38.1
+    },
+    "61260": {
+      "city": "Joy",
+      "state": "IL",
+      "lat": 41.24141,
+      "lon": -90.88407,
+      "miles": 29.2
+    },
+    "61261": {
+      "city": "Lyndon",
+      "state": "IL",
+      "lat": 41.72928,
+      "lon": -89.91166,
+      "miles": 86.7
+    },
+    "61262": {
+      "city": "Lynn Center",
+      "state": "IL",
+      "lat": 41.27799,
+      "lon": -90.35699,
+      "miles": 49.0
+    },
+    "61263": {
+      "city": "Matherville",
+      "state": "IL",
+      "lat": 41.26409,
+      "lon": -90.59878,
+      "miles": 38.9
+    },
+    "61264": {
+      "city": "Milan",
+      "state": "IL",
+      "lat": 41.39765,
+      "lon": -90.59452,
+      "miles": 46.1
+    },
+    "61265": {
+      "city": "Moline",
+      "state": "IL",
+      "lat": 41.48195,
+      "lon": -90.48895,
+      "miles": 54.1
+    },
+    "61270": {
+      "city": "Morrison",
+      "state": "IL",
+      "lat": 41.82971,
+      "lon": -89.9656,
+      "miles": 89.8
+    },
+    "61272": {
+      "city": "New Boston",
+      "state": "IL",
+      "lat": 41.24817,
+      "lon": -91.00865,
+      "miles": 27.7
+    },
+    "61273": {
+      "city": "Orion",
+      "state": "IL",
+      "lat": 41.36426,
+      "lon": -90.39907,
+      "miles": 51.1
+    },
+    "61274": {
+      "city": "Osco",
+      "state": "IL",
+      "lat": 41.37031,
+      "lon": -90.27666,
+      "miles": 56.2
+    },
+    "61275": {
+      "city": "Port Byron",
+      "state": "IL",
+      "lat": 41.60016,
+      "lon": -90.29781,
+      "miles": 66.6
+    },
+    "61276": {
+      "city": "Preemption",
+      "state": "IL",
+      "lat": 41.31667,
+      "lon": -90.57638,
+      "miles": 42.3
+    },
+    "61277": {
+      "city": "Prophetstown",
+      "state": "IL",
+      "lat": 41.60425,
+      "lon": -89.93251,
+      "miles": 80.2
+    },
+    "61278": {
+      "city": "Rapids City",
+      "state": "IL",
+      "lat": 41.57938,
+      "lon": -90.34138,
+      "miles": 64.1
+    },
+    "61279": {
+      "city": "Reynolds",
+      "state": "IL",
+      "lat": 41.32574,
+      "lon": -90.72863,
+      "miles": 38.1
+    },
+    "61281": {
+      "city": "Sherrard",
+      "state": "IL",
+      "lat": 41.3009,
+      "lon": -90.51992,
+      "miles": 43.5
+    },
+    "61282": {
+      "city": "Silvis",
+      "state": "IL",
+      "lat": 41.49673,
+      "lon": -90.41172,
+      "miles": 57.3
+    },
+    "61283": {
+      "city": "Tampico",
+      "state": "IL",
+      "lat": 41.59094,
+      "lon": -89.78854,
+      "miles": 85.5
+    },
+    "61284": {
+      "city": "Taylor Ridge",
+      "state": "IL",
+      "lat": 41.3927,
+      "lon": -90.74874,
+      "miles": 41.7
+    },
+    "61285": {
+      "city": "Thomson",
+      "state": "IL",
+      "lat": 41.98307,
+      "lon": -90.0811,
+      "miles": 94.5
+    },
+    "61314": {
+      "city": "Buda",
+      "state": "IL",
+      "lat": 41.29745,
+      "lon": -89.67474,
+      "miles": 80.8
+    },
+    "61315": {
+      "city": "Bureau",
+      "state": "IL",
+      "lat": 41.2865,
+      "lon": -89.36477,
+      "miles": 95.7
+    },
+    "61322": {
+      "city": "Depue",
+      "state": "IL",
+      "lat": 41.3185,
+      "lon": -89.30566,
+      "miles": 99.3
+    },
+    "61323": {
+      "city": "Dover",
+      "state": "IL",
+      "lat": 41.43544,
+      "lon": -89.39605,
+      "miles": 97.8
+    },
+    "61327": {
+      "city": "Hennepin",
+      "state": "IL",
+      "lat": 41.22827,
+      "lon": -89.30876,
+      "miles": 97.4
+    },
+    "61328": {
+      "city": "Kasbeer",
+      "state": "IL",
+      "lat": 41.50924,
+      "lon": -89.459,
+      "miles": 97.1
+    },
+    "61338": {
+      "city": "Manlius",
+      "state": "IL",
+      "lat": 41.47014,
+      "lon": -89.66517,
+      "miles": 86.4
+    },
+    "61344": {
+      "city": "Mineral",
+      "state": "IL",
+      "lat": 41.41245,
+      "lon": -89.8344,
+      "miles": 76.8
+    },
+    "61345": {
+      "city": "Neponset",
+      "state": "IL",
+      "lat": 41.27981,
+      "lon": -89.78878,
+      "miles": 74.9
+    },
+    "61346": {
+      "city": "New Bedford",
+      "state": "IL",
+      "lat": 41.50659,
+      "lon": -89.7199,
+      "miles": 85.2
+    },
+    "61349": {
+      "city": "Ohio",
+      "state": "IL",
+      "lat": 41.55295,
+      "lon": -89.44192,
+      "miles": 99.3
+    },
+    "61356": {
+      "city": "Princeton",
+      "state": "IL",
+      "lat": 41.38914,
+      "lon": -89.43406,
+      "miles": 94.8
+    },
+    "61361": {
+      "city": "Sheffield",
+      "state": "IL",
+      "lat": 41.40913,
+      "lon": -89.76778,
+      "miles": 79.7
+    },
+    "61368": {
+      "city": "Tiskilwa",
+      "state": "IL",
+      "lat": 41.26113,
+      "lon": -89.51981,
+      "miles": 87.5
+    },
+    "61375": {
+      "city": "Varna",
+      "state": "IL",
+      "lat": 41.03254,
+      "lon": -89.24688,
+      "miles": 98.1
+    },
+    "61376": {
+      "city": "Walnut",
+      "state": "IL",
+      "lat": 41.54065,
+      "lon": -89.60726,
+      "miles": 91.4
+    },
+    "61379": {
+      "city": "Wyanet",
+      "state": "IL",
+      "lat": 41.38144,
+      "lon": -89.61077,
+      "miles": 86.1
+    },
+    "61401": {
+      "city": "Galesburg",
+      "state": "IL",
+      "lat": 40.94451,
+      "lon": -90.38888,
+      "miles": 38.2
+    },
+    "61402": {
+      "city": "Galesburg",
+      "state": "IL",
+      "lat": 40.93993,
+      "lon": -90.40627,
+      "miles": 37.3
+    },
+    "61410": {
+      "city": "Abingdon",
+      "state": "IL",
+      "lat": 40.79779,
+      "lon": -90.40703,
+      "miles": 37.0
+    },
+    "61411": {
+      "city": "Adair",
+      "state": "IL",
+      "lat": 40.40105,
+      "lon": -90.50544,
+      "miles": 44.6
+    },
+    "61412": {
+      "city": "Alexis",
+      "state": "IL",
+      "lat": 41.07092,
+      "lon": -90.58853,
+      "miles": 31.1
+    },
+    "61413": {
+      "city": "Alpha",
+      "state": "IL",
+      "lat": 41.19135,
+      "lon": -90.37227,
+      "miles": 45.0
+    },
+    "61414": {
+      "city": "Altona",
+      "state": "IL",
+      "lat": 41.12597,
+      "lon": -90.15495,
+      "miles": 53.3
+    },
+    "61415": {
+      "city": "Avon",
+      "state": "IL",
+      "lat": 40.65425,
+      "lon": -90.42801,
+      "miles": 38.3
+    },
+    "61416": {
+      "city": "Bardolph",
+      "state": "IL",
+      "lat": 40.49592,
+      "lon": -90.56308,
+      "miles": 38.0
+    },
+    "61417": {
+      "city": "Berwick",
+      "state": "IL",
+      "lat": 40.77222,
+      "lon": -90.54413,
+      "miles": 30.2
+    },
+    "61418": {
+      "city": "Biggsville",
+      "state": "IL",
+      "lat": 40.84714,
+      "lon": -90.86492,
+      "miles": 12.9
+    },
+    "61419": {
+      "city": "Bishop Hill",
+      "state": "IL",
+      "lat": 41.19982,
+      "lon": -90.11751,
+      "miles": 57.0
+    },
+    "61420": {
+      "city": "Blandinsville",
+      "state": "IL",
+      "lat": 40.5491,
+      "lon": -90.86679,
+      "miles": 24.7
+    },
+    "61421": {
+      "city": "Bradford",
+      "state": "IL",
+      "lat": 41.1792,
+      "lon": -89.65083,
+      "miles": 79.3
+    },
+    "61422": {
+      "city": "Bushnell",
+      "state": "IL",
+      "lat": 40.55084,
+      "lon": -90.53113,
+      "miles": 36.9
+    },
+    "61423": {
+      "city": "Cameron",
+      "state": "IL",
+      "lat": 40.8855,
+      "lon": -90.50232,
+      "miles": 31.9
+    },
+    "61424": {
+      "city": "Camp Grove",
+      "state": "IL",
+      "lat": 41.07671,
+      "lon": -89.63513,
+      "miles": 78.5
+    },
+    "61425": {
+      "city": "Carman",
+      "state": "IL",
+      "lat": 40.76297,
+      "lon": -91.04575,
+      "miles": 7.2
+    },
+    "61426": {
+      "city": "Castleton",
+      "state": "IL",
+      "lat": 41.11964,
+      "lon": -89.70601,
+      "miles": 75.5
+    },
+    "61427": {
+      "city": "Cuba",
+      "state": "IL",
+      "lat": 40.49823,
+      "lon": -90.19319,
+      "miles": 54.0
+    },
+    "61428": {
+      "city": "Dahinda",
+      "state": "IL",
+      "lat": 40.93262,
+      "lon": -90.10977,
+      "miles": 52.6
+    },
+    "61430": {
+      "city": "East Galesburg",
+      "state": "IL",
+      "lat": 40.94393,
+      "lon": -90.31135,
+      "miles": 42.2
+    },
+    "61431": {
+      "city": "Ellisville",
+      "state": "IL",
+      "lat": 40.60315,
+      "lon": -90.2776,
+      "miles": 47.0
+    },
+    "61432": {
+      "city": "Fairview",
+      "state": "IL",
+      "lat": 40.65055,
+      "lon": -90.16086,
+      "miles": 51.7
+    },
+    "61433": {
+      "city": "Fiatt",
+      "state": "IL",
+      "lat": 40.55749,
+      "lon": -90.16866,
+      "miles": 53.5
+    },
+    "61434": {
+      "city": "Galva",
+      "state": "IL",
+      "lat": 41.17387,
+      "lon": -90.03598,
+      "miles": 60.2
+    },
+    "61435": {
+      "city": "Gerlaw",
+      "state": "IL",
+      "lat": 40.99559,
+      "lon": -90.5686,
+      "miles": 29.9
+    },
+    "61436": {
+      "city": "Gilson",
+      "state": "IL",
+      "lat": 40.86067,
+      "lon": -90.21739,
+      "miles": 46.7
+    },
+    "61437": {
+      "city": "Gladstone",
+      "state": "IL",
+      "lat": 40.84911,
+      "lon": -90.98905,
+      "miles": 6.4
+    },
+    "61438": {
+      "city": "Good Hope",
+      "state": "IL",
+      "lat": 40.58538,
+      "lon": -90.64942,
+      "miles": 30.5
+    },
+    "61439": {
+      "city": "Henderson",
+      "state": "IL",
+      "lat": 41.02923,
+      "lon": -90.35019,
+      "miles": 41.5
+    },
+    "61440": {
+      "city": "Industry",
+      "state": "IL",
+      "lat": 40.3079,
+      "lon": -90.59786,
+      "miles": 46.4
+    },
+    "61441": {
+      "city": "Ipava",
+      "state": "IL",
+      "lat": 40.33957,
+      "lon": -90.29336,
+      "miles": 55.8
+    },
+    "61442": {
+      "city": "Keithsburg",
+      "state": "IL",
+      "lat": 41.10237,
+      "lon": -90.92303,
+      "miles": 19.7
+    },
+    "61443": {
+      "city": "Kewanee",
+      "state": "IL",
+      "lat": 41.25972,
+      "lon": -89.94242,
+      "miles": 67.0
+    },
+    "61447": {
+      "city": "Kirkwood",
+      "state": "IL",
+      "lat": 40.87105,
+      "lon": -90.76674,
+      "miles": 18.0
+    },
+    "61448": {
+      "city": "Knoxville",
+      "state": "IL",
+      "lat": 40.93385,
+      "lon": -90.24374,
+      "miles": 45.6
+    },
+    "61449": {
+      "city": "La Fayette",
+      "state": "IL",
+      "lat": 41.08926,
+      "lon": -89.97051,
+      "miles": 61.7
+    },
+    "61450": {
+      "city": "La Harpe",
+      "state": "IL",
+      "lat": 40.57629,
+      "lon": -90.98088,
+      "miles": 20.4
+    },
+    "61451": {
+      "city": "Laura",
+      "state": "IL",
+      "lat": 40.94117,
+      "lon": -89.93555,
+      "miles": 61.7
+    },
+    "61452": {
+      "city": "Littleton",
+      "state": "IL",
+      "lat": 40.23836,
+      "lon": -90.66022,
+      "miles": 48.7
+    },
+    "61453": {
+      "city": "Little York",
+      "state": "IL",
+      "lat": 41.01345,
+      "lon": -90.76322,
+      "miles": 21.2
+    },
+    "61454": {
+      "city": "Lomax",
+      "state": "IL",
+      "lat": 40.68152,
+      "lon": -91.04535,
+      "miles": 12.5
+    },
+    "61455": {
+      "city": "Macomb",
+      "state": "IL",
+      "lat": 40.44047,
+      "lon": -90.65115,
+      "miles": 37.4
+    },
+    "61458": {
+      "city": "Maquon",
+      "state": "IL",
+      "lat": 40.78027,
+      "lon": -90.18107,
+      "miles": 48.9
+    },
+    "61459": {
+      "city": "Marietta",
+      "state": "IL",
+      "lat": 40.50497,
+      "lon": -90.41453,
+      "miles": 43.8
+    },
+    "61460": {
+      "city": "Media",
+      "state": "IL",
+      "lat": 40.72159,
+      "lon": -90.82774,
+      "miles": 17.5
+    },
+    "61462": {
+      "city": "Monmouth",
+      "state": "IL",
+      "lat": 40.91014,
+      "lon": -90.65176,
+      "miles": 24.3
+    },
+    "61465": {
+      "city": "New Windsor",
+      "state": "IL",
+      "lat": 41.20618,
+      "lon": -90.46744,
+      "miles": 41.4
+    },
+    "61466": {
+      "city": "North Henderson",
+      "state": "IL",
+      "lat": 41.11103,
+      "lon": -90.48222,
+      "miles": 37.3
+    },
+    "61467": {
+      "city": "Oneida",
+      "state": "IL",
+      "lat": 41.07115,
+      "lon": -90.24338,
+      "miles": 47.7
+    },
+    "61468": {
+      "city": "Ophiem",
+      "state": "IL",
+      "lat": 41.2565,
+      "lon": -90.38751,
+      "miles": 46.8
+    },
+    "61469": {
+      "city": "Oquawka",
+      "state": "IL",
+      "lat": 40.96262,
+      "lon": -90.91066,
+      "miles": 12.8
+    },
+    "61470": {
+      "city": "Prairie City",
+      "state": "IL",
+      "lat": 40.60613,
+      "lon": -90.50623,
+      "miles": 36.0
+    },
+    "61471": {
+      "city": "Raritan",
+      "state": "IL",
+      "lat": 40.69583,
+      "lon": -90.82507,
+      "miles": 18.6
+    },
+    "61472": {
+      "city": "Rio",
+      "state": "IL",
+      "lat": 41.10327,
+      "lon": -90.38345,
+      "miles": 41.6
+    },
+    "61473": {
+      "city": "Roseville",
+      "state": "IL",
+      "lat": 40.70914,
+      "lon": -90.64975,
+      "miles": 26.2
+    },
+    "61474": {
+      "city": "Saint Augustine",
+      "state": "IL",
+      "lat": 40.73419,
+      "lon": -90.39724,
+      "miles": 38.3
+    },
+    "61475": {
+      "city": "Sciota",
+      "state": "IL",
+      "lat": 40.5969,
+      "lon": -90.7527,
+      "miles": 25.9
+    },
+    "61476": {
+      "city": "Seaton",
+      "state": "IL",
+      "lat": 41.09191,
+      "lon": -90.83259,
+      "miles": 21.9
+    },
+    "61477": {
+      "city": "Smithfield",
+      "state": "IL",
+      "lat": 40.4945,
+      "lon": -90.31402,
+      "miles": 48.6
+    },
+    "61478": {
+      "city": "Smithshire",
+      "state": "IL",
+      "lat": 40.75633,
+      "lon": -90.76035,
+      "miles": 19.6
+    },
+    "61479": {
+      "city": "Speer",
+      "state": "IL",
+      "lat": 41.00192,
+      "lon": -89.63939,
+      "miles": 77.5
+    },
+    "61480": {
+      "city": "Stronghurst",
+      "state": "IL",
+      "lat": 40.72323,
+      "lon": -90.91827,
+      "miles": 13.6
+    },
+    "61482": {
+      "city": "Table Grove",
+      "state": "IL",
+      "lat": 40.39362,
+      "lon": -90.40766,
+      "miles": 48.8
+    },
+    "61483": {
+      "city": "Toulon",
+      "state": "IL",
+      "lat": 41.08157,
+      "lon": -89.87186,
+      "miles": 66.5
+    },
+    "61484": {
+      "city": "Vermont",
+      "state": "IL",
+      "lat": 40.29696,
+      "lon": -90.44153,
+      "miles": 52.2
+    },
+    "61485": {
+      "city": "Victoria",
+      "state": "IL",
+      "lat": 41.01677,
+      "lon": -90.09764,
+      "miles": 54.1
+    },
+    "61486": {
+      "city": "Viola",
+      "state": "IL",
+      "lat": 41.19609,
+      "lon": -90.57614,
+      "miles": 36.5
+    },
+    "61488": {
+      "city": "Wataga",
+      "state": "IL",
+      "lat": 41.03004,
+      "lon": -90.32071,
+      "miles": 43.0
+    },
+    "61489": {
+      "city": "Williamsfield",
+      "state": "IL",
+      "lat": 40.93462,
+      "lon": -90.02664,
+      "miles": 56.9
+    },
+    "61490": {
+      "city": "Woodhull",
+      "state": "IL",
+      "lat": 41.18263,
+      "lon": -90.26518,
+      "miles": 49.6
+    },
+    "61491": {
+      "city": "Wyoming",
+      "state": "IL",
+      "lat": 41.05982,
+      "lon": -89.72525,
+      "miles": 73.7
+    },
+    "61501": {
+      "city": "Astoria",
+      "state": "IL",
+      "lat": 40.22797,
+      "lon": -90.31233,
+      "miles": 60.3
+    },
+    "61517": {
+      "city": "Brimfield",
+      "state": "IL",
+      "lat": 40.823,
+      "lon": -89.85155,
+      "miles": 65.9
+    },
+    "61519": {
+      "city": "Bryant",
+      "state": "IL",
+      "lat": 40.46463,
+      "lon": -90.09309,
+      "miles": 59.8
+    },
+    "61520": {
+      "city": "Canton",
+      "state": "IL",
+      "lat": 40.54197,
+      "lon": -90.02156,
+      "miles": 61.0
+    },
+    "61523": {
+      "city": "Chillicothe",
+      "state": "IL",
+      "lat": 40.91751,
+      "lon": -89.53562,
+      "miles": 82.4
+    },
+    "61524": {
+      "city": "Dunfermline",
+      "state": "IL",
+      "lat": 40.49125,
+      "lon": -90.03468,
+      "miles": 61.8
+    },
+    "61525": {
+      "city": "Dunlap",
+      "state": "IL",
+      "lat": 40.84776,
+      "lon": -89.67047,
+      "miles": 75.3
+    },
+    "61526": {
+      "city": "Edelstein",
+      "state": "IL",
+      "lat": 40.92899,
+      "lon": -89.62599,
+      "miles": 77.7
+    },
+    "61528": {
+      "city": "Edwards",
+      "state": "IL",
+      "lat": 40.7757,
+      "lon": -89.7227,
+      "miles": 72.8
+    },
+    "61529": {
+      "city": "Elmwood",
+      "state": "IL",
+      "lat": 40.7809,
+      "lon": -89.93673,
+      "miles": 61.6
+    },
+    "61530": {
+      "city": "Eureka",
+      "state": "IL",
+      "lat": 40.71146,
+      "lon": -89.26287,
+      "miles": 97.2
+    },
+    "61531": {
+      "city": "Farmington",
+      "state": "IL",
+      "lat": 40.68291,
+      "lon": -90.03482,
+      "miles": 57.6
+    },
+    "61532": {
+      "city": "Forest City",
+      "state": "IL",
+      "lat": 40.34851,
+      "lon": -89.80692,
+      "miles": 76.8
+    },
+    "61533": {
+      "city": "Glasford",
+      "state": "IL",
+      "lat": 40.58736,
+      "lon": -89.84029,
+      "miles": 69.1
+    },
+    "61534": {
+      "city": "Green Valley",
+      "state": "IL",
+      "lat": 40.41499,
+      "lon": -89.66464,
+      "miles": 81.7
+    },
+    "61535": {
+      "city": "Groveland",
+      "state": "IL",
+      "lat": 40.58578,
+      "lon": -89.52316,
+      "miles": 85.2
+    },
+    "61536": {
+      "city": "Hanna City",
+      "state": "IL",
+      "lat": 40.69051,
+      "lon": -89.78688,
+      "miles": 70.2
+    },
+    "61537": {
+      "city": "Henry",
+      "state": "IL",
+      "lat": 41.11607,
+      "lon": -89.47035,
+      "miles": 87.4
+    },
+    "61539": {
+      "city": "Kingston Mines",
+      "state": "IL",
+      "lat": 40.55375,
+      "lon": -89.77561,
+      "miles": 73.0
+    },
+    "61540": {
+      "city": "Lacon",
+      "state": "IL",
+      "lat": 41.01856,
+      "lon": -89.36867,
+      "miles": 91.6
+    },
+    "61541": {
+      "city": "La Rose",
+      "state": "IL",
+      "lat": 40.98039,
+      "lon": -89.23497,
+      "miles": 98.3
+    },
+    "61542": {
+      "city": "Lewistown",
+      "state": "IL",
+      "lat": 40.38487,
+      "lon": -90.13402,
+      "miles": 60.7
+    },
+    "61543": {
+      "city": "Liverpool",
+      "state": "IL",
+      "lat": 40.42213,
+      "lon": -89.96842,
+      "miles": 67.0
+    },
+    "61544": {
+      "city": "London Mills",
+      "state": "IL",
+      "lat": 40.69753,
+      "lon": -90.24273,
+      "miles": 46.7
+    },
+    "61545": {
+      "city": "Lowpoint",
+      "state": "IL",
+      "lat": 40.86837,
+      "lon": -89.35253,
+      "miles": 91.9
+    },
+    "61546": {
+      "city": "Manito",
+      "state": "IL",
+      "lat": 40.45212,
+      "lon": -89.80172,
+      "miles": 74.1
+    },
+    "61547": {
+      "city": "Mapleton",
+      "state": "IL",
+      "lat": 40.60962,
+      "lon": -89.73847,
+      "miles": 73.8
+    },
+    "61548": {
+      "city": "Metamora",
+      "state": "IL",
+      "lat": 40.80887,
+      "lon": -89.41311,
+      "miles": 88.8
+    },
+    "61550": {
+      "city": "Morton",
+      "state": "IL",
+      "lat": 40.61054,
+      "lon": -89.44049,
+      "miles": 89.1
+    },
+    "61552": {
+      "city": "Mossville",
+      "state": "IL",
+      "lat": 40.82133,
+      "lon": -89.56496,
+      "miles": 80.8
+    },
+    "61553": {
+      "city": "Norris",
+      "state": "IL",
+      "lat": 40.62136,
+      "lon": -90.02686,
+      "miles": 59.0
+    },
+    "61554": {
+      "city": "Pekin",
+      "state": "IL",
+      "lat": 40.54441,
+      "lon": -89.62181,
+      "miles": 80.9
+    },
+    "61559": {
+      "city": "Princeville",
+      "state": "IL",
+      "lat": 40.92101,
+      "lon": -89.77438,
+      "miles": 70.0
+    },
+    "61560": {
+      "city": "Putnam",
+      "state": "IL",
+      "lat": 41.18581,
+      "lon": -89.40077,
+      "miles": 92.0
+    },
+    "61561": {
+      "city": "Roanoke",
+      "state": "IL",
+      "lat": 40.80582,
+      "lon": -89.20475,
+      "miles": 99.7
+    },
+    "61562": {
+      "city": "Rome",
+      "state": "IL",
+      "lat": 40.88102,
+      "lon": -89.50144,
+      "miles": 84.1
+    },
+    "61563": {
+      "city": "Saint David",
+      "state": "IL",
+      "lat": 40.4931,
+      "lon": -90.05108,
+      "miles": 60.9
+    },
+    "61564": {
+      "city": "South Pekin",
+      "state": "IL",
+      "lat": 40.49848,
+      "lon": -89.65624,
+      "miles": 80.1
+    },
+    "61565": {
+      "city": "Sparland",
+      "state": "IL",
+      "lat": 41.032,
+      "lon": -89.50718,
+      "miles": 84.6
+    },
+    "61567": {
+      "city": "Topeka",
+      "state": "IL",
+      "lat": 40.35077,
+      "lon": -89.89899,
+      "miles": 72.5
+    },
+    "61568": {
+      "city": "Tremont",
+      "state": "IL",
+      "lat": 40.50484,
+      "lon": -89.47876,
+      "miles": 88.9
+    },
+    "61569": {
+      "city": "Trivoli",
+      "state": "IL",
+      "lat": 40.67788,
+      "lon": -89.89324,
+      "miles": 64.9
+    },
+    "61570": {
+      "city": "Washburn",
+      "state": "IL",
+      "lat": 40.91933,
+      "lon": -89.31578,
+      "miles": 93.9
+    },
+    "61571": {
+      "city": "Washington",
+      "state": "IL",
+      "lat": 40.70506,
+      "lon": -89.42294,
+      "miles": 88.9
+    },
+    "61572": {
+      "city": "Yates City",
+      "state": "IL",
+      "lat": 40.79768,
+      "lon": -90.0343,
+      "miles": 56.4
+    },
+    "61602": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.68005,
+      "lon": -89.60395,
+      "miles": 79.8
+    },
+    "61603": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.7122,
+      "lon": -89.57465,
+      "miles": 81.0
+    },
+    "61604": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.70525,
+      "lon": -89.65297,
+      "miles": 77.0
+    },
+    "61605": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.6765,
+      "lon": -89.63317,
+      "miles": 78.3
+    },
+    "61606": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.70011,
+      "lon": -89.61187,
+      "miles": 79.2
+    },
+    "61607": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.62895,
+      "lon": -89.68627,
+      "miles": 76.2
+    },
+    "61610": {
+      "city": "Creve Coeur",
+      "state": "IL",
+      "lat": 40.64294,
+      "lon": -89.59882,
+      "miles": 80.5
+    },
+    "61611": {
+      "city": "East Peoria",
+      "state": "IL",
+      "lat": 40.71185,
+      "lon": -89.53469,
+      "miles": 83.1
+    },
+    "61614": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.75872,
+      "lon": -89.60486,
+      "miles": 79.0
+    },
+    "61615": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.78088,
+      "lon": -89.63102,
+      "miles": 77.6
+    },
+    "61616": {
+      "city": "Peoria Heights",
+      "state": "IL",
+      "lat": 40.74682,
+      "lon": -89.57195,
+      "miles": 80.8
+    },
+    "61625": {
+      "city": "Peoria",
+      "state": "IL",
+      "lat": 40.6978,
+      "lon": -89.61455,
+      "miles": 79.0
+    },
+    "61733": {
+      "city": "Deer Creek",
+      "state": "IL",
+      "lat": 40.62421,
+      "lon": -89.33573,
+      "miles": 94.3
+    },
+    "61734": {
+      "city": "Delavan",
+      "state": "IL",
+      "lat": 40.37431,
+      "lon": -89.52549,
+      "miles": 89.5
+    },
+    "61742": {
+      "city": "Goodfield",
+      "state": "IL",
+      "lat": 40.63341,
+      "lon": -89.27322,
+      "miles": 97.4
+    },
+    "61747": {
+      "city": "Hopedale",
+      "state": "IL",
+      "lat": 40.4174,
+      "lon": -89.43295,
+      "miles": 93.0
+    },
+    "61755": {
+      "city": "Mackinaw",
+      "state": "IL",
+      "lat": 40.52661,
+      "lon": -89.33909,
+      "miles": 95.6
+    },
+    "61759": {
+      "city": "Minier",
+      "state": "IL",
+      "lat": 40.4347,
+      "lon": -89.32418,
+      "miles": 98.1
+    },
+    "62301": {
+      "city": "Quincy",
+      "state": "IL",
+      "lat": 39.93139,
+      "lon": -91.38741,
+      "miles": 65.5
+    },
+    "62305": {
+      "city": "Quincy",
+      "state": "IL",
+      "lat": 39.92915,
+      "lon": -91.34441,
+      "miles": 65.1
+    },
+    "62311": {
+      "city": "Augusta",
+      "state": "IL",
+      "lat": 40.22195,
+      "lon": -90.9212,
+      "miles": 44.9
+    },
+    "62312": {
+      "city": "Barry",
+      "state": "IL",
+      "lat": 39.71035,
+      "lon": -91.02518,
+      "miles": 79.2
+    },
+    "62313": {
+      "city": "Basco",
+      "state": "IL",
+      "lat": 40.31782,
+      "lon": -91.2251,
+      "miles": 37.6
+    },
+    "62314": {
+      "city": "Baylis",
+      "state": "IL",
+      "lat": 39.76967,
+      "lon": -90.89204,
+      "miles": 75.9
+    },
+    "62316": {
+      "city": "Bowen",
+      "state": "IL",
+      "lat": 40.23341,
+      "lon": -91.05495,
+      "miles": 43.1
+    },
+    "62319": {
+      "city": "Camden",
+      "state": "IL",
+      "lat": 40.15293,
+      "lon": -90.72997,
+      "miles": 52.5
+    },
+    "62320": {
+      "city": "Camp Point",
+      "state": "IL",
+      "lat": 40.02343,
+      "lon": -91.08295,
+      "miles": 57.5
+    },
+    "62321": {
+      "city": "Carthage",
+      "state": "IL",
+      "lat": 40.40948,
+      "lon": -91.10606,
+      "miles": 30.8
+    },
+    "62323": {
+      "city": "Chambersburg",
+      "state": "IL",
+      "lat": 39.81306,
+      "lon": -90.68607,
+      "miles": 75.4
+    },
+    "62324": {
+      "city": "Clayton",
+      "state": "IL",
+      "lat": 39.9901,
+      "lon": -90.96302,
+      "miles": 60.3
+    },
+    "62325": {
+      "city": "Coatsburg",
+      "state": "IL",
+      "lat": 40.05307,
+      "lon": -91.16564,
+      "miles": 55.5
+    },
+    "62326": {
+      "city": "Colchester",
+      "state": "IL",
+      "lat": 40.42248,
+      "lon": -90.81501,
+      "miles": 33.7
+    },
+    "62330": {
+      "city": "Dallas City",
+      "state": "IL",
+      "lat": 40.57217,
+      "lon": -91.12187,
+      "miles": 19.6
+    },
+    "62334": {
+      "city": "Elvaston",
+      "state": "IL",
+      "lat": 40.39598,
+      "lon": -91.24912,
+      "miles": 32.5
+    },
+    "62336": {
+      "city": "Ferris",
+      "state": "IL",
+      "lat": 40.46759,
+      "lon": -91.17333,
+      "miles": 27.0
+    },
+    "62338": {
+      "city": "Fowler",
+      "state": "IL",
+      "lat": 39.99309,
+      "lon": -91.23889,
+      "miles": 59.9
+    },
+    "62339": {
+      "city": "Golden",
+      "state": "IL",
+      "lat": 40.12898,
+      "lon": -91.04196,
+      "miles": 50.3
+    },
+    "62340": {
+      "city": "Griggsville",
+      "state": "IL",
+      "lat": 39.7228,
+      "lon": -90.72588,
+      "miles": 80.8
+    },
+    "62341": {
+      "city": "Hamilton",
+      "state": "IL",
+      "lat": 40.42566,
+      "lon": -91.30555,
+      "miles": 31.4
+    },
+    "62343": {
+      "city": "Hull",
+      "state": "IL",
+      "lat": 39.70275,
+      "lon": -91.2418,
+      "miles": 79.9
+    },
+    "62344": {
+      "city": "Huntsville",
+      "state": "IL",
+      "lat": 40.1799,
+      "lon": -90.82497,
+      "miles": 49.0
+    },
+    "62345": {
+      "city": "Kinderhook",
+      "state": "IL",
+      "lat": 39.70655,
+      "lon": -91.12758,
+      "miles": 79.4
+    },
+    "62346": {
+      "city": "La Prairie",
+      "state": "IL",
+      "lat": 40.14367,
+      "lon": -90.93418,
+      "miles": 50.0
+    },
+    "62347": {
+      "city": "Liberty",
+      "state": "IL",
+      "lat": 39.86648,
+      "lon": -91.08905,
+      "miles": 68.3
+    },
+    "62348": {
+      "city": "Lima",
+      "state": "IL",
+      "lat": 40.18836,
+      "lon": -91.37126,
+      "miles": 48.1
+    },
+    "62349": {
+      "city": "Loraine",
+      "state": "IL",
+      "lat": 40.16958,
+      "lon": -91.19986,
+      "miles": 47.6
+    },
+    "62351": {
+      "city": "Mendon",
+      "state": "IL",
+      "lat": 40.11374,
+      "lon": -91.26751,
+      "miles": 51.9
+    },
+    "62352": {
+      "city": "Milton",
+      "state": "IL",
+      "lat": 39.56818,
+      "lon": -90.65455,
+      "miles": 92.1
+    },
+    "62353": {
+      "city": "Mount Sterling",
+      "state": "IL",
+      "lat": 39.97277,
+      "lon": -90.75735,
+      "miles": 63.7
+    },
+    "62354": {
+      "city": "Nauvoo",
+      "state": "IL",
+      "lat": 40.52087,
+      "lon": -91.33305,
+      "miles": 25.9
+    },
+    "62356": {
+      "city": "New Canton",
+      "state": "IL",
+      "lat": 39.60092,
+      "lon": -91.08508,
+      "miles": 86.7
+    },
+    "62357": {
+      "city": "New Salem",
+      "state": "IL",
+      "lat": 39.68671,
+      "lon": -90.86374,
+      "miles": 81.8
+    },
+    "62358": {
+      "city": "Niota",
+      "state": "IL",
+      "lat": 40.58527,
+      "lon": -91.26113,
+      "miles": 20.2
+    },
+    "62359": {
+      "city": "Paloma",
+      "state": "IL",
+      "lat": 40.03239,
+      "lon": -91.20851,
+      "miles": 57.1
+    },
+    "62360": {
+      "city": "Payson",
+      "state": "IL",
+      "lat": 39.81731,
+      "lon": -91.26143,
+      "miles": 72.1
+    },
+    "62361": {
+      "city": "Pearl",
+      "state": "IL",
+      "lat": 39.48734,
+      "lon": -90.64191,
+      "miles": 97.7
+    },
+    "62362": {
+      "city": "Perry",
+      "state": "IL",
+      "lat": 39.77618,
+      "lon": -90.76429,
+      "miles": 76.8
+    },
+    "62363": {
+      "city": "Pittsfield",
+      "state": "IL",
+      "lat": 39.59163,
+      "lon": -90.7784,
+      "miles": 89.0
+    },
+    "62365": {
+      "city": "Plainville",
+      "state": "IL",
+      "lat": 39.79559,
+      "lon": -91.16018,
+      "miles": 73.3
+    },
+    "62366": {
+      "city": "Pleasant Hill",
+      "state": "IL",
+      "lat": 39.46253,
+      "lon": -90.89402,
+      "miles": 96.9
+    },
+    "62367": {
+      "city": "Plymouth",
+      "state": "IL",
+      "lat": 40.30325,
+      "lon": -90.86687,
+      "miles": 40.2
+    },
+    "62370": {
+      "city": "Rockport",
+      "state": "IL",
+      "lat": 39.51818,
+      "lon": -90.99881,
+      "miles": 92.6
+    },
+    "62373": {
+      "city": "Sutter",
+      "state": "IL",
+      "lat": 40.23643,
+      "lon": -91.35863,
+      "miles": 44.7
+    },
+    "62374": {
+      "city": "Tennessee",
+      "state": "IL",
+      "lat": 40.40765,
+      "lon": -90.91052,
+      "miles": 32.7
+    },
+    "62375": {
+      "city": "Timewell",
+      "state": "IL",
+      "lat": 39.99782,
+      "lon": -90.87176,
+      "miles": 60.6
+    },
+    "62376": {
+      "city": "Ursa",
+      "state": "IL",
+      "lat": 40.1148,
+      "lon": -91.40662,
+      "miles": 53.5
+    },
+    "62378": {
+      "city": "Versailles",
+      "state": "IL",
+      "lat": 39.89602,
+      "lon": -90.63652,
+      "miles": 70.8
+    },
+    "62379": {
+      "city": "Warsaw",
+      "state": "IL",
+      "lat": 40.26867,
+      "lon": -91.4061,
+      "miles": 43.4
+    },
+    "62380": {
+      "city": "West Point",
+      "state": "IL",
+      "lat": 40.24249,
+      "lon": -91.19174,
+      "miles": 42.5
+    },
+    "62601": {
+      "city": "Alexander",
+      "state": "IL",
+      "lat": 39.75032,
+      "lon": -90.03904,
+      "miles": 95.0
+    },
+    "62610": {
+      "city": "Alsey",
+      "state": "IL",
+      "lat": 39.5526,
+      "lon": -90.42708,
+      "miles": 97.0
+    },
+    "62611": {
+      "city": "Arenzville",
+      "state": "IL",
+      "lat": 39.88493,
+      "lon": -90.39984,
+      "miles": 76.8
+    },
+    "62612": {
+      "city": "Ashland",
+      "state": "IL",
+      "lat": 39.89864,
+      "lon": -90.0683,
+      "miles": 85.9
+    },
+    "62613": {
+      "city": "Athens",
+      "state": "IL",
+      "lat": 39.99009,
+      "lon": -89.67036,
+      "miles": 96.5
+    },
+    "62617": {
+      "city": "Bath",
+      "state": "IL",
+      "lat": 40.14948,
+      "lon": -90.18109,
+      "miles": 69.0
+    },
+    "62618": {
+      "city": "Beardstown",
+      "state": "IL",
+      "lat": 40.00534,
+      "lon": -90.39542,
+      "miles": 69.7
+    },
+    "62621": {
+      "city": "Bluffs",
+      "state": "IL",
+      "lat": 39.73174,
+      "lon": -90.5309,
+      "miles": 83.4
+    },
+    "62622": {
+      "city": "Bluff Springs",
+      "state": "IL",
+      "lat": 39.97786,
+      "lon": -90.34302,
+      "miles": 72.8
+    },
+    "62624": {
+      "city": "Browning",
+      "state": "IL",
+      "lat": 40.14993,
+      "lon": -90.34478,
+      "miles": 63.2
+    },
+    "62625": {
+      "city": "Cantrall",
+      "state": "IL",
+      "lat": 39.90424,
+      "lon": -89.70185,
+      "miles": 99.1
+    },
+    "62627": {
+      "city": "Chandlerville",
+      "state": "IL",
+      "lat": 40.05425,
+      "lon": -90.12887,
+      "miles": 75.7
+    },
+    "62628": {
+      "city": "Chapin",
+      "state": "IL",
+      "lat": 39.7794,
+      "lon": -90.40199,
+      "miles": 83.2
+    },
+    "62631": {
+      "city": "Concord",
+      "state": "IL",
+      "lat": 39.82531,
+      "lon": -90.36122,
+      "miles": 81.4
+    },
+    "62633": {
+      "city": "Easton",
+      "state": "IL",
+      "lat": 40.22577,
+      "lon": -89.8763,
+      "miles": 78.1
+    },
+    "62635": {
+      "city": "Emden",
+      "state": "IL",
+      "lat": 40.29653,
+      "lon": -89.46573,
+      "miles": 94.6
+    },
+    "62639": {
+      "city": "Frederick",
+      "state": "IL",
+      "lat": 40.0435,
+      "lon": -90.48753,
+      "miles": 65.0
+    },
+    "62642": {
+      "city": "Greenview",
+      "state": "IL",
+      "lat": 40.09022,
+      "lon": -89.71303,
+      "miles": 90.5
+    },
+    "62643": {
+      "city": "Hartsburg",
+      "state": "IL",
+      "lat": 40.24154,
+      "lon": -89.45774,
+      "miles": 96.6
+    },
+    "62644": {
+      "city": "Havana",
+      "state": "IL",
+      "lat": 40.28553,
+      "lon": -90.06022,
+      "miles": 67.7
+    },
+    "62650": {
+      "city": "Jacksonville",
+      "state": "IL",
+      "lat": 39.73799,
+      "lon": -90.22027,
+      "miles": 90.3
+    },
+    "62655": {
+      "city": "Kilbourne",
+      "state": "IL",
+      "lat": 40.16523,
+      "lon": -89.99515,
+      "miles": 75.5
+    },
+    "62663": {
+      "city": "Manchester",
+      "state": "IL",
+      "lat": 39.54106,
+      "lon": -90.32748,
+      "miles": 99.8
+    },
+    "62664": {
+      "city": "Mason City",
+      "state": "IL",
+      "lat": 40.21106,
+      "lon": -89.72629,
+      "miles": 85.2
+    },
+    "62665": {
+      "city": "Meredosia",
+      "state": "IL",
+      "lat": 39.81627,
+      "lon": -90.53462,
+      "miles": 77.9
+    },
+    "62666": {
+      "city": "Middletown",
+      "state": "IL",
+      "lat": 40.08384,
+      "lon": -89.54364,
+      "miles": 98.1
+    },
+    "62668": {
+      "city": "Murrayville",
+      "state": "IL",
+      "lat": 39.57474,
+      "lon": -90.23667,
+      "miles": 99.8
+    },
+    "62670": {
+      "city": "New Berlin",
+      "state": "IL",
+      "lat": 39.74431,
+      "lon": -89.89601,
+      "miles": 99.9
+    },
+    "62671": {
+      "city": "New Holland",
+      "state": "IL",
+      "lat": 40.16707,
+      "lon": -89.55755,
+      "miles": 94.4
+    },
+    "62673": {
+      "city": "Oakford",
+      "state": "IL",
+      "lat": 40.09586,
+      "lon": -89.9674,
+      "miles": 79.8
+    },
+    "62675": {
+      "city": "Petersburg",
+      "state": "IL",
+      "lat": 40.02109,
+      "lon": -89.86146,
+      "miles": 87.4
+    },
+    "62677": {
+      "city": "Pleasant Plains",
+      "state": "IL",
+      "lat": 39.85168,
+      "lon": -89.87694,
+      "miles": 95.0
+    },
+    "62681": {
+      "city": "Rushville",
+      "state": "IL",
+      "lat": 40.13841,
+      "lon": -90.55885,
+      "miles": 57.4
+    },
+    "62682": {
+      "city": "San Jose",
+      "state": "IL",
+      "lat": 40.29487,
+      "lon": -89.63541,
+      "miles": 86.6
+    },
+    "62688": {
+      "city": "Tallula",
+      "state": "IL",
+      "lat": 39.945,
+      "lon": -89.92415,
+      "miles": 88.6
+    },
+    "62691": {
+      "city": "Virginia",
+      "state": "IL",
+      "lat": 39.95731,
+      "lon": -90.22246,
+      "miles": 77.7
+    },
+    "62694": {
+      "city": "Winchester",
+      "state": "IL",
+      "lat": 39.62463,
+      "lon": -90.47274,
+      "miles": 91.4
+    },
+    "62695": {
+      "city": "Woodson",
+      "state": "IL",
+      "lat": 39.61943,
+      "lon": -90.22418,
+      "miles": 97.3
+    },
+    "63353": {
+      "city": "Louisiana",
+      "state": "MO",
+      "lat": 39.44375,
+      "lon": -91.12,
+      "miles": 97.5
+    },
+    "63401": {
+      "city": "Hannibal",
+      "state": "MO",
+      "lat": 39.69046,
+      "lon": -91.45986,
+      "miles": 82.5
+    },
+    "63430": {
+      "city": "Alexandria",
+      "state": "MO",
+      "lat": 40.38972,
+      "lon": -91.53958,
+      "miles": 39.2
+    },
+    "63431": {
+      "city": "Anabel",
+      "state": "MO",
+      "lat": 39.74887,
+      "lon": -92.32893,
+      "miles": 99.8
+    },
+    "63432": {
+      "city": "Arbela",
+      "state": "MO",
+      "lat": 40.50058,
+      "lon": -91.99551,
+      "miles": 52.4
+    },
+    "63433": {
+      "city": "Ashburn",
+      "state": "MO",
+      "lat": 39.51838,
+      "lon": -91.11816,
+      "miles": 92.4
+    },
+    "63434": {
+      "city": "Bethel",
+      "state": "MO",
+      "lat": 39.90591,
+      "lon": -91.9507,
+      "miles": 79.1
+    },
+    "63435": {
+      "city": "Canton",
+      "state": "MO",
+      "lat": 40.20299,
+      "lon": -91.58267,
+      "miles": 51.4
+    },
+    "63436": {
+      "city": "Center",
+      "state": "MO",
+      "lat": 39.50093,
+      "lon": -91.54524,
+      "miles": 96.3
+    },
+    "63437": {
+      "city": "Clarence",
+      "state": "MO",
+      "lat": 39.72576,
+      "lon": -92.23679,
+      "miles": 98.0
+    },
+    "63438": {
+      "city": "Durham",
+      "state": "MO",
+      "lat": 39.96084,
+      "lon": -91.68828,
+      "miles": 68.8
+    },
+    "63439": {
+      "city": "Emden",
+      "state": "MO",
+      "lat": 39.80382,
+      "lon": -91.85963,
+      "miles": 82.6
+    },
+    "63440": {
+      "city": "Ewing",
+      "state": "MO",
+      "lat": 39.97551,
+      "lon": -91.75376,
+      "miles": 69.5
+    },
+    "63441": {
+      "city": "Frankford",
+      "state": "MO",
+      "lat": 39.4766,
+      "lon": -91.31575,
+      "miles": 95.9
+    },
+    "63443": {
+      "city": "Hunnewell",
+      "state": "MO",
+      "lat": 39.66222,
+      "lon": -91.86697,
+      "miles": 91.6
+    },
+    "63445": {
+      "city": "Kahoka",
+      "state": "MO",
+      "lat": 40.39681,
+      "lon": -91.72044,
+      "miles": 45.0
+    },
+    "63446": {
+      "city": "Knox City",
+      "state": "MO",
+      "lat": 40.13972,
+      "lon": -92.0055,
+      "miles": 68.2
+    },
+    "63447": {
+      "city": "La Belle",
+      "state": "MO",
+      "lat": 40.09251,
+      "lon": -91.90494,
+      "miles": 67.2
+    },
+    "63448": {
+      "city": "La Grange",
+      "state": "MO",
+      "lat": 40.02168,
+      "lon": -91.55416,
+      "miles": 62.1
+    },
+    "63450": {
+      "city": "Lentner",
+      "state": "MO",
+      "lat": 39.66808,
+      "lon": -92.14857,
+      "miles": 98.6
+    },
+    "63451": {
+      "city": "Leonard",
+      "state": "MO",
+      "lat": 39.91135,
+      "lon": -92.19728,
+      "miles": 86.7
+    },
+    "63452": {
+      "city": "Lewistown",
+      "state": "MO",
+      "lat": 40.09316,
+      "lon": -91.78551,
+      "miles": 63.5
+    },
+    "63453": {
+      "city": "Luray",
+      "state": "MO",
+      "lat": 40.49511,
+      "lon": -91.86495,
+      "miles": 46.7
+    },
+    "63454": {
+      "city": "Maywood",
+      "state": "MO",
+      "lat": 39.92389,
+      "lon": -91.64897,
+      "miles": 70.3
+    },
+    "63456": {
+      "city": "Monroe City",
+      "state": "MO",
+      "lat": 39.65364,
+      "lon": -91.72693,
+      "miles": 89.1
+    },
+    "63457": {
+      "city": "Monticello",
+      "state": "MO",
+      "lat": 40.17272,
+      "lon": -91.70115,
+      "miles": 56.4
+    },
+    "63458": {
+      "city": "Newark",
+      "state": "MO",
+      "lat": 39.98751,
+      "lon": -92.01745,
+      "miles": 76.6
+    },
+    "63459": {
+      "city": "New London",
+      "state": "MO",
+      "lat": 39.58392,
+      "lon": -91.3795,
+      "miles": 89.0
+    },
+    "63460": {
+      "city": "Novelty",
+      "state": "MO",
+      "lat": 40.00237,
+      "lon": -92.21002,
+      "miles": 82.5
+    },
+    "63461": {
+      "city": "Palmyra",
+      "state": "MO",
+      "lat": 39.79757,
+      "lon": -91.55577,
+      "miles": 76.7
+    },
+    "63463": {
+      "city": "Philadelphia",
+      "state": "MO",
+      "lat": 39.84533,
+      "lon": -91.75976,
+      "miles": 77.7
+    },
+    "63465": {
+      "city": "Revere",
+      "state": "MO",
+      "lat": 40.52307,
+      "lon": -91.6898,
+      "miles": 38.0
+    },
+    "63466": {
+      "city": "Saint Patrick",
+      "state": "MO",
+      "lat": 40.26627,
+      "lon": -91.61751,
+      "miles": 48.6
+    },
+    "63467": {
+      "city": "Saverton",
+      "state": "MO",
+      "lat": 39.64849,
+      "lon": -91.26655,
+      "miles": 83.8
+    },
+    "63468": {
+      "city": "Shelbina",
+      "state": "MO",
+      "lat": 39.67857,
+      "lon": -92.01267,
+      "miles": 94.2
+    },
+    "63469": {
+      "city": "Shelbyville",
+      "state": "MO",
+      "lat": 39.8323,
+      "lon": -92.04401,
+      "miles": 86.1
+    },
+    "63471": {
+      "city": "Taylor",
+      "state": "MO",
+      "lat": 39.92511,
+      "lon": -91.50652,
+      "miles": 67.5
+    },
+    "63472": {
+      "city": "Wayland",
+      "state": "MO",
+      "lat": 40.4053,
+      "lon": -91.57734,
+      "miles": 39.5
+    },
+    "63473": {
+      "city": "Williamstown",
+      "state": "MO",
+      "lat": 40.25263,
+      "lon": -91.77803,
+      "miles": 54.4
+    },
+    "63474": {
+      "city": "Wyaconda",
+      "state": "MO",
+      "lat": 40.3473,
+      "lon": -91.89674,
+      "miles": 54.1
+    },
+    "63501": {
+      "city": "Kirksville",
+      "state": "MO",
+      "lat": 40.16745,
+      "lon": -92.59078,
+      "miles": 91.1
+    },
+    "63530": {
+      "city": "Atlanta",
+      "state": "MO",
+      "lat": 39.90732,
+      "lon": -92.45037,
+      "miles": 96.2
+    },
+    "63531": {
+      "city": "Baring",
+      "state": "MO",
+      "lat": 40.30002,
+      "lon": -92.25248,
+      "miles": 71.1
+    },
+    "63533": {
+      "city": "Brashear",
+      "state": "MO",
+      "lat": 40.20471,
+      "lon": -92.39608,
+      "miles": 81.1
+    },
+    "63535": {
+      "city": "Coatsville",
+      "state": "MO",
+      "lat": 40.57244,
+      "lon": -92.67946,
+      "miles": 84.4
+    },
+    "63536": {
+      "city": "Downing",
+      "state": "MO",
+      "lat": 40.48423,
+      "lon": -92.3574,
+      "miles": 70.2
+    },
+    "63537": {
+      "city": "Edina",
+      "state": "MO",
+      "lat": 40.14776,
+      "lon": -92.16172,
+      "miles": 73.7
+    },
+    "63540": {
+      "city": "Gibbs",
+      "state": "MO",
+      "lat": 40.09782,
+      "lon": -92.40792,
+      "miles": 85.9
+    },
+    "63541": {
+      "city": "Glenwood",
+      "state": "MO",
+      "lat": 40.50355,
+      "lon": -92.63331,
+      "miles": 83.4
+    },
+    "63543": {
+      "city": "Gorin",
+      "state": "MO",
+      "lat": 40.35765,
+      "lon": -92.00976,
+      "miles": 58.3
+    },
+    "63546": {
+      "city": "Greentop",
+      "state": "MO",
+      "lat": 40.33129,
+      "lon": -92.50882,
+      "miles": 81.8
+    },
+    "63547": {
+      "city": "Hurdland",
+      "state": "MO",
+      "lat": 40.13492,
+      "lon": -92.30651,
+      "miles": 80.1
+    },
+    "63548": {
+      "city": "Lancaster",
+      "state": "MO",
+      "lat": 40.53405,
+      "lon": -92.4953,
+      "miles": 75.8
+    },
+    "63549": {
+      "city": "La Plata",
+      "state": "MO",
+      "lat": 40.0167,
+      "lon": -92.49172,
+      "miles": 92.9
+    },
+    "63551": {
+      "city": "Livonia",
+      "state": "MO",
+      "lat": 40.49921,
+      "lon": -92.74252,
+      "miles": 89.0
+    },
+    "63555": {
+      "city": "Memphis",
+      "state": "MO",
+      "lat": 40.48458,
+      "lon": -92.18698,
+      "miles": 61.9
+    },
+    "63559": {
+      "city": "Novinger",
+      "state": "MO",
+      "lat": 40.22674,
+      "lon": -92.74528,
+      "miles": 96.2
+    },
+    "63561": {
+      "city": "Queen City",
+      "state": "MO",
+      "lat": 40.41408,
+      "lon": -92.54317,
+      "miles": 81.0
+    },
+    "63563": {
+      "city": "Rutledge",
+      "state": "MO",
+      "lat": 40.30387,
+      "lon": -92.07439,
+      "miles": 63.3
+    },
+    "63565": {
+      "city": "Unionville",
+      "state": "MO",
+      "lat": 40.48263,
+      "lon": -92.95447,
+      "miles": 100.0
+    },
+    "63567": {
+      "city": "Worthington",
+      "state": "MO",
+      "lat": 40.41332,
+      "lon": -92.70461,
+      "miles": 89.0
+    }
+  }
+}
