@@ -65,7 +65,12 @@
       <div><label for="est-phone">Phone</label><input id="est-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
     </div>
     <div><label for="est-email">Email</label><input id="est-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"></div>
-    <div><label for="est-address">Address</label><input id="est-address" name="address" required placeholder="Property address or nearest town + ZIP" autocomplete="street-address"></div>
+        <div><label for="est-street">Street address</label><input id="est-street" name="street" required placeholder="1234 County Rd X" autocomplete="street-address"></div>
+    <div class="form-row">
+      <div><label for="est-city">City</label><input id="est-city" name="city" required placeholder="Burlington" autocomplete="address-level2"></div>
+      <div><label for="est-state">State</label><input id="est-state" name="state" required placeholder="IA" maxlength="2" autocomplete="address-level1" style="text-transform:uppercase"></div>
+    </div>
+    <div><label for="est-zip">ZIP</label><input id="est-zip" name="zip" required placeholder="52601" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code"></div>
     <div><label for="est-job">Job type requested</label>
       <select id="est-job" name="job_type" required>
         <option value="">Choose one</option>
@@ -713,6 +718,6 @@
   guard("estimate-form-el");
 })();
 </script>
-<script src="js/estimate-sms.js?v=5" defer></script>
+<script src="js/estimate-sms.js?v=7" defer></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 (function () {
   var TO = "+13197501530";
+  // iOS sms: URLs truncate aggressively; keep body short and put address first.
+  var MAX_BODY = 700;
 
   function field(form, name) {
     var el = form.elements.namedItem(name);
@@ -7,23 +9,57 @@
     return String(el.value || "").trim();
   }
 
+  function fullAddress(form) {
+    var street = field(form, "street") || field(form, "address");
+    var city = field(form, "city");
+    var state = field(form, "state");
+    var zip = field(form, "zip");
+    var parts = [];
+    if (street) parts.push(street);
+    var cityLine = [city, state].filter(Boolean).join(", ");
+    if (cityLine && zip) cityLine += " " + zip;
+    else if (zip) cityLine = zip;
+    if (cityLine) parts.push(cityLine);
+    return parts.join(", ");
+  }
+
+  function mapsLinks(addr) {
+    if (!addr) return [];
+    var q = encodeURIComponent(addr);
+    return [
+      "Maps: https://maps.apple.com/?q=" + q,
+      "Google: https://www.google.com/maps/search/?api=1&query=" + q,
+    ];
+  }
+
   function buildBody(form) {
-    var lines = [
-      "AIX Outdoors estimate request",
+    var addr = fullAddress(form);
+    var core = [
+      "AIX estimate",
       "Name: " + field(form, "name"),
       "Phone: " + field(form, "phone"),
-      "Email: " + field(form, "email"),
-      "Address: " + field(form, "address"),
+      "Address: " + (addr || "(missing)"),
     ];
+    core = core.concat(mapsLinks(addr));
+    core.push("Email: " + field(form, "email"));
+
+    var extras = [];
     var acres = field(form, "acres");
-    if (acres) lines.push("Acres: " + acres);
+    if (acres) extras.push("Acres: " + acres);
     var job = field(form, "job_type");
-    if (job) lines.push("Job: " + job);
+    if (job) extras.push("Job: " + job);
     var notes = field(form, "notes");
-    if (notes) lines.push("Notes: " + notes);
-    lines.push("Photos: attach in this text thread if you have them.");
-    var body = lines.join("\n");
-    if (body.length > 1200) body = body.slice(0, 1190) + "…";
+    if (notes) extras.push("Notes: " + notes);
+
+    var body = core.concat(extras).join("\n");
+    if (body.length <= MAX_BODY) return body;
+
+    // Never cut the address / maps lines — trim notes first, then job/acres.
+    while (body.length > MAX_BODY && extras.length) {
+      extras.pop();
+      body = core.concat(extras).join("\n");
+    }
+    if (body.length > MAX_BODY) body = body.slice(0, MAX_BODY - 1) + "…";
     return body;
   }
 
@@ -32,13 +68,11 @@
     var isIOS =
       /iPad|iPhone|iPod/.test(navigator.userAgent) ||
       (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-    // iOS: sms:number&body=  Android: sms:number?body=
     if (isIOS) return "sms:" + TO + "&body=" + encoded;
     return "sms:" + TO + "?body=" + encoded;
   }
 
   function openSms(url) {
-    // Stay on this page — do NOT set window.location (that navigates away).
     var a = document.createElement("a");
     a.href = url;
     a.target = "_blank";
@@ -63,7 +97,6 @@
     var ok = okId ? document.getElementById(okId) : null;
     if (!form) return;
 
-    // Never allow a real navigation POST (blocks cached FormSubmit actions too once JS runs)
     form.setAttribute("action", "javascript:void(0)");
     form.setAttribute("method", "post");
     form.removeAttribute("enctype");
@@ -79,9 +112,7 @@
         var body = buildBody(form);
         try {
           openSms(smsUrl(body));
-        } catch (err) {
-          // still show confirmation; offer manual sms link below
-        }
+        } catch (err) {}
         showOk(form, ok);
       },
       true

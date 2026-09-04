@@ -44,7 +44,12 @@
         <div><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
       </div>
       <div><label for="q-email">Email</label><input id="q-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"></div>
-      <div><label for="q-address">Property address</label><input id="q-address" name="address" required placeholder="Street, town, ZIP" autocomplete="street-address"></div>
+            <div><label for="q-street">Street address</label><input id="q-street" name="street" required placeholder="1234 County Rd X" autocomplete="street-address"></div>
+      <div class="form-row">
+        <div><label for="q-city">City</label><input id="q-city" name="city" required placeholder="Burlington" autocomplete="address-level2"></div>
+        <div><label for="q-state">State</label><input id="q-state" name="state" required placeholder="IA" maxlength="2" autocomplete="address-level1" style="text-transform:uppercase"></div>
+      </div>
+      <div><label for="q-zip">ZIP</label><input id="q-zip" name="zip" required placeholder="52601" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code"></div>
       <div class="form-row">
         <div><label for="q-acres">Acres (approx.)</label><input id="q-acres" name="acres" placeholder="e.g. 80" inputmode="decimal"></div>
         <div><label for="q-job">Job type</label>
@@ -110,6 +115,6 @@
   guard("estimate-form-el");
 })();
 </script>
-<script src="js/estimate-sms.js?v=6" defer></script>
+<script src="js/estimate-sms.js?v=7" defer></script>
 </body>
 </html>
