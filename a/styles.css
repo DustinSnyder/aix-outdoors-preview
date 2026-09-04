@@ -1556,3 +1556,39 @@ body.fb-sheet-open { overflow: hidden; }
   .estimate-rail .btn-block { width: 100%; }
   .estimate-rail .form-row { grid-template-columns: 1fr; }
 }
+
+.photo-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+  list-style: none;
+  padding: 0;
+}
+.photo-preview[hidden] { display: none !important; }
+.photo-preview figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0b0b0b;
+}
+.photo-preview img {
+  width: 100%;
+  height: 88px;
+  object-fit: cover;
+  display: block;
+  max-width: none !important;
+}
+.photo-preview figcaption {
+  font-size: 10px;
+  padding: 4px 6px;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 640px) {
+  .photo-preview { grid-template-columns: repeat(2, 1fr); }
+  .photo-preview img { height: 110px; }
+}

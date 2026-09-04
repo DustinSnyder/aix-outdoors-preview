@@ -55,7 +55,7 @@
     <div id="estimate-sent" class="quote-ok" hidden>
     <p class="tiny">Request received</p>
     <h2>Thank you — your information was sent.</h2>
-    <p class="muted">AIX Outdoors will be contacting you soon. If Messages opened a text to <strong>319-750-1530</strong>, tap <strong>Send</strong> (and attach photos there if you have them).</p>
+    <p class="muted">AIX Outdoors will be contacting you soon. If a share sheet or Messages opened, choose <strong>Messages</strong> / tap <strong>Send</strong> so we get your request and photos.</p>
     <p style="margin-top:22px"><a class="btn" href="service-area.html#estimate-form">Submit another</a>
     <a class="btn" href="index.html" style="margin-left:8px">Back to home</a></p>
   </div>
@@ -85,8 +85,11 @@
       </select>
     </div>
     <div><label for="est-notes">What do you want done? (optional)</label><textarea id="est-notes" name="notes" placeholder="Acreage, access, timing…"></textarea></div>
-    <div class="photo-upload">
-      <p class="muted photo-upload-hint"><strong>Photos:</strong> After you submit, attach land photos in the text to 319-750-1530 before tapping Send.</p>
+        <div class="photo-upload">
+      <label for="est-photos">Land photos (optional)</label>
+      <input id="est-photos" name="photos" type="file" accept="image/*" multiple capture="environment">
+      <p class="muted photo-upload-hint">Add photos here. On your phone, Submit opens a share sheet — choose <strong>Messages</strong> and both your details and photos go together.</p>
+      <div class="photo-preview" hidden></div>
     </div>
     <button class="btn" type="submit">Request free estimate</button>
     <p class="note">Opens a text to <a href="sms:+13197501530">319-750-1530</a> with your details. Or call that number.</p>
@@ -718,6 +721,6 @@
   guard("estimate-form-el");
 })();
 </script>
-<script src="js/estimate-sms.js?v=7" defer></script>
+<script src="js/estimate-sms.js?v=8" defer></script>
 </body>
 </html>

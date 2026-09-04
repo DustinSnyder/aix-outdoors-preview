@@ -1,12 +1,26 @@
 (function () {
   var TO = "+13197501530";
-  // iOS sms: URLs truncate aggressively; keep body short and put address first.
   var MAX_BODY = 700;
+  var MAX_PHOTOS = 6;
+  var MAX_PHOTO_BYTES = 8 * 1024 * 1024; // skip huge originals for share reliability
 
   function field(form, name) {
     var el = form.elements.namedItem(name);
     if (!el) return "";
     return String(el.value || "").trim();
+  }
+
+  function photoInput(form) {
+    return form.querySelector('input[type="file"][name="photos"]');
+  }
+
+  function selectedFiles(form) {
+    var input = photoInput(form);
+    if (!input || !input.files || !input.files.length) return [];
+    var list = Array.prototype.slice.call(input.files, 0, MAX_PHOTOS);
+    return list.filter(function (f) {
+      return f && f.type && f.type.indexOf("image/") === 0 && f.size <= MAX_PHOTO_BYTES;
+    });
   }
 
   function fullAddress(form) {
@@ -32,7 +46,7 @@
     ];
   }
 
-  function buildBody(form) {
+  function buildBody(form, fileCount) {
     var addr = fullAddress(form);
     var core = [
       "AIX estimate",
@@ -50,11 +64,10 @@
     if (job) extras.push("Job: " + job);
     var notes = field(form, "notes");
     if (notes) extras.push("Notes: " + notes);
+    if (fileCount > 0) extras.push("Photos attached: " + fileCount);
 
     var body = core.concat(extras).join("\n");
     if (body.length <= MAX_BODY) return body;
-
-    // Never cut the address / maps lines — trim notes first, then job/acres.
     while (body.length > MAX_BODY && extras.length) {
       extras.pop();
       body = core.concat(extras).join("\n");
@@ -85,11 +98,78 @@
     }, 500);
   }
 
+  function canShareFiles(files) {
+    if (!navigator.share || !navigator.canShare) return false;
+    try {
+      return navigator.canShare({ files: files });
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function sendRequest(form) {
+    var files = selectedFiles(form);
+    var body = buildBody(form, files.length);
+    var shareData = { text: body, title: "AIX Outdoors estimate" };
+
+    // Best path on phones: one share sheet with text + photos → Messages
+    if (files.length && canShareFiles(files)) {
+      shareData.files = files;
+      return navigator.share(shareData).then(function () {
+        return "shared";
+      });
+    }
+
+    if (navigator.share) {
+      return navigator
+        .share(shareData)
+        .then(function () {
+          return "shared-text";
+        })
+        .catch(function () {
+          openSms(smsUrl(body));
+          return "sms";
+        });
+    }
+
+    openSms(smsUrl(body));
+    return Promise.resolve("sms");
+  }
+
   function showOk(form, ok) {
     if (!ok) return;
     form.hidden = true;
     ok.hidden = false;
     ok.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function wirePhotoPreview(form) {
+    var input = photoInput(form);
+    var preview = form.querySelector(".photo-preview");
+    if (!input || !preview) return;
+    input.addEventListener("change", function () {
+      preview.innerHTML = "";
+      var files = selectedFiles(form);
+      if (!files.length) {
+        preview.hidden = true;
+        return;
+      }
+      preview.hidden = false;
+      files.forEach(function (file) {
+        var fig = document.createElement("figure");
+        var img = document.createElement("img");
+        img.alt = file.name;
+        img.src = URL.createObjectURL(file);
+        img.onload = function () {
+          URL.revokeObjectURL(img.src);
+        };
+        var cap = document.createElement("figcaption");
+        cap.textContent = file.name;
+        fig.appendChild(img);
+        fig.appendChild(cap);
+        preview.appendChild(fig);
+      });
+    });
   }
 
   function wireForm(formId, okId) {
@@ -100,6 +180,7 @@
     form.setAttribute("action", "javascript:void(0)");
     form.setAttribute("method", "post");
     form.removeAttribute("enctype");
+    wirePhotoPreview(form);
 
     form.addEventListener(
       "submit",
@@ -109,11 +190,31 @@
         if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
         if (!form.reportValidity()) return;
 
-        var body = buildBody(form);
-        try {
-          openSms(smsUrl(body));
-        } catch (err) {}
-        showOk(form, ok);
+        var btn = form.querySelector('button[type="submit"]');
+        if (btn) {
+          btn.disabled = true;
+          btn.textContent = "Opening…";
+        }
+
+        sendRequest(form)
+          .then(function () {
+            showOk(form, ok);
+          })
+          .catch(function (err) {
+            // User canceled share sheet — stay on form so they can try again
+            if (err && (err.name === "AbortError" || err.name === "NotAllowedError")) {
+              if (btn) {
+                btn.disabled = false;
+                btn.textContent = "Request free estimate";
+              }
+              return;
+            }
+            // Other failure — still fall back to SMS draft
+            try {
+              openSms(smsUrl(buildBody(form, selectedFiles(form).length)));
+            } catch (e2) {}
+            showOk(form, ok);
+          });
       },
       true
     );
