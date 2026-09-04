@@ -1,19 +1,40 @@
-/* AIX Outdoors — live Facebook Page Plugin (landing page only). */
+/* AIX Outdoors — Facebook on landing page (promo card + optional live plugin). */
 (function () {
   var PAGE_URL = "https://www.facebook.com/people/AIX-Outdoors-LLC/61593250985679/";
   var SHARE_URL = "https://www.facebook.com/share/1PLyJxJ2rQ/";
   var STORAGE_KEY = "aix-a-mobile-feed";
 
+  function promoCard() {
+    return (
+      '<div class="fb-promo">' +
+        '<div class="fb-promo-top">' +
+          '<img class="fb-promo-mark" src="img/brand/logo-circle-dark.jpg" width="56" height="56" alt="AIX Outdoors">' +
+          "<div>" +
+            '<p class="fb-promo-name">AIX Outdoors LLC</p>' +
+            '<p class="fb-promo-meta">Land Clearing • Hauling • Grading</p>' +
+            '<p class="fb-promo-meta">Facebook · Burlington, IA</p>' +
+          "</div>" +
+        "</div>" +
+        '<p class="fb-promo-copy">Follow the Page for job photos and updates. New Page — posts coming soon.</p>' +
+        '<a class="btn fb-promo-btn" href="' + SHARE_URL + '" target="_blank" rel="noopener noreferrer">Open / Follow on Facebook</a>' +
+      "</div>"
+    );
+  }
+
   function pluginMarkup(width) {
     width = width || 340;
+    // Promo card always visible; live plugin underneath when Facebook allows embedding.
     return (
       '<div class="fb-live-wrap">' +
-        '<div class="fb-page" data-href="' + PAGE_URL + '" data-tabs="timeline" data-width="' + width + '" data-height="560" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">' +
-          '<blockquote cite="' + PAGE_URL + '" class="fb-xfbml-parse-ignore">' +
-            '<a href="' + SHARE_URL + '">AIX Outdoors LLC on Facebook</a>' +
-          "</blockquote>" +
-        "</div>" +
-        '<p class="fb-visit"><a class="btn" href="' + SHARE_URL + '" target="_blank" rel="noopener noreferrer">Open Facebook Page</a></p>' +
+        promoCard() +
+        '<details class="fb-embed-details">' +
+          "<summary>Show Facebook timeline embed</summary>" +
+          '<div class="fb-page" data-href="' + PAGE_URL + '" data-tabs="timeline" data-width="' + width + '" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">' +
+            '<blockquote cite="' + PAGE_URL + '" class="fb-xfbml-parse-ignore">' +
+              '<a href="' + SHARE_URL + '">AIX Outdoors LLC on Facebook</a>' +
+            "</blockquote>" +
+          "</div>" +
+        "</details>" +
       "</div>"
     );
   }
@@ -61,15 +82,16 @@
   }
 
   function getMode() {
+    // Prefer inline after-hero on phones so Facebook is obvious without hunting a chip.
     try {
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored === "hero" || stored === "sheet") return stored;
     } catch (e) {}
-    return "sheet";
+    return "hero";
   }
 
   function setMode(mode) {
-    if (mode !== "hero" && mode !== "sheet") mode = "sheet";
+    if (mode !== "hero" && mode !== "sheet") mode = "hero";
     document.body.setAttribute("data-mobile-feed", mode);
     try {
       localStorage.setItem(STORAGE_KEY, mode);
@@ -96,9 +118,9 @@
     toggle.setAttribute("aria-label", "Mobile Facebook feed placement");
     toggle.innerHTML =
       '<span class="feed-toggle-label">Mobile feed:</span> ' +
-      '<a href="#fb-feed-sheet" data-feed-mode="sheet">Bottom sheet</a>' +
-      '<span class="feed-toggle-sep"> | </span>' +
       '<a href="#fb-feed-hero" data-feed-mode="hero">After hero</a>' +
+      '<span class="feed-toggle-sep"> | </span>' +
+      '<a href="#fb-feed-sheet" data-feed-mode="sheet">Bottom sheet</a>' +
       '<span class="feed-toggle-desk">desktop uses right rail</span>';
     if (sw) {
       sw.parentNode.insertBefore(tools, sw);
@@ -119,7 +141,7 @@
   function fillMounts() {
     document.querySelectorAll(".fb-rail, .fb-after-hero, .fb-sheet-body").forEach(function (el) {
       if (!el.innerHTML.trim()) {
-        var w = el.classList.contains("fb-rail") ? 340 : 500;
+        var w = el.classList.contains("fb-rail") ? 340 : Math.min(500, Math.max(280, el.clientWidth || 340));
         el.innerHTML = pluginMarkup(w);
       }
     });
@@ -155,13 +177,13 @@
     var wrap = document.createElement("div");
     wrap.innerHTML =
       '<button type="button" class="fb-chip" id="fb-chip" aria-controls="fb-sheet" aria-expanded="false">' +
-        '<span class="fb-chip-dot" aria-hidden="true"></span> Latest from the field' +
+        '<span class="fb-chip-dot" aria-hidden="true"></span> Facebook' +
       "</button>" +
       '<div class="fb-sheet" id="fb-sheet" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="fb-sheet-title">' +
         '<div class="fb-sheet-backdrop" data-fb-close></div>' +
         '<div class="fb-sheet-panel">' +
           '<header class="fb-sheet-hd">' +
-            '<h2 id="fb-sheet-title">Latest from the field</h2>' +
+            '<h2 id="fb-sheet-title">AIX on Facebook</h2>' +
             '<button type="button" class="fb-sheet-close" data-fb-close>Close</button>' +
           "</header>" +
           '<div class="fb-sheet-body"></div>' +
@@ -179,6 +201,12 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    // Migrate old default "sheet" → hero so phones see Facebook without hunting
+    try {
+      if (localStorage.getItem(STORAGE_KEY) === "sheet") {
+        localStorage.setItem(STORAGE_KEY, "hero");
+      }
+    } catch (e) {}
     enhanceBanner();
     ensureSheet();
     fillMounts();
