@@ -1098,7 +1098,7 @@ body.fb-sheet-open { overflow: hidden; }
 .hero.hero-slim {
   min-height: 0;
   align-items: center;
-  background: #0b0b0b;
+  background: var(--bg);
 }
 .hero.hero-slim .hero-media { display: none !important; }
 .hero.hero-slim .hero-inner {
@@ -1110,15 +1110,17 @@ body.fb-sheet-open { overflow: hidden; }
 }
 .hero.hero-slim .hero-wordmark {
   display: block;
-  /* Stretch wide across the content column; keep native aspect (no distortion) */
-  width: min(720px, 100%);
+  /* ~50% of prior display height; aspect locked; bg matched to site --bg */
+  width: min(360px, 100%);
   max-width: 100%;
   height: auto;
   object-fit: contain;
   image-rendering: auto;
   border: 0;
   border-radius: 0;
-  background: #0b0b0b;
+  background: var(--bg);
+  mix-blend-mode: normal;
+  box-shadow: none;
 }
 .hero.hero-slim .hero-slim-row {
   display: flex;
@@ -1143,6 +1145,6 @@ body.fb-sheet-open { overflow: hidden; }
 }
 @media (max-width: 640px) {
   .hero.hero-slim .hero-inner { padding: 8px 0; }
-  .hero.hero-slim .hero-wordmark { width: min(100%, 420px); }
+  .hero.hero-slim .hero-wordmark { width: min(100%, 240px); }
   .hero.hero-slim .hero-slim-row { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
