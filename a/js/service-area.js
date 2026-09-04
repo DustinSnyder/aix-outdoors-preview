@@ -161,7 +161,21 @@
   }
 
   function initMap() {
-    if (!mapEl || typeof L === "undefined") return;
+    if (!mapEl) return;
+    if (typeof L === "undefined") {
+      var fb = document.getElementById("map-fallback");
+      if (fb) fb.textContent = "Map library failed to load. Try a hard refresh, or call 319-750-1530.";
+      return;
+    }
+    var fallback = document.getElementById("map-fallback");
+    if (fallback) fallback.remove();
+    if (L.Icon && L.Icon.Default) {
+      L.Icon.Default.mergeOptions({
+        iconUrl: "vendor/leaflet/images/marker-icon.png",
+        iconRetinaUrl: "vendor/leaflet/images/marker-icon-2x.png",
+        shadowUrl: "vendor/leaflet/images/marker-shadow.png",
+      });
+    }
     map = L.map(mapEl, { scrollWheelZoom: true, attributionControl: true }).setView(
       [CENTER.lat, CENTER.lon],
       8
@@ -188,6 +202,8 @@
       .bindTooltip("Burlington, IA 52601", { permanent: false });
 
     map.fitBounds(radiusCircle.getBounds(), { padding: [24, 24] });
+    setTimeout(function () { map.invalidateSize(); }, 100);
+    setTimeout(function () { map.invalidateSize(); }, 500);
 
     map.on("click", function (e) {
       applyPoint(e.latlng.lat, e.latlng.lng, {

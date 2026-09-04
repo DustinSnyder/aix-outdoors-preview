@@ -7,7 +7,7 @@
   <meta name="description" content="Interactive service area map: AIX Outdoors works within 100 miles of Burlington, IA 52601 across southeast Iowa, northeast Missouri, and eastern Illinois. Check your ZIP and request a free estimate.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -49,7 +49,7 @@
       <div id="zip-result" class="zip-result" hidden role="status" aria-live="polite"></div>
       <p class="muted coverage-hint">Tip: click the map to drop a pin and test any spot. Ring is straight-line 100 miles from 52601 (IA / MO / IL ZIP list for the checker).</p>
     </div>
-    <div id="coverage-map" class="coverage-map" role="region" aria-label="Interactive service area map centered on Burlington Iowa"></div>
+    <div id="coverage-map" class="coverage-map" role="region" aria-label="Interactive service area map centered on Burlington Iowa"><p id="map-fallback" class="muted" style="padding:24px;margin:0">Loading map…</p></div>
   </div>
 </div></section>
 
@@ -708,7 +708,7 @@
     zipUrl: "data/service-zips.json"
   };
 </script>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="vendor/leaflet/leaflet.js"></script>
 <script src="js/service-area.js" defer></script>
 <script src="fb-feed.js" defer></script>
 </body>
