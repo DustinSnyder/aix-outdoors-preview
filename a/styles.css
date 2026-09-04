@@ -1482,12 +1482,13 @@ body.fb-sheet-open { overflow: hidden; }
 /* Solo estimate form (no FB rail, mobile-first) */
 .quote-wrap {
   width: min(640px, calc(100% - 40px));
-  margin: 0 auto;
+  margin: 0;
+  margin-right: auto;
 }
 .quote-panel-solo {
   width: 100%;
-  max-width: 640px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 .btn-block { width: 100%; }
 .photo-upload { margin-top: 4px; }
@@ -1518,4 +1519,40 @@ body.fb-sheet-open { overflow: hidden; }
   .quote-wrap { width: calc(100% - 24px); }
   .quote-panel-solo { padding: 18px 14px 28px; }
   .page-hero-slim h1 { font-size: clamp(28px, 9vw, 40px); }
+}
+
+/* Estimate page — left rail (call + form), mobile-first */
+.estimate-rail-section {
+  padding: 28px 0 96px;
+}
+.estimate-rail {
+  width: min(560px, 100%);
+  margin: 0;
+  max-width: 560px;
+}
+.estimate-rail-title {
+  font-size: clamp(32px, 6vw, 48px);
+  margin: 0 0 14px;
+  max-width: none;
+  line-height: 1.05;
+}
+.estimate-rail-call {
+  margin: 0 0 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+.estimate-rail .quote-panel-solo {
+  margin: 0;
+  max-width: none;
+  width: 100%;
+}
+.estimate-rail .crumbs { margin-bottom: 12px; }
+@media (max-width: 640px) {
+  .estimate-rail-section { padding: 18px 0 72px; }
+  .estimate-rail { width: 100%; max-width: none; }
+  .estimate-rail-call .btn,
+  .estimate-rail .btn-block { width: 100%; }
+  .estimate-rail .form-row { grid-template-columns: 1fr; }
 }
