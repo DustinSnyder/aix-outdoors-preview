@@ -1315,3 +1315,14 @@ body.fb-sheet-open { overflow: hidden; }
   .job-photo-grid { grid-template-columns: 1fr; }
   .job-photo img { height: 220px; }
 }
+
+.job-video-portrait video {
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  max-height: 420px;
+  width: 100%;
+  background: #000;
+}
+@media (min-width: 901px) {
+  .job-video-portrait { max-width: 280px; }
+}
