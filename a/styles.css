@@ -1391,3 +1391,66 @@ body.fb-sheet-open { overflow: hidden; }
 .zip-result.zip-bad { border-color: #666; }
 .zip-status { margin: 0 0 6px; font-size: 16px; }
 .lead-panel { max-width: 720px; }
+
+/* Interactive coverage map */
+.page-hero-slim { padding-bottom: 28px; }
+.page-hero-slim .lede { font-size: 15px; }
+.coverage-map-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #101010;
+}
+.coverage-map-toolbar {
+  padding: 18px 18px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.coverage-zip-form { margin: 0; }
+.coverage-hint { margin: 10px 0 0; font-size: 13px; }
+.coverage-map {
+  width: 100%;
+  height: min(62vh, 560px);
+  min-height: 360px;
+  background: #1a1a1a;
+  z-index: 0;
+}
+.coverage-map-shell .zip-result { margin-top: 12px; }
+.seo-coverage-details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 18px;
+  background: #101010;
+}
+.seo-coverage-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--ink);
+}
+.seo-city-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 3;
+  column-gap: 24px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+.seo-city-list li {
+  break-inside: avoid;
+  padding: 3px 0;
+}
+.seo-city-list .seo-zips {
+  font-size: 11px;
+  opacity: .65;
+  font-family: var(--font-mono, monospace);
+}
+@media (max-width: 900px) {
+  .seo-city-list { columns: 2; }
+}
+@media (max-width: 560px) {
+  .seo-city-list { columns: 1; }
+  .coverage-map { min-height: 300px; height: 50vh; }
+}
