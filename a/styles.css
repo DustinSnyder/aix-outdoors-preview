@@ -421,8 +421,16 @@ footer a, footer p { color: var(--ink-muted); font-size: 14px; display: block; m
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
   .mark-logo { width: 32px; height: 32px; max-height: 32px; }
-  .nav-cta-phone { font-size: 10px; padding: 8px 8px; }
+  .nav-cta-phone {
+    font-size: 10px; padding: 8px 10px;
+    max-width: none;
+  }
+  .nav-cta-phone .cta-full { display: none; }
+  .nav-cta-phone .cta-short { display: inline; }
+  .hero-brand-mark { display: none; } /* logo already in nav; hero stays photo + copy */
 }
+.nav-cta-phone .cta-short { display: none; }
+
 
 
 /* ===== Facebook Page Plugin rail / mobile placements ===== */
