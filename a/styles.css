@@ -1094,36 +1094,46 @@ body.fb-sheet-open { overflow: hidden; }
   .svc-mini-grid { grid-template-columns: 1fr; }
 }
 
-/* Compact home hero — content-sized, not viewport-tall */
-.hero.hero-compact {
+/* Ultra-slim home hero (~75% smaller than compact) */
+.hero.hero-slim {
   min-height: 0;
   align-items: center;
 }
-.hero.hero-compact .hero-inner {
-  padding: 36px 0 32px;
+.hero.hero-slim .hero-inner {
+  padding: 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.hero.hero-compact h1 {
-  font-size: clamp(28px, 4.2vw, 44px);
-  line-height: 1.02;
-  max-width: 18ch;
+.hero.hero-slim .hero-wordmark {
+  display: block;
+  width: min(220px, 48vw);
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--line);
 }
-.hero.hero-compact .lede {
-  font-size: 15px;
-  margin: 10px 0 16px;
-  max-width: 48ch;
-  line-height: 1.45;
+.hero.hero-slim .hero-slim-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
 }
-.hero.hero-compact .kicker {
-  margin-bottom: 8px;
+.hero.hero-slim .hero-one-liner {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-muted);
+  max-width: 36ch;
+  line-height: 1.35;
 }
-.hero.hero-compact .hero-actions .btn {
-  padding: 10px 14px;
-  font-size: 12px;
+.hero.hero-slim .hero-actions {
+  gap: 8px;
 }
-.hero.hero-compact .hero-media {
-  /* keep photo, but crop shorter visually via section height */
+.hero.hero-slim .hero-actions .btn {
+  padding: 8px 12px;
+  font-size: 11px;
 }
 @media (max-width: 640px) {
-  .hero.hero-compact .hero-inner { padding: 22px 0 20px; }
-  .hero.hero-compact h1 { font-size: clamp(24px, 7vw, 32px); }
+  .hero.hero-slim .hero-inner { padding: 8px 0; }
+  .hero.hero-slim .hero-wordmark { width: min(180px, 62vw); }
+  .hero.hero-slim .hero-slim-row { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
