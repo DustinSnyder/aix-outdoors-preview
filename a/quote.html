@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quote · AIX Outdoors</title>
+  <title>Request a Free Estimate · AIX Outdoors</title>
+  <meta name="description" content="Request a free estimate from AIX Outdoors — land clearing, hauling, and grading near Burlington, IA. Send property details and photos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
 </head>
 <body>
 <div class="sample-banner">
@@ -21,32 +21,39 @@
     <nav class="nav-links"><a href="services.html" class="">Work</a><a href="process.html" class="">Process</a><a href="gallery.html" class="">Gallery</a><a href="service-area.html" class="">Service area</a><a href="faq.html" class="">FAQ</a></nav>
     <a class="nav-cta-phone" href="tel:+13197501530"><span class="cta-full">Call / text 319-750-1530</span><span class="cta-short">Call</span></a>
   </div></header>
-<section class="page-hero"><div class="wrap">
-  <div class="crumbs"><a href="index.html">Home</a> / Quote</div>
-  <p class="tiny">AIX Outdoors</p>
+<section class="page-hero page-hero-slim"><div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / Estimate</div>
   <h1>Request a free estimate</h1>
-  <p class="lede" style="margin-left:auto;margin-right:auto">Tell us about your property — name, address, phone, email, and job type. The form emails cmboal@pm.me. Pricing tables here are orientation only — not a bid. Or call / text 319-750-1530.</p>
+  <p class="hero-page-actions" style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
+    <a class="btn" href="tel:+13197501530">Call 319-750-1530</a>
+  </p>
 </div></section>
-<div class="fb-after-hero"></div>
 
-<div class="layout-with-rail">
-<div class="layout-main">
-<section class="section quote-section"><div class="wrap grid-2">
-    <form id="quote-form" class="quote-panel" action="https://formsubmit.co/cmboal@pm.me" method="POST">
-    <input type="hidden" name="_subject" value="AIX Outdoors quote request">
+<section class="section quote-section" style="padding-top:0"><div class="wrap quote-wrap">
+  <div id="quote-ok" class="quote-ok" hidden>
+    <p class="tiny">Received</p>
+    <h2>Thanks — we got your estimate request.</h2>
+    <p class="muted">We will follow up about your property. If this is your first submit, you may get a one-time confirmation email — click it so messages can reach us.</p>
+    <p style="margin-top:22px"><a class="btn" href="quote.html">Send another</a>
+    <a class="btn" href="tel:+13197501530" style="margin-left:8px">Call 319-750-1530</a></p>
+  </div>
+
+  <form id="quote-form" class="quote-panel quote-panel-solo" action="https://formsubmit.co/cmboal@pm.me" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_subject" value="AIX Outdoors free estimate request">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://dustinsnyder.github.io/aix-outdoors-preview/a/quote.html?sent=1">
     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
     <div class="form-row">
       <div><label for="q-name">Name</label><input id="q-name" name="name" required placeholder="Your name" autocomplete="name"></div>
       <div><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
     </div>
     <div><label for="q-email">Email</label><input id="q-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"></div>
-    <div><label for="q-address">Address</label><input id="q-address" name="address" required placeholder="Property address or nearest town + ZIP" autocomplete="street-address"></div>
+    <div><label for="q-address">Property address</label><input id="q-address" name="address" required placeholder="Street, town, ZIP" autocomplete="street-address"></div>
     <div class="form-row">
-      <div><label for="q-acres">Acres (approx.)</label><input id="q-acres" name="acres" placeholder="80"></div>
-      <div><label for="q-job">Job type requested</label>
+      <div><label for="q-acres">Acres (approx.)</label><input id="q-acres" name="acres" placeholder="e.g. 80" inputmode="decimal"></div>
+      <div><label for="q-job">Job type</label>
         <select id="q-job" name="job_type" required>
           <option value="">Choose one</option>
           <option>Forestry mulching / ground clearing</option>
@@ -60,31 +67,18 @@
         </select>
       </div>
     </div>
-    <div><label for="q-notes">What should be true when we leave?</label><textarea id="q-notes" name="notes" placeholder="Finish condition, access notes, timing around hunting season…"></textarea></div>
-    <button class="btn" type="submit">Send free estimate request</button>
-    <p class="note">Emails <strong>cmboal@pm.me</strong> via FormSubmit. First submit may need a one-time confirmation. Or call / text <a href="tel:+13197501530">319-750-1530</a>.</p>
+    <div><label for="q-notes">What do you want done?</label><textarea id="q-notes" name="notes" placeholder="Access notes, timing, finish you want…"></textarea></div>
+    <div class="photo-upload">
+      <label for="q-photos">Photos of the land (optional)</label>
+      <input id="q-photos" name="attachment" type="file" accept="image/*" multiple>
+      <p class="muted photo-upload-hint">Add clear shots of the area you want estimated — before, access road, and close-ups help. You can select more than one photo.</p>
+      <ul id="photo-preview" class="photo-preview" hidden></ul>
+    </div>
+    <button class="btn btn-block" type="submit">Send free estimate request</button>
+    <p class="note">Or call / text <a href="tel:+13197501530">319-750-1530</a>.</p>
   </form>
-  <div id="quote-ok" class="quote-ok" hidden>
-    <p class="tiny">Request sent</p>
-    <h2>Thanks — your estimate request went through.</h2>
-    <p class="muted">If this is the first FormSubmit message to that inbox, confirm the activation email once. We will follow up about your property.</p>
-    <p style="margin-top:22px"><a class="btn" href="quote.html">Send another</a></p>
-  </div>
-  <div>
-    <p class="tiny">Sample ranges</p>
-    <h2>Not a bid</h2>
-    <table class="table">
-      <thead><tr><th>Service</th><th>Sample</th></tr></thead>
-      <tbody>
-        <tr><td>Ground clearing<br><span class="muted">Typical 1–8 acre thicket jobs. Mobilization quoted separately.</span></td><td class="num">From $185 / hour machine time</td></tr><tr><td>Trail creation<br><span class="muted">Includes corridor cut, surface, and first-year pass.</span></td><td class="num">From $4.50 / linear foot new cut</td></tr><tr><td>Trail refresh<br><span class="muted">Existing corridor, blowdown, and rut repair.</span></td><td class="num">From $1.80 / linear foot</td></tr><tr><td>Feeding plots<br><span class="muted">Soil test, lime/fert, seed, and first mow. Seed mix extra if specified.</span></td><td class="num">From $1,150 / acre installed</td></tr><tr><td>Stand management<br><span class="muted">Lane cut, approach, and pad. Hardware not included.</span></td><td class="num">From $275 / stand</td></tr><tr><td>Large plot mowing<br><span class="muted">10-acre minimum. Slope and obstacle density change the number.</span></td><td class="num">From $42 / acre</td></tr><tr><td>Driveway resurfacing<br><span class="muted">Re-crown + 4 in. compacted gravel on an existing lane. Stone index may float.</span></td><td class="num">From $9.50 / linear foot</td></tr><tr><td>Dump truck / hauling<br><span class="muted">Haul-off, spoil, load-and-go, or stone delivery. Tipping and stone index billed as pass-throughs.</span></td><td class="num">From $165 / hour dump-body time</td></tr>
-      </tbody>
-    </table>
-  </div>
 </div></section>
 
-</div>
-<aside class="fb-rail" aria-label="Facebook Page timeline sample"></aside>
-</div>
 <footer>
   <div class="wrap foot">
     <div>
@@ -93,7 +87,7 @@
       <div class="wordmark-text"><span>AIX Outdoors</span><small>Land Clearing • Hauling • Grading</small></div>
     </a>
       <p style="margin-top:14px">Quality work. Honest pricing. Locally owned &amp; operated. Land-management contractors for private landowners. We work on your property.</p>
-      <p>Burlington, IA 52601<br><a href="tel:+13197501530">319-750-1530</a><br>hello@aixoutdoors.example</p>
+      <p>Burlington, IA 52601<br><a href="tel:+13197501530">319-750-1530</a></p>
     </div>
     <div>
       <h4>Services</h4>
@@ -101,14 +95,14 @@
     </div>
     <div>
       <h4>Company</h4>
-      <a href="process.html">How a job runs</a><a href="gallery.html">Gallery</a><a href="service-area.html">Service area</a><a href="faq.html">FAQ</a><a href="quote.html">Quote request</a>
+      <a href="process.html">How a job runs</a><a href="gallery.html">Gallery</a><a href="service-area.html">Service area</a><a href="faq.html">FAQ</a><a href="quote.html">Free estimate</a>
     </div>
     <div>
       <h4>Sample notice</h4>
-      <p>This is a design sample. Email is a placeholder. No owner portrait or personal bio is used by design. Job-site partners are labeled SAMPLE until the owner confirms names.</p>
+      <p>Design sample on GitHub Pages. Estimate form emails the AIX inbox. No owner portrait or personal bio is used by design.</p>
     </div>
   </div>
-  <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Photos: Unsplash Iowa/Midwest + generated SAMPLE harvest · Partners are placeholders · Not an offer to contract</div>
+  <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Not an offer to contract</div>
 </footer>
 <a class="sticky-call" href="tel:+13197501530">Call or text 319-750-1530</a>
 
@@ -120,8 +114,27 @@
     if (f) f.hidden = true;
     if (ok) { ok.hidden = false; ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
   }
+  var input = document.getElementById("q-photos");
+  var list = document.getElementById("photo-preview");
+  if (input && list) {
+    input.addEventListener("change", function () {
+      list.innerHTML = "";
+      var files = Array.prototype.slice.call(input.files || []);
+      if (!files.length) { list.hidden = true; return; }
+      list.hidden = false;
+      files.slice(0, 12).forEach(function (file) {
+        var li = document.createElement("li");
+        li.textContent = file.name + " (" + Math.max(1, Math.round(file.size / 1024)) + " KB)";
+        list.appendChild(li);
+      });
+      if (files.length > 12) {
+        var more = document.createElement("li");
+        more.textContent = "+" + (files.length - 12) + " more";
+        list.appendChild(more);
+      }
+    });
+  }
 })();
 </script>
-<script src="fb-feed.js" defer></script>
 </body>
 </html>

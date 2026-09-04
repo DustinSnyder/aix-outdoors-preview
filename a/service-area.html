@@ -27,14 +27,9 @@
   <h1>Service area map</h1>
   <p class="hero-page-actions" style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
     <a class="btn" href="tel:+13197501530">Call 319-750-1530</a>
-    <a class="btn" href="#lead-form">Request estimate</a>
+    <a class="btn" href="#estimate-form">Request estimate</a>
   </p>
 </div></section>
-<div class="fb-after-hero"></div>
-
-<div class="layout-with-rail">
-<div class="layout-main">
-
 <section class="section" id="map" style="padding-top:0"><div class="wrap">
   <div class="coverage-map-shell" id="zip-check">
     <div class="coverage-map-toolbar">
@@ -52,32 +47,32 @@
   </div>
 </div></section>
 
-<section class="section" id="lead-form" style="padding-top:0"><div class="wrap">
+<section class="section" id="estimate-form" style="padding-top:0"><div class="wrap">
   <div class="section-head">
-    <div><p class="tiny">Free estimate</p><h2>Send a job lead</h2></div>
-    <p>Name, address, phone, email, and the job type. Submissions email to the AIX inbox. Or call / text <a href="tel:+13197501530">319-750-1530</a>.</p>
+    <div><p class="tiny">Free estimate</p><h2>Request a free estimate</h2></div>
+    <p>Name, address, phone, email, and the job type. Or call / text <a href="tel:+13197501530">319-750-1530</a>.</p>
   </div>
-  <div id="lead-sent" class="quote-ok" hidden>
-    <p class="tiny">Lead sent</p>
+  <div id="estimate-sent" class="quote-ok" hidden>
+    <p class="tiny">Request sent</p>
     <h2>Thanks — we got your request.</h2>
     <p class="muted">Check your email if FormSubmit asks you to confirm the first time. We will follow up about your property.</p>
-    <p style="margin-top:22px"><a class="btn" href="service-area.html#lead-form">Send another</a>
+    <p style="margin-top:22px"><a class="btn" href="service-area.html#estimate-form">Send another</a>
     <a class="btn" href="tel:+13197501530" style="margin-left:8px">Call 319-750-1530</a></p>
   </div>
-  <form id="lead-form-el" class="quote-panel lead-panel" action="https://formsubmit.co/cmboal@pm.me" method="POST">
-    <input type="hidden" name="_subject" value="AIX Outdoors website lead">
+  <form id="estimate-form-el" class="quote-panel estimate-panel" action="https://formsubmit.co/cmboal@pm.me" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_subject" value="AIX Outdoors free estimate request">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://dustinsnyder.github.io/aix-outdoors-preview/a/service-area.html?sent=1#lead-form">
+    <input type="hidden" name="_next" value="https://dustinsnyder.github.io/aix-outdoors-preview/a/service-area.html?sent=1#estimate-form">
     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
     <div class="form-row">
-      <div><label for="lead-name">Name</label><input id="lead-name" name="name" required placeholder="Your name" autocomplete="name"></div>
-      <div><label for="lead-phone">Phone</label><input id="lead-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
+      <div><label for="est-name">Name</label><input id="est-name" name="name" required placeholder="Your name" autocomplete="name"></div>
+      <div><label for="est-phone">Phone</label><input id="est-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
     </div>
-    <div><label for="lead-email">Email</label><input id="lead-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"></div>
-    <div><label for="lead-address">Address</label><input id="lead-address" name="address" required placeholder="Property address or nearest town + ZIP" autocomplete="street-address"></div>
-    <div><label for="lead-job">Job type requested</label>
-      <select id="lead-job" name="job_type" required>
+    <div><label for="est-email">Email</label><input id="est-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"></div>
+    <div><label for="est-address">Address</label><input id="est-address" name="address" required placeholder="Property address or nearest town + ZIP" autocomplete="street-address"></div>
+    <div><label for="est-job">Job type requested</label>
+      <select id="est-job" name="job_type" required>
         <option value="">Choose one</option>
         <option>Forestry mulching / ground clearing</option>
         <option>Trail creation and management</option>
@@ -89,9 +84,14 @@
         <option>Combination / not sure — describe below</option>
       </select>
     </div>
-    <div><label for="lead-notes">Notes (optional)</label><textarea id="lead-notes" name="notes" placeholder="Acreage, access, timing, photos you can text…"></textarea></div>
-    <button class="btn" type="submit">Send lead / free estimate</button>
-    <p class="note">Goes to <strong>cmboal@pm.me</strong>. First submit may need a one-time email confirmation from FormSubmit.</p>
+    <div><label for="est-notes">What do you want done? (optional)</label><textarea id="est-notes" name="notes" placeholder="Acreage, access, timing…"></textarea></div>
+    <div class="photo-upload">
+      <label for="est-photos">Photos of the land (optional)</label>
+      <input id="est-photos" name="attachment" type="file" accept="image/*" multiple>
+      <p class="muted photo-upload-hint">Clear shots of the work area help. You can select more than one photo.</p>
+    </div>
+    <button class="btn" type="submit">Send free estimate request</button>
+    <p class="note">Or call / text <a href="tel:+13197501530">319-750-1530</a>. First submit may need a one-time inbox confirmation.</p>
   </form>
 </div></section>
 
@@ -670,10 +670,6 @@
     </ul>
   </details>
 </div></section>
-
-</div>
-<aside class="fb-rail" aria-label="Facebook Page timeline sample"></aside>
-</div>
 <footer>
   <div class="wrap foot">
     <div>
@@ -694,7 +690,7 @@
     </div>
     <div>
       <h4>Sample notice</h4>
-      <p>Design sample on GitHub Pages. Interactive map uses Esri street tiles (no API key). Lead form uses FormSubmit to email cmboal@pm.me.</p>
+      <p>Design sample on GitHub Pages. Interactive map uses Esri street tiles (no API key). Estimate form emails the AIX inbox.</p>
     </div>
   </div>
   <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Not an offer to contract</div>
@@ -708,7 +704,6 @@
   };
 </script>
 <script src="vendor/leaflet/leaflet.js?v=2"></script>
-<script src="js/service-area-map.js?v=2" defer></script>
-<script src="fb-feed.js" defer></script>
+<script src="js/service-area-map.js?v=3" defer></script>
 </body>
 </html>

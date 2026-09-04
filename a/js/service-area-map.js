@@ -8,8 +8,8 @@
   var form = document.getElementById("zip-form");
   var input = document.getElementById("zip-input");
   var result = document.getElementById("zip-result");
-  var leadForm = document.getElementById("lead-form-el");
-  var leadSent = document.getElementById("lead-sent");
+  var leadForm = document.getElementById("estimate-form-el");
+  var leadSent = document.getElementById("estimate-sent");
   var mapEl = document.getElementById("coverage-map");
 
   var map, radiusCircle, pinMarker;
@@ -99,11 +99,11 @@
           " · about <strong>" +
           miles.toFixed(1) +
           " miles</strong> from Burlington 52601.</p>" +
-          '<p style="margin-top:12px"><a class="btn" href="#lead-form">Request a free estimate</a> ' +
+          '<p style="margin-top:12px"><a class="btn" href="#estimate-form">Request a free estimate</a> ' +
           '<a class="btn" href="tel:+13197501530">Call 319-750-1530</a></p>',
         edge ? "zip-edge" : "zip-yes"
       );
-      var addr = document.getElementById("lead-address");
+      var addr = document.getElementById("est-address");
       if (addr && !addr.value && meta.zip) {
         addr.value = (meta.city || "") + ", " + (meta.state || "") + " " + meta.zip;
       }
