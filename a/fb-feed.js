@@ -4,7 +4,7 @@
   var PAGE_URL = "https://www.facebook.com/AIXOutdoors";
   var STORAGE_KEY = "aix-a-mobile-feed";
   var MARK =
-    '<svg class="fb-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="3" fill="#6b7c3a"/><path d="M8 30 L20 8 L32 30" fill="none" stroke="#f3f1ea" stroke-width="2.4"/><path d="M14 30h12" stroke="#e85d04" stroke-width="2.4"/><circle cx="20" cy="22" r="2.2" fill="#e85d04"/></svg>';
+    '<img class="fb-mark" src="img/brand/logo-circle-dark.jpg" alt="" width="48" height="48" style="border-radius:50%;object-fit:cover;display:block">';
 
   var POSTS = [
     {
@@ -76,7 +76,7 @@
             '<div class="fb-avatar">' + MARK + "</div>" +
             "<div>" +
               '<p class="fb-page-name">AIX Outdoors</p>' +
-              '<p class="fb-page-meta">Land · Trails · Plots · Burlington, IA</p>' +
+              '<p class="fb-page-meta">Land Clearing • Hauling • Grading · Burlington, IA</p>' +
             "</div>" +
           "</div>" +
           '<div class="fb-btns">' +
