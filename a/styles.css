@@ -1272,3 +1272,46 @@ body.fb-sheet-open { overflow: hidden; }
     justify-content: center;
   }
 }
+
+.job-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.job-photo {
+  margin: 0;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.job-photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  background: #111;
+}
+.job-photo figcaption {
+  padding: 10px 12px 12px;
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.4;
+}
+.job-photo figcaption strong {
+  display: block;
+  color: var(--ink);
+  font-size: 13px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-family: var(--display);
+}
+.gallery-job-photos { margin-top: 18px; }
+@media (max-width: 900px) {
+  .job-photo-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .job-photo-grid { grid-template-columns: 1fr; }
+  .job-photo img { height: 220px; }
+}
