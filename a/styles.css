@@ -174,7 +174,7 @@ a:hover { color: var(--orange-hot); }
 /* Hero */
 .hero {
   position: relative;
-  min-height: 78vh;
+  min-height: 0;
   display: grid; align-items: end;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
@@ -190,7 +190,7 @@ a:hover { color: var(--orange-hot); }
     linear-gradient(90deg, rgba(11,11,11,.92) 0%, rgba(11,11,11,.55) 48%, rgba(11,11,11,.25) 100%),
     linear-gradient(0deg, rgba(11,11,11,.9) 0%, transparent 45%);
 }
-.hero-inner { position: relative; z-index: 1; padding: 80px 0 56px; width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+.hero-inner { position: relative; z-index: 1; padding: 40px 0 32px; width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
 .kicker {
   font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
   color: var(--muted-gray); margin-bottom: 14px;
@@ -212,9 +212,9 @@ h3 { font-size: 18px; font-weight: 700; letter-spacing: .02em; }
   background: var(--line); border-top: 1px solid var(--line);
 }
 .proof-strip div {
-  background: var(--bg-elev); padding: 22px 20px;
+  background: var(--bg-elev); padding: 14px 16px;
 }
-.proof-strip strong { display: block; font-family: var(--display); font-size: 28px; color: var(--ink); }
+.proof-strip strong { display: block; font-family: var(--display); font-size: 20px; color: var(--ink); }
 .proof-strip span { font-size: 12px; color: var(--ink-muted); text-transform: uppercase; letter-spacing: .08em; }
 
 /* Sections */
@@ -1092,4 +1092,38 @@ body.fb-sheet-open { overflow: hidden; }
 }
 @media (max-width: 640px) {
   .svc-mini-grid { grid-template-columns: 1fr; }
+}
+
+/* Compact home hero — content-sized, not viewport-tall */
+.hero.hero-compact {
+  min-height: 0;
+  align-items: center;
+}
+.hero.hero-compact .hero-inner {
+  padding: 36px 0 32px;
+}
+.hero.hero-compact h1 {
+  font-size: clamp(28px, 4.2vw, 44px);
+  line-height: 1.02;
+  max-width: 18ch;
+}
+.hero.hero-compact .lede {
+  font-size: 15px;
+  margin: 10px 0 16px;
+  max-width: 48ch;
+  line-height: 1.45;
+}
+.hero.hero-compact .kicker {
+  margin-bottom: 8px;
+}
+.hero.hero-compact .hero-actions .btn {
+  padding: 10px 14px;
+  font-size: 12px;
+}
+.hero.hero-compact .hero-media {
+  /* keep photo, but crop shorter visually via section height */
+}
+@media (max-width: 640px) {
+  .hero.hero-compact .hero-inner { padding: 22px 0 20px; }
+  .hero.hero-compact h1 { font-size: clamp(24px, 7vw, 32px); }
 }
