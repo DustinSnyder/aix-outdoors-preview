@@ -1592,3 +1592,12 @@ body.fb-sheet-open { overflow: hidden; }
   .photo-preview { grid-template-columns: repeat(2, 1fr); }
   .photo-preview img { height: 110px; }
 }
+
+/* Live Facebook Page embed */
+.fb-live-wrap { background: #fff; border-radius: 8px; overflow: hidden; }
+.fb-live-wrap .fb-page { min-height: 200px; }
+.fb-visit { padding: 12px; margin: 0; background: #f0f2f5; text-align: center; }
+.fb-visit .btn { width: 100%; }
+.fb-rail .fb-live-wrap,
+.fb-sheet-body .fb-live-wrap,
+.fb-after-hero .fb-live-wrap { max-width: 500px; }

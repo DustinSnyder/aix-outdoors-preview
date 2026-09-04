@@ -1,94 +1,63 @@
-/* AIX Outdoors — Direction A Facebook Page Plugin mock + mobile placements.
-   Swap data-href when a real Page exists. See HTML comment inside pluginMarkup(). */
+/* AIX Outdoors — live Facebook Page Plugin (landing page only). */
 (function () {
-  var PAGE_URL = "https://www.facebook.com/AIXOutdoors";
+  var PAGE_URL = "https://www.facebook.com/people/AIX-Outdoors-LLC/61593250985679/";
+  var SHARE_URL = "https://www.facebook.com/share/1PLyJxJ2rQ/";
   var STORAGE_KEY = "aix-a-mobile-feed";
-  var MARK =
-    '<img class="fb-mark" src="img/brand/logo-circle-dark.jpg" alt="" width="48" height="48" style="border-radius:50%;object-fit:cover;display:block">';
 
-  var POSTS = [
-    {
-      time: "SAMPLE · 2d",
-      text: "Clearing job on a landowner's Des Moines County property. Hedge and locust off their fence line so the next pass can be a plot — not a jungle. Finish photos go in the closeout packet.",
-      img: "img/midwest-oak-timber.jpg",
-      alt: "Oak timber edge — company post, Unsplash illustrative"
-    },
-    {
-      time: "SAMPLE · 5d",
-      text: "Trail cut for a southeast Iowa landowner through their oak timber. Hunter-width corridor, first stone down, quiet enough to walk without flagging. GPS of the line is in the job folder.",
-      img: "img/gravel-rural-lane.jpg",
-      alt: "Gravel lane standing in for trail work — company post, Unsplash"
-    },
-    {
-      time: "SAMPLE · 1w",
-      text: "Food plot installed on a landowner's corn/soy edge. Sized to their farm, not the seed-bag photo. Soil work, lime, and a mix that will still be standing after first frost.",
-      img: "img/iowa-corn-mason-city.jpg",
-      alt: "Mason City Iowa corn standing in for a feeding plot — company post, Unsplash"
-    },
-    {
-      time: "SAMPLE · 2w",
-      text: "Driveway resurfacing on a client's rural lane: re-crown, ditch, fresh stone. Their drive has to carry the trailer in April, not just look clean in July.",
-      img: "img/gravel-rural-lane.jpg",
-      alt: "Rural gravel lane — company post, Unsplash"
-    },
-    {
-      time: "SAMPLE · 3w",
-      text: "Seasonal mowing hired for a landowner's CRP-style field. Edges held, setbacks cut, timber line left as cover. Opening-day access without a hay crop in the way.",
-      img: "img/farm-rows.jpg",
-      alt: "Farm rows standing in for seasonal mowing — company post, Unsplash"
-    }
-  ];
-
-  function pluginMarkup() {
-    var posts = POSTS.map(function (p) {
-      return (
-        '<article class="fb-post">' +
-          '<header class="fb-post-hd">' + MARK +
-            '<div><strong>AIX Outdoors</strong><span>' + p.time + '</span></div>' +
-          "</header>" +
-          "<p>" + p.text + "</p>" +
-          '<div class="fb-post-img"><img src="' + p.img + '" alt="' + p.alt + '"></div>' +
-          '<div class="fb-post-actions" aria-hidden="true"><span>Like</span><span>Comment</span><span>Share</span></div>' +
-        "</article>"
-      );
-    }).join("");
-
+  function pluginMarkup(width) {
+    width = width || 340;
     return (
-      "<!--\n" +
-      "  Facebook Page Plugin (timeline) — visual mock until a real Page URL exists.\n" +
-      "  Official plugin: https://developers.facebook.com/docs/plugins/page-plugin/\n" +
-      "  Public Page required. Width 180–500px. tabs=timeline.\n" +
-      "  Optional: data-show-posts=\"true\" if the timeline spinner never settles.\n" +
-      "  hide facepile: brand page — no faces of random likers.\n" +
-      "  Placeholder Page URL (swap later): https://www.facebook.com/AIXOutdoors\n" +
-      "  When live: load https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0\n" +
-      "  then replace this mock with:\n" +
-      "  <div class=\"fb-page\" data-href=\"PAGE_URL\" data-tabs=\"timeline\"\n" +
-      "       data-width=\"340\" data-height=\"500\" data-small-header=\"true\"\n" +
-      "       data-adapt-container-width=\"true\" data-hide-cover=\"false\"\n" +
-      "       data-show-facepile=\"false\"></div>\n" +
-      "-->\n" +
-      '<div class="fb-page-mock" data-href="' + PAGE_URL + '" data-tabs="timeline" data-width="340" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">' +
-        '<p class="fb-sample-flag">SAMPLE</p>' +
-        '<div class="fb-chrome" role="region" aria-label="Facebook Page plugin mock — AIX Outdoors timeline">' +
-          '<div class="fb-cover" style="background-image:url(\'img/iowa-green-field.jpg\')"></div>' +
-          '<div class="fb-page-hd">' +
-            '<div class="fb-avatar">' + MARK + "</div>" +
-            "<div>" +
-              '<p class="fb-page-name">AIX Outdoors</p>' +
-              '<p class="fb-page-meta">Land Clearing • Hauling • Grading · Contractors · Burlington, IA</p>' +
-            "</div>" +
-          "</div>" +
-          '<div class="fb-btns">' +
-            '<button type="button" class="fb-like" disabled title="Disabled in this sample">Like</button>' +
-            '<button type="button" class="fb-follow" disabled title="Disabled in this sample">Follow</button>' +
-          "</div>" +
-          '<div class="fb-tabs"><span class="on">Posts</span></div>' +
-          '<div class="fb-timeline">' + posts + "</div>" +
+      '<div class="fb-live-wrap">' +
+        '<div class="fb-page" data-href="' + PAGE_URL + '" data-tabs="timeline" data-width="' + width + '" data-height="560" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">' +
+          '<blockquote cite="' + PAGE_URL + '" class="fb-xfbml-parse-ignore">' +
+            '<a href="' + SHARE_URL + '">AIX Outdoors LLC on Facebook</a>' +
+          "</blockquote>" +
         "</div>" +
-        '<p class="fb-chrome-caption">Facebook keeps its own chrome. Live embed is an iframe; this is a SAMPLE stand-in.</p>' +
+        '<p class="fb-visit"><a class="btn" href="' + SHARE_URL + '" target="_blank" rel="noopener noreferrer">Open Facebook Page</a></p>' +
       "</div>"
     );
+  }
+
+  function loadSdk(cb) {
+    if (window.FB) {
+      cb();
+      return;
+    }
+    if (document.getElementById("facebook-jssdk")) {
+      var tries = 0;
+      var t = setInterval(function () {
+        tries += 1;
+        if (window.FB || tries > 40) {
+          clearInterval(t);
+          if (window.FB) cb();
+        }
+      }, 100);
+      return;
+    }
+    if (!document.getElementById("fb-root")) {
+      var root = document.createElement("div");
+      root.id = "fb-root";
+      document.body.insertBefore(root, document.body.firstChild);
+    }
+    window.fbAsyncInit = function () {
+      window.FB.init({ xfbml: true, version: "v21.0" });
+      cb();
+    };
+    var js = document.createElement("script");
+    js.id = "facebook-jssdk";
+    js.async = true;
+    js.defer = true;
+    js.crossOrigin = "anonymous";
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    document.head.appendChild(js);
+  }
+
+  function parseXfbml() {
+    loadSdk(function () {
+      try {
+        if (window.FB && window.FB.XFBML) window.FB.XFBML.parse();
+      } catch (e) {}
+    });
   }
 
   function getMode() {
@@ -107,6 +76,7 @@
     } catch (e) {}
     syncToggle(mode);
     if (mode !== "sheet") closeSheet();
+    parseXfbml();
   }
 
   function syncToggle(mode) {
@@ -147,10 +117,13 @@
   }
 
   function fillMounts() {
-    var html = pluginMarkup();
     document.querySelectorAll(".fb-rail, .fb-after-hero, .fb-sheet-body").forEach(function (el) {
-      if (!el.innerHTML.trim()) el.innerHTML = html;
+      if (!el.innerHTML.trim()) {
+        var w = el.classList.contains("fb-rail") ? 340 : 500;
+        el.innerHTML = pluginMarkup(w);
+      }
     });
+    parseXfbml();
   }
 
   function closeSheet() {
@@ -174,6 +147,7 @@
     if (chip) chip.setAttribute("aria-expanded", "true");
     var closeBtn = sheet.querySelector(".fb-sheet-close");
     if (closeBtn) closeBtn.focus();
+    parseXfbml();
   }
 
   function ensureSheet() {
