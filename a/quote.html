@@ -31,21 +31,15 @@
 
 <section class="section quote-section" style="padding-top:0"><div class="wrap quote-wrap">
   <div id="quote-ok" class="quote-ok" hidden>
-    <p class="tiny">Received</p>
-    <h2>Thanks — we got your estimate request.</h2>
-    <p class="muted">We will follow up about your property. If this is your first submit, you may get a one-time confirmation email — click it so messages can reach us.</p>
-    <p style="margin-top:22px"><a class="btn" href="quote.html">Send another</a>
-    <a class="btn" href="tel:+13197501530" style="margin-left:8px">Call 319-750-1530</a></p>
+    <p class="tiny">Almost done</p>
+    <h2>Finish in Messages</h2>
+    <p class="muted">Your phone should open a text to <strong>319-750-1530</strong> with your details filled in. Tap Send. You can attach land photos in that text before sending.</p>
+    <p style="margin-top:22px"><a class="btn" href="quote.html">Start over</a>
+    <a class="btn" href="sms:+13197501530" style="margin-left:8px">Open Messages again</a></p>
   </div>
 
-  <form id="quote-form" class="quote-panel quote-panel-solo" action="https://formsubmit.co/cmboal@pm.me" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="_subject" value="AIX Outdoors free estimate request">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://dustinsnyder.github.io/aix-outdoors-preview/a/quote.html?sent=1">
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
-    <div class="form-row">
+  <form id="quote-form" class="quote-panel quote-panel-solo" action="#" method="post">
+<div class="form-row">
       <div><label for="q-name">Name</label><input id="q-name" name="name" required placeholder="Your name" autocomplete="name"></div>
       <div><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" required placeholder="319-555-0100" autocomplete="tel"></div>
     </div>
@@ -69,12 +63,9 @@
     </div>
     <div><label for="q-notes">What do you want done?</label><textarea id="q-notes" name="notes" placeholder="Access notes, timing, finish you want…"></textarea></div>
     <div class="photo-upload">
-      <label for="q-photos">Photos of the land (optional)</label>
-      <input id="q-photos" name="attachment" type="file" accept="image/*" multiple>
-      <p class="muted photo-upload-hint">Add clear shots of the area you want estimated — before, access road, and close-ups help. You can select more than one photo.</p>
-      <ul id="photo-preview" class="photo-preview" hidden></ul>
+      <p class="muted photo-upload-hint"><strong>Photos:</strong> After you tap the button below, Messages opens a text to 319-750-1530. Attach land photos in that thread before you hit Send.</p>
     </div>
-    <button class="btn btn-block" type="submit">Send free estimate request</button>
+    <button class="btn btn-block" type="submit">Text estimate request</button>
     <p class="note">Or call / text <a href="tel:+13197501530">319-750-1530</a>.</p>
   </form>
 </div></section>
@@ -99,42 +90,13 @@
     </div>
     <div>
       <h4>Sample notice</h4>
-      <p>Design sample on GitHub Pages. Estimate form emails the AIX inbox. No owner portrait or personal bio is used by design.</p>
+      <p>Design sample on GitHub Pages. Estimate requests open a text to 319-750-1530. No owner portrait or personal bio is used by design.</p>
     </div>
   </div>
   <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Not an offer to contract</div>
 </footer>
 <a class="sticky-call" href="tel:+13197501530">Call or text 319-750-1530</a>
 
-<script>
-(function () {
-  if (new URLSearchParams(window.location.search).get("sent") === "1") {
-    var f = document.getElementById("quote-form");
-    var ok = document.getElementById("quote-ok");
-    if (f) f.hidden = true;
-    if (ok) { ok.hidden = false; ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
-  }
-  var input = document.getElementById("q-photos");
-  var list = document.getElementById("photo-preview");
-  if (input && list) {
-    input.addEventListener("change", function () {
-      list.innerHTML = "";
-      var files = Array.prototype.slice.call(input.files || []);
-      if (!files.length) { list.hidden = true; return; }
-      list.hidden = false;
-      files.slice(0, 12).forEach(function (file) {
-        var li = document.createElement("li");
-        li.textContent = file.name + " (" + Math.max(1, Math.round(file.size / 1024)) + " KB)";
-        list.appendChild(li);
-      });
-      if (files.length > 12) {
-        var more = document.createElement("li");
-        more.textContent = "+" + (files.length - 12) + " more";
-        list.appendChild(more);
-      }
-    });
-  }
-})();
-</script>
+<script src="js/estimate-sms.js" defer></script>
 </body>
 </html>
