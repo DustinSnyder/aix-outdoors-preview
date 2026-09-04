@@ -1061,3 +1061,35 @@ body.fb-sheet-open { overflow: hidden; }
 @media (max-width: 700px) {
   .job-video-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Landing service features with embedded job video */
+.svc-feature {
+  margin: 0 0 48px;
+  padding: 28px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.svc-feature-copy { margin-bottom: 20px; max-width: 62ch; }
+.svc-feature-copy h3 {
+  font-family: var(--display);
+  font-size: clamp(26px, 3.5vw, 36px);
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  margin: 8px 0 12px;
+}
+.svc-feature-videos { margin-top: 8px; }
+.svc-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 8px;
+}
+@media (max-width: 900px) {
+  .svc-mini-grid { grid-template-columns: 1fr 1fr; }
+  .svc-feature { padding: 18px; }
+}
+@media (max-width: 640px) {
+  .svc-mini-grid { grid-template-columns: 1fr; }
+}
