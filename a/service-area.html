@@ -7,7 +7,7 @@
   <meta name="description" content="Interactive service area map: AIX Outdoors works within 100 miles of Burlington, IA 52601 across southeast Iowa, northeast Missouri, and eastern Illinois. Check your ZIP and request a free estimate.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=2">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -695,7 +695,7 @@
     </div>
     <div>
       <h4>Sample notice</h4>
-      <p>Design sample on GitHub Pages. Interactive map uses OpenStreetMap tiles (no API key required). Lead form uses FormSubmit to email cmboal@pm.me.</p>
+      <p>Design sample on GitHub Pages. Interactive map uses Esri street tiles (no API key). Lead form uses FormSubmit to email cmboal@pm.me.</p>
     </div>
   </div>
   <div class="wrap legal">© 2026 AIX Outdoors sample · Direction A · Not an offer to contract</div>
@@ -708,8 +708,8 @@
     zipUrl: "data/service-zips.json"
   };
 </script>
-<script src="vendor/leaflet/leaflet.js"></script>
-<script src="js/service-area.js" defer></script>
+<script src="vendor/leaflet/leaflet.js?v=2"></script>
+<script src="js/service-area-map.js?v=2" defer></script>
 <script src="fb-feed.js" defer></script>
 </body>
 </html>
