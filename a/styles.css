@@ -1194,3 +1194,71 @@ body.fb-sheet-open { overflow: hidden; }
 }
 
 .gallery-job-videos { margin-top: 18px; }
+
+/* Google Business Profile reviews (SAMPLE until live Place ID) */
+.gmb-reviews { background: var(--bg); border-bottom: 1px solid var(--line); }
+.gmb-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.gmb-profile-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.gmb-profile-top { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.gmb-g-badge {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #fff; color: #4285f4; font-weight: 800; font-size: 22px;
+  display: grid; place-items: center; font-family: var(--display);
+  flex-shrink: 0;
+}
+.gmb-biz-name { margin: 0; font-weight: 700; font-size: 18px; }
+.gmb-biz-meta { margin: 2px 0 0; font-size: 12px; color: var(--ink-muted); }
+.gmb-rating-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 10px; }
+.gmb-score { font-family: var(--display); font-size: 28px; color: var(--ink); line-height: 1; }
+.gmb-stars, .gmb-stars-sm { color: #fbbc04; letter-spacing: 1px; font-size: 14px; }
+.gmb-stars-sm { font-size: 12px; margin-left: auto; }
+.gmb-count { font-size: 12px; color: var(--ink-muted); }
+.gmb-note { font-size: 13px; color: var(--ink-muted); margin: 0 0 12px; line-height: 1.45; }
+.gmb-embed-slot {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0b0b0b;
+  min-height: 180px;
+  margin-bottom: 12px;
+}
+.gmb-embed-placeholder {
+  min-height: 180px; padding: 20px; display: grid; align-content: center; gap: 4px;
+  text-align: center; color: var(--ink-muted); font-size: 13px;
+}
+.gmb-embed-placeholder strong { color: var(--ink); font-size: 14px; }
+.gmb-embed-hint { color: var(--brand-bright); font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-top: 8px !important; }
+.gmb-maps-iframe { width: 100%; height: 220px; border: 0; display: block; }
+.gmb-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.gmb-actions .btn { padding: 10px 12px; font-size: 11px; }
+.gmb-review-list { display: grid; gap: 12px; }
+.gmb-review {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.gmb-review header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+}
+.gmb-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--brand); color: #fff; font-weight: 700;
+  display: grid; place-items: center; font-size: 14px; flex-shrink: 0;
+}
+.gmb-review header strong { display: block; font-size: 14px; }
+.gmb-when { display: block; font-size: 11px; color: var(--ink-muted); text-transform: uppercase; letter-spacing: .06em; }
+.gmb-review p { margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 1.5; }
+@media (max-width: 800px) {
+  .gmb-layout { grid-template-columns: 1fr; }
+}
