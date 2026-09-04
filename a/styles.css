@@ -963,6 +963,24 @@ body.fb-sheet-open { overflow: hidden; }
 }
 .gallery-group-head h2 { font-size: clamp(22px, 3vw, 30px); }
 
+/* Home proof teaser inside proof-lib */
+.proof-lib .job-strip figure {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.proof-lib .job-strip img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+.proof-lib .job-strip figcaption {
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
 /* Home "problems we fix" band */
 .problems-grid {
   display: grid;

@@ -9,31 +9,31 @@
   var POSTS = [
     {
       time: "SAMPLE · 2d",
-      text: "Clearing job, Des Moines County. Hedge and locust off a fence line so the next pass can be a plot — not a jungle. Finish photos go in the closeout packet.",
+      text: "Clearing job on a landowner's Des Moines County property. Hedge and locust off their fence line so the next pass can be a plot — not a jungle. Finish photos go in the closeout packet.",
       img: "img/midwest-oak-timber.jpg",
       alt: "Oak timber edge — company post, Unsplash illustrative"
     },
     {
       time: "SAMPLE · 5d",
-      text: "Trail cut through oak timber on a southeast Iowa farm. Hunter-width corridor, first stone down, quiet enough to walk without flagging. GPS of the line is in the job folder.",
+      text: "Trail cut for a southeast Iowa landowner through their oak timber. Hunter-width corridor, first stone down, quiet enough to walk without flagging. GPS of the line is in the job folder.",
       img: "img/gravel-rural-lane.jpg",
       alt: "Gravel lane standing in for trail work — company post, Unsplash"
     },
     {
       time: "SAMPLE · 1w",
-      text: "Food plot in on a corn/soy edge. Sized to the farm, not the seed-bag photo. Soil work, lime, and a mix that will still be standing after first frost.",
+      text: "Food plot installed on a landowner's corn/soy edge. Sized to their farm, not the seed-bag photo. Soil work, lime, and a mix that will still be standing after first frost.",
       img: "img/iowa-corn-mason-city.jpg",
       alt: "Mason City Iowa corn standing in for a feeding plot — company post, Unsplash"
     },
     {
       time: "SAMPLE · 2w",
-      text: "Driveway resurfacing: re-crown, ditch, fresh stone. The lane has to carry the trailer in April, not just look clean in July.",
+      text: "Driveway resurfacing on a client's rural lane: re-crown, ditch, fresh stone. Their drive has to carry the trailer in April, not just look clean in July.",
       img: "img/gravel-rural-lane.jpg",
       alt: "Rural gravel lane — company post, Unsplash"
     },
     {
       time: "SAMPLE · 3w",
-      text: "Seasonal mowing on a CRP-style field. Edges held, setbacks cut, timber line left as cover. Opening-day access without a hay crop in the way.",
+      text: "Seasonal mowing hired for a landowner's CRP-style field. Edges held, setbacks cut, timber line left as cover. Opening-day access without a hay crop in the way.",
       img: "img/farm-rows.jpg",
       alt: "Farm rows standing in for seasonal mowing — company post, Unsplash"
     }
@@ -76,7 +76,7 @@
             '<div class="fb-avatar">' + MARK + "</div>" +
             "<div>" +
               '<p class="fb-page-name">AIX Outdoors</p>' +
-              '<p class="fb-page-meta">Land Clearing • Hauling • Grading · Burlington, IA</p>' +
+              '<p class="fb-page-meta">Land Clearing • Hauling • Grading · Contractors · Burlington, IA</p>' +
             "</div>" +
           "</div>" +
           '<div class="fb-btns">' +
