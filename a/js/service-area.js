@@ -180,11 +180,11 @@
       [CENTER.lat, CENTER.lon],
       8
     );
-    // Google-like roadmap via Carto (free tiles; GitHub Pages friendly — no Google billing key required)
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-      maxZoom: 18,
+    // OpenStreetMap standard tiles — no API key required
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
       attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
     radiusCircle = L.circle([CENTER.lat, CENTER.lon], Object.assign({
