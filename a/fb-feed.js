@@ -1,4 +1,4 @@
-/* AIX Outdoors — Facebook Follow card on landing page (no timeline embed). */
+/* AIX Outdoors — Facebook Follow card on landing page. */
 (function () {
   var SHARE_URL = "https://www.facebook.com/share/1PLyJxJ2rQ/";
   var STORAGE_KEY = "aix-a-mobile-feed";
@@ -46,36 +46,6 @@
     });
   }
 
-  function enhanceBanner() {
-    var banner = document.querySelector(".sample-banner");
-    if (!banner || banner.querySelector(".feed-toggle")) return;
-    var sw = banner.querySelector(".ab-switch");
-    var tools = document.createElement("div");
-    tools.className = "sample-banner-tools";
-    var toggle = document.createElement("nav");
-    toggle.className = "feed-toggle";
-    toggle.setAttribute("aria-label", "Mobile Facebook feed placement");
-    toggle.innerHTML =
-      '<span class="feed-toggle-label">Mobile feed:</span> ' +
-      '<a href="#fb-feed-hero" data-feed-mode="hero">After hero</a>' +
-      '<span class="feed-toggle-sep"> | </span>' +
-      '<a href="#fb-feed-sheet" data-feed-mode="sheet">Bottom sheet</a>' +
-      '<span class="feed-toggle-desk">desktop uses right rail</span>';
-    if (sw) {
-      sw.parentNode.insertBefore(tools, sw);
-      tools.appendChild(toggle);
-      tools.appendChild(sw);
-    } else {
-      banner.appendChild(tools);
-      tools.appendChild(toggle);
-    }
-    toggle.addEventListener("click", function (e) {
-      var a = e.target.closest("[data-feed-mode]");
-      if (!a) return;
-      e.preventDefault();
-      setMode(a.getAttribute("data-feed-mode"));
-    });
-  }
 
   function fillMounts() {
     document.querySelectorAll(".fb-rail, .fb-after-hero, .fb-sheet-body").forEach(function (el) {
@@ -140,7 +110,6 @@
         localStorage.setItem(STORAGE_KEY, "hero");
       }
     } catch (e) {}
-    enhanceBanner();
     ensureSheet();
     fillMounts();
     setMode(getMode());
