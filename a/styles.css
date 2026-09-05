@@ -1622,14 +1622,14 @@ body.fb-sheet-open { overflow: hidden; }
   body[data-mobile-feed="sheet"] .fb-after-hero { display: block !important; }
 }
 
-/* Who we are — black block, color logo left, light text right */
+/* Who we are — black block, color circle logo (no square), white type */
 .about-section {
   padding-top: 36px;
   padding-bottom: 12px;
 }
 .about-card {
-  background: #0b0b0b;
-  color: #f2f2f2;
+  background: #0b0b0b !important;
+  color: #f2f2f2 !important;
   border-radius: 12px;
   padding: 36px 40px 40px;
   border: 1px solid var(--line);
@@ -1641,42 +1641,45 @@ body.fb-sheet-open { overflow: hidden; }
   gap: 40px;
   align-items: center;
 }
-.about-brand-copy .tiny { color: var(--ink-muted); }
-.about-brand-copy h2 { color: var(--ink); }
+.about-brand-copy .tiny { color: #b0b0b0 !important; }
+.about-brand-copy h2 { color: #f2f2f2 !important; }
 .about-lede {
   margin: 0 0 14px;
-  color: var(--ink-muted);
+  color: #c8c8c8 !important;
   font-size: 16px;
   line-height: 1.5;
 }
-.about-brand-copy .seo-prose {
+.about-brand-copy .seo-prose,
+.about-brand-copy .seo-prose p {
   max-width: none;
-  color: var(--ink-muted);
+  color: #c8c8c8 !important;
 }
-.about-brand-copy .seo-prose p { color: var(--ink-muted); }
 .about-brand-mark {
   margin: 0;
   width: 100%;
   max-width: 300px;
   justify-self: start;
   line-height: 0;
-  background: #0b0b0b;
+  background: transparent !important;
   border: 0;
   box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
 }
 .about-brand-mark img {
   width: 100%;
   height: auto;
   display: block;
-  background: #0b0b0b;
+  background: transparent !important;
+  border-radius: 0;
 }
 .about-pillars .problem-tile {
-  background: var(--bg-card);
-  border-color: var(--line);
-  color: var(--ink);
+  background: #1a1a1a !important;
+  border-color: #2e2e2e !important;
+  color: #f2f2f2 !important;
 }
-.about-pillars .problem-tile h3 { color: var(--ink); }
-.about-pillars .problem-tile p { color: var(--ink-muted); }
+.about-pillars .problem-tile h3 { color: #f2f2f2 !important; }
+.about-pillars .problem-tile p { color: #b0b0b0 !important; }
 @media (max-width: 800px) {
   .about-card { padding: 28px 20px 32px; }
   .about-brand {
