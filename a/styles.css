@@ -1637,7 +1637,7 @@ body.fb-sheet-open { overflow: hidden; }
 }
 .about-brand {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(200px, 300px);
+  grid-template-columns: minmax(200px, 300px) minmax(0, 1fr);
   gap: 40px;
   align-items: center;
 }
@@ -1664,7 +1664,7 @@ body.fb-sheet-open { overflow: hidden; }
   margin: 0;
   width: 100%;
   max-width: 300px;
-  justify-self: end;
+  justify-self: start;
   line-height: 0;
   background: #fff;
   border: 0;
@@ -1694,7 +1694,6 @@ body.fb-sheet-open { overflow: hidden; }
   .about-brand-mark {
     justify-self: center;
     max-width: 240px;
-    order: -1; /* logo above copy on mobile, centered */
   }
   .about-brand-copy { width: 100%; text-align: left; }
   .about-brand-copy .section-head { text-align: left; }
