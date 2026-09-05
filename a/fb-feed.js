@@ -8,7 +8,7 @@
       '<div class="fb-live-wrap">' +
         '<div class="fb-promo">' +
           '<div class="fb-promo-top">' +
-            '<img class="fb-promo-mark" src="img/brand/logo-circle-dark.jpg" width="56" height="56" alt="AIX Outdoors">' +
+            '<img class="fb-promo-mark" src="img/brand/logo-circle-brand.png?v=8" width="56" height="56" alt="AIX Outdoors">' +
             "<div>" +
               '<p class="fb-promo-kicker">On Facebook</p>' +
               '<p class="fb-promo-name">AIX Outdoors LLC</p>' +
