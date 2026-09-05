@@ -1,85 +1,66 @@
-/* AIX Outdoors — Facebook on landing page (live timeline + follow CTA). */
+/* AIX Outdoors — Facebook on landing page.
+   Meta's Page Plugin is unreliable (login walls / blank iframes), so we show
+   a native "Recent posts" panel that always works, plus a Follow CTA. */
 (function () {
   var PAGE_URL = "https://www.facebook.com/people/AIX-Outdoors-LLC/61593250985679/";
   var SHARE_URL = "https://www.facebook.com/share/1PLyJxJ2rQ/";
   var STORAGE_KEY = "aix-a-mobile-feed";
 
-  function promoCard() {
-    return (
-      '<div class="fb-promo">' +
-        '<div class="fb-promo-top">' +
-          '<img class="fb-promo-mark" src="img/brand/logo-circle-dark.jpg" width="56" height="56" alt="AIX Outdoors">' +
-          "<div>" +
-            '<p class="fb-promo-kicker">Latest on Facebook</p>' +
-            '<p class="fb-promo-name">AIX Outdoors LLC</p>' +
-            '<p class="fb-promo-meta">Land Clearing • Hauling • Grading · Burlington, IA</p>' +
+  // Curated mirrors of public Page posts — update when new FB posts go up.
+  var POSTS = [
+    {
+      title: "Forestry mulching & brush clearing",
+      body: "Invasive brush and timber-edge thickets mulched in place so you can walk, plant, or maintain again.",
+      img: "media/mulching/forestry-mulching-02.jpg",
+      alt: "Track loader mulching brush along a field edge",
+      href: SHARE_URL
+    },
+    {
+      title: "Driveway transformation — still mowing your driveway?",
+      body: "Ruts, potholes, and grass through the rock. We grade and resurface your lane so it drives smooth.",
+      img: "media/gravel/gravel-01.jpg",
+      alt: "Skid steer grading a long gravel farm driveway",
+      href: SHARE_URL
+    }
+  ];
+
+  function postCards() {
+    return POSTS.map(function (p) {
+      return (
+        '<a class="fb-native-post" href="' + p.href + '" target="_blank" rel="noopener noreferrer">' +
+          '<img class="fb-native-img" src="' + p.img + '" alt="' + p.alt + '" loading="lazy" width="640" height="360">' +
+          '<div class="fb-native-body">' +
+            '<p class="fb-native-from">AIX Outdoors LLC · Facebook</p>' +
+            "<h3>" + p.title + "</h3>" +
+            "<p>" + p.body + "</p>" +
+            '<span class="fb-native-open">View on Facebook →</span>' +
           "</div>" +
-        "</div>" +
-        '<p class="fb-promo-copy">Job photos and updates from the field. Follow the Page, or scroll the live feed below.</p>' +
-        '<a class="btn fb-promo-btn" href="' + SHARE_URL + '" target="_blank" rel="noopener noreferrer">Open / Follow on Facebook</a>' +
-      "</div>"
-    );
+        "</a>"
+      );
+    }).join("");
   }
 
-  function pluginMarkup(width, height) {
-    width = width || 340;
-    height = height || 620;
-    // Timeline visible by default so visitors see real posts without an extra click.
+  function pluginMarkup() {
     return (
       '<div class="fb-live-wrap">' +
-        promoCard() +
-        '<div class="fb-embed-panel" aria-label="Facebook Page timeline">' +
-          '<p class="fb-embed-label">Recent posts</p>' +
-          '<div class="fb-page" data-href="' + PAGE_URL + '" data-tabs="timeline" data-width="' + width + '" data-height="' + height + '" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">' +
-            '<blockquote cite="' + PAGE_URL + '" class="fb-xfbml-parse-ignore">' +
-              '<a href="' + SHARE_URL + '">AIX Outdoors LLC on Facebook</a>' +
-            "</blockquote>" +
+        '<div class="fb-promo">' +
+          '<div class="fb-promo-top">' +
+            '<img class="fb-promo-mark" src="img/brand/logo-circle-dark.jpg" width="56" height="56" alt="AIX Outdoors">' +
+            "<div>" +
+              '<p class="fb-promo-kicker">Latest on Facebook</p>' +
+              '<p class="fb-promo-name">AIX Outdoors LLC</p>' +
+              '<p class="fb-promo-meta">Land Clearing • Hauling • Grading · Burlington, IA</p>' +
+            "</div>" +
           "</div>" +
+          '<p class="fb-promo-copy">Job photos and updates from the field — same posts as the Facebook Page, shown here so you do not need a Facebook login.</p>' +
+          '<a class="btn fb-promo-btn" href="' + SHARE_URL + '" target="_blank" rel="noopener noreferrer">Open / Follow on Facebook</a>' +
+        "</div>" +
+        '<div class="fb-native-feed" aria-label="Recent Facebook posts">' +
+          '<p class="fb-embed-label">Recent posts</p>' +
+          postCards() +
         "</div>" +
       "</div>"
     );
-  }
-
-  function loadSdk(cb) {
-    if (window.FB) {
-      cb();
-      return;
-    }
-    if (document.getElementById("facebook-jssdk")) {
-      var tries = 0;
-      var t = setInterval(function () {
-        tries += 1;
-        if (window.FB || tries > 40) {
-          clearInterval(t);
-          if (window.FB) cb();
-        }
-      }, 100);
-      return;
-    }
-    if (!document.getElementById("fb-root")) {
-      var root = document.createElement("div");
-      root.id = "fb-root";
-      document.body.insertBefore(root, document.body.firstChild);
-    }
-    window.fbAsyncInit = function () {
-      window.FB.init({ xfbml: true, version: "v21.0" });
-      cb();
-    };
-    var js = document.createElement("script");
-    js.id = "facebook-jssdk";
-    js.async = true;
-    js.defer = true;
-    js.crossOrigin = "anonymous";
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    document.head.appendChild(js);
-  }
-
-  function parseXfbml() {
-    loadSdk(function () {
-      try {
-        if (window.FB && window.FB.XFBML) window.FB.XFBML.parse();
-      } catch (e) {}
-    });
   }
 
   function getMode() {
@@ -98,7 +79,6 @@
     } catch (e) {}
     syncToggle(mode);
     if (mode !== "sheet") closeSheet();
-    parseXfbml();
   }
 
   function syncToggle(mode) {
@@ -140,14 +120,8 @@
 
   function fillMounts() {
     document.querySelectorAll(".fb-rail, .fb-after-hero, .fb-sheet-body").forEach(function (el) {
-      if (!el.innerHTML.trim()) {
-        var isRail = el.classList.contains("fb-rail");
-        var w = isRail ? 340 : Math.min(500, Math.max(280, el.clientWidth || 340));
-        var h = isRail ? 680 : 560;
-        el.innerHTML = pluginMarkup(w, h);
-      }
+      if (!el.innerHTML.trim()) el.innerHTML = pluginMarkup();
     });
-    parseXfbml();
   }
 
   function closeSheet() {
@@ -171,7 +145,6 @@
     if (chip) chip.setAttribute("aria-expanded", "true");
     var closeBtn = sheet.querySelector(".fb-sheet-close");
     if (closeBtn) closeBtn.focus();
-    parseXfbml();
   }
 
   function ensureSheet() {
