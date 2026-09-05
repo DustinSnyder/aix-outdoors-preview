@@ -119,7 +119,7 @@ a:hover { color: var(--orange-hot); }
   .hero-brand-mark { width: min(140px, 38vw); margin-bottom: 12px; }
 }
 .nav-links { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
-.nav-links a { color: var(--ink-muted); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.nav-links a { color: var(--ink-muted); font-size: 12px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; white-space: nowrap; }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
