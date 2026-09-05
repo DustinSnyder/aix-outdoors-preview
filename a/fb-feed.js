@@ -1,44 +1,7 @@
-/* AIX Outdoors — Facebook on landing page.
-   Meta's Page Plugin is unreliable (login walls / blank iframes), so we show
-   a native "Recent posts" panel that always works, plus a Follow CTA. */
+/* AIX Outdoors — Facebook Follow card on landing page (no timeline embed). */
 (function () {
-  var PAGE_URL = "https://www.facebook.com/people/AIX-Outdoors-LLC/61593250985679/";
   var SHARE_URL = "https://www.facebook.com/share/1PLyJxJ2rQ/";
   var STORAGE_KEY = "aix-a-mobile-feed";
-
-  // Curated mirrors of public Page posts — update when new FB posts go up.
-  var POSTS = [
-    {
-      title: "Forestry mulching & brush clearing",
-      body: "Invasive brush and timber-edge thickets mulched in place so you can walk, plant, or maintain again.",
-      img: "media/mulching/forestry-mulching-02.jpg",
-      alt: "Track loader mulching brush along a field edge",
-      href: SHARE_URL
-    },
-    {
-      title: "Driveway transformation — still mowing your driveway?",
-      body: "Ruts, potholes, and grass through the rock. We grade and resurface your lane so it drives smooth.",
-      img: "media/gravel/gravel-01.jpg",
-      alt: "Skid steer grading a long gravel farm driveway",
-      href: SHARE_URL
-    }
-  ];
-
-  function postCards() {
-    return POSTS.map(function (p) {
-      return (
-        '<a class="fb-native-post" href="' + p.href + '" target="_blank" rel="noopener noreferrer">' +
-          '<img class="fb-native-img" src="' + p.img + '" alt="' + p.alt + '" loading="lazy" width="640" height="360">' +
-          '<div class="fb-native-body">' +
-            '<p class="fb-native-from">AIX Outdoors LLC · Facebook</p>' +
-            "<h3>" + p.title + "</h3>" +
-            "<p>" + p.body + "</p>" +
-            '<span class="fb-native-open">View on Facebook →</span>' +
-          "</div>" +
-        "</a>"
-      );
-    }).join("");
-  }
 
   function pluginMarkup() {
     return (
@@ -47,17 +10,13 @@
           '<div class="fb-promo-top">' +
             '<img class="fb-promo-mark" src="img/brand/logo-circle-dark.jpg" width="56" height="56" alt="AIX Outdoors">' +
             "<div>" +
-              '<p class="fb-promo-kicker">Latest on Facebook</p>' +
+              '<p class="fb-promo-kicker">On Facebook</p>' +
               '<p class="fb-promo-name">AIX Outdoors LLC</p>' +
               '<p class="fb-promo-meta">Land Clearing • Hauling • Grading · Burlington, IA</p>' +
             "</div>" +
           "</div>" +
-          '<p class="fb-promo-copy">Job photos and updates from the field — same posts as the Facebook Page, shown here so you do not need a Facebook login.</p>' +
+          '<p class="fb-promo-copy">Job photos and updates from the field. Follow the Page to see what we are working on.</p>' +
           '<a class="btn fb-promo-btn" href="' + SHARE_URL + '" target="_blank" rel="noopener noreferrer">Open / Follow on Facebook</a>' +
-        "</div>" +
-        '<div class="fb-native-feed" aria-label="Recent Facebook posts">' +
-          '<p class="fb-embed-label">Recent posts</p>' +
-          postCards() +
         "</div>" +
       "</div>"
     );
