@@ -1050,8 +1050,10 @@ body.fb-sheet-open { overflow: hidden; }
 }
 .job-video-portrait .job-video-player video {
   aspect-ratio: 9 / 16;
-  max-height: 520px;
+  object-fit: contain;
+  max-height: 560px;
   margin: 0 auto;
+  background: #0b0b0b;
 }
 .job-video-playbtn {
   position: absolute;
@@ -1343,13 +1345,15 @@ body.fb-sheet-open { overflow: hidden; }
 
 .job-video-portrait video {
   aspect-ratio: 9 / 16;
-  object-fit: cover;
-  max-height: 420px;
-  width: 100%;
-  background: #000;
+  object-fit: contain;
+  max-height: 560px;
+  margin-inline: auto;
+  background: #0b0b0b;
 }
-@media (min-width: 901px) {
-  .job-video-portrait { max-width: 280px; }
+.job-video-portrait {
+  max-width: 340px;
+  width: 100%;
+  justify-self: center;
 }
 
 .seo-prose { max-width: 68ch; color: var(--ink-muted); font-size: 15px; line-height: 1.55; }

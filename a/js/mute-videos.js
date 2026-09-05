@@ -47,6 +47,7 @@
   function wire(v) {
     silence(v);
     v.removeAttribute("controls");
+    v.controls = false;
     v.setAttribute("playsinline", "");
     v.setAttribute("webkit-playsinline", "");
     v.disablePictureInPicture = true;
