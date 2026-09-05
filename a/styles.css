@@ -1622,42 +1622,80 @@ body.fb-sheet-open { overflow: hidden; }
   body[data-mobile-feed="sheet"] .fb-after-hero { display: block !important; }
 }
 
-/* Who we are — brand mark + copy */
+/* Who we are — white card, text left, logo right */
+.about-section {
+  padding-top: 36px;
+  padding-bottom: 12px;
+}
+.about-card {
+  background: #ffffff;
+  color: #121212;
+  border-radius: 12px;
+  padding: 36px 40px 40px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 12px 40px rgba(0,0,0,.28);
+}
 .about-brand {
   display: grid;
-  grid-template-columns: minmax(200px, 300px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 300px);
   gap: 40px;
   align-items: center;
 }
+.about-brand-copy .tiny {
+  color: #5a5a5a;
+}
+.about-brand-copy h2 {
+  color: #0b0b0b;
+}
+.about-lede {
+  margin: 0 0 14px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.about-brand-copy .seo-prose {
+  max-width: none;
+  color: #1a1a1a;
+}
+.about-brand-copy .seo-prose p {
+  color: #1a1a1a;
+}
 .about-brand-mark {
   margin: 0;
-  width: min(100%, 300px);
-  aspect-ratio: 1;
-  background: #0b0b0b; /* exact site black — no white plate */
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
+  width: 100%;
+  max-width: 300px;
+  justify-self: end;
   line-height: 0;
-  overflow: hidden;
+  background: #fff;
+  border: 0;
+  box-shadow: none;
 }
 .about-brand-mark img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
-  object-fit: contain;
-  background: #0b0b0b;
-  border-radius: 0; /* file is already a clean circle on black */
+  background: #fff;
 }
-.about-brand-copy .section-head { margin-bottom: 0; }
-.about-brand-copy .seo-prose { max-width: none; }
+.about-pillars .problem-tile {
+  background: #f5f5f5;
+  border-color: #ddd;
+  color: #1a1a1a;
+}
+.about-pillars .problem-tile h3 { color: #0b0b0b; }
+.about-pillars .problem-tile p { color: #333; }
 @media (max-width: 800px) {
+  .about-card { padding: 28px 20px 32px; }
   .about-brand {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 24px;
     justify-items: center;
+    text-align: center;
   }
-  .about-brand-mark { width: min(240px, 72vw); margin: 0 auto; }
-  .about-brand-copy { width: 100%; }
-  .about-brand-copy .seo-prose,
-  .about-brand-copy .muted { text-align: left; }
+  .about-brand-mark {
+    justify-self: center;
+    max-width: 240px;
+    order: -1; /* logo above copy on mobile, centered */
+  }
+  .about-brand-copy { width: 100%; text-align: left; }
+  .about-brand-copy .section-head { text-align: left; }
 }
