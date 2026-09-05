@@ -1593,19 +1593,19 @@ body.fb-sheet-open { overflow: hidden; }
   .photo-preview img { height: 110px; }
 }
 
-/* Facebook promo card — always visible while Page is new / embed empty */
+/* Facebook — promo + live timeline (posts visible by default) */
 .fb-promo {
   background: #121212;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 18px 16px 16px;
+  padding: 16px 14px 14px;
   color: var(--ink);
 }
 .fb-promo-top {
   display: flex;
   gap: 12px;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .fb-promo-mark {
   width: 56px;
@@ -1615,6 +1615,15 @@ body.fb-sheet-open { overflow: hidden; }
   display: block;
   flex: 0 0 auto;
   border: 1px solid var(--line);
+}
+.fb-promo-kicker {
+  margin: 0 0 2px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 700;
 }
 .fb-promo-name {
   margin: 0;
@@ -1628,25 +1637,37 @@ body.fb-sheet-open { overflow: hidden; }
   color: var(--ink-muted);
 }
 .fb-promo-copy {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   font-size: 14px;
   color: var(--ink-muted);
   line-height: 1.45;
 }
 .fb-promo-btn { width: 100%; }
-.fb-embed-details {
+.fb-embed-panel {
   margin-top: 12px;
-  border-top: 1px solid var(--line);
-  padding-top: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
 }
-.fb-embed-details summary {
-  cursor: pointer;
-  font-size: 12px;
-  letter-spacing: .06em;
+.fb-embed-label {
+  margin: 0;
+  padding: 10px 12px 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--ink-muted);
   font-weight: 700;
-  padding: 6px 0;
+  color: #65676b;
+  background: #f0f2f5;
+  border-bottom: 1px solid #dadde1;
+}
+.fb-embed-panel .fb-page,
+.fb-embed-panel iframe {
+  width: 100% !important;
+  min-height: 480px;
+  background: #fff;
 }
 .fb-live-wrap {
   background: transparent;
@@ -1657,8 +1678,12 @@ body.fb-sheet-open { overflow: hidden; }
 @media (max-width: 960px) {
   .fb-after-hero {
     display: block !important;
-    margin: 16px auto 8px;
+    margin: 16px auto 12px;
     padding: 0 0 8px;
   }
   body[data-mobile-feed="sheet"] .fb-after-hero { display: block !important; }
+  .fb-after-hero .fb-embed-panel .fb-page,
+  .fb-after-hero .fb-embed-panel iframe {
+    min-height: 420px;
+  }
 }
