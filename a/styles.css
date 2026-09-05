@@ -1621,3 +1621,37 @@ body.fb-sheet-open { overflow: hidden; }
   }
   body[data-mobile-feed="sheet"] .fb-after-hero { display: block !important; }
 }
+
+/* Who we are — brand mark + copy */
+.about-brand {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+  gap: 36px;
+  align-items: center;
+}
+.about-brand-mark {
+  margin: 0 auto;
+  width: min(100%, 280px);
+  background: var(--bg); /* #0b0b0b — no white card behind logo */
+  border-radius: 50%;
+  line-height: 0;
+}
+.about-brand-mark img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  background: var(--bg);
+}
+.about-brand-copy .section-head { margin-bottom: 0; }
+.about-brand-copy .seo-prose { max-width: none; }
+@media (max-width: 800px) {
+  .about-brand {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    text-align: center;
+  }
+  .about-brand-mark { width: min(220px, 70vw); }
+  .about-brand-copy .seo-prose,
+  .about-brand-copy .muted { text-align: left; }
+}
