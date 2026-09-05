@@ -1625,23 +1625,28 @@ body.fb-sheet-open { overflow: hidden; }
 /* Who we are — brand mark + copy */
 .about-brand {
   display: grid;
-  grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
-  gap: 36px;
+  grid-template-columns: minmax(200px, 300px) minmax(0, 1fr);
+  gap: 40px;
   align-items: center;
 }
 .about-brand-mark {
-  margin: 0 auto;
-  width: min(100%, 280px);
-  background: var(--bg); /* #0b0b0b — no white card behind logo */
-  border-radius: 50%;
+  margin: 0;
+  width: min(100%, 300px);
+  aspect-ratio: 1;
+  background: #0b0b0b; /* exact site black — no white plate */
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   line-height: 0;
+  overflow: hidden;
 }
 .about-brand-mark img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  border-radius: 50%;
-  background: var(--bg);
+  object-fit: contain;
+  background: #0b0b0b;
+  border-radius: 0; /* file is already a clean circle on black */
 }
 .about-brand-copy .section-head { margin-bottom: 0; }
 .about-brand-copy .seo-prose { max-width: none; }
@@ -1649,9 +1654,10 @@ body.fb-sheet-open { overflow: hidden; }
   .about-brand {
     grid-template-columns: 1fr;
     gap: 22px;
-    text-align: center;
+    justify-items: center;
   }
-  .about-brand-mark { width: min(220px, 70vw); }
+  .about-brand-mark { width: min(240px, 72vw); margin: 0 auto; }
+  .about-brand-copy { width: 100%; }
   .about-brand-copy .seo-prose,
   .about-brand-copy .muted { text-align: left; }
 }
